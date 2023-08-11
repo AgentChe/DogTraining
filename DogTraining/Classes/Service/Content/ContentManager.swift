@@ -10,6 +10,7 @@ import RxSwift
 protocol ContentManagerProtocol {
     func obtainLevels(forceUpdate: Bool) -> Single<[SkillLevel]>
     func obtainBreeds(forceUpdate: Bool) -> Single<[Breed]>
+    func obtainHomeKit() -> Single<HomeKit?>
 }
 
 final class ContentManager {
@@ -31,6 +32,18 @@ extension ContentManager: ContentManagerProtocol {
     
     func obtainBreeds(forceUpdate: Bool) -> Single<[Breed]> {
         forceUpdate ? loadBreeds() : cachedBreeds()
+    }
+    
+    func obtainHomeKit() -> Single<HomeKit?> {
+        guard let userToken = sessionManager.getSession()?.userToken else {
+            return .error(SignError.tokenNotFound)
+        }
+        
+        let request = GetHomeKitRequest(userToken: userToken)
+        
+        return defaultRequestWrapper
+            .callServerApi(requestBody: request)
+            .map { GetHomeKitResponse.map(from: $0) }
     }
 }
 

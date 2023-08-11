@@ -180,6 +180,18 @@
 		DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CE52A8641EC00A56B96 /* AssignTrainingResponse.swift */; };
 		DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CEA2A8641EC00A56B96 /* LogTrainingProgressResponse.swift */; };
 		DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CEB2A8641EC00A56B96 /* LogTrainingProgressRequest.swift */; };
+		DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CFF2A865BC500A56B96 /* PlanMediator.swift */; };
+		DEB55D0D2A865BC500A56B96 /* PlanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D002A865BC500A56B96 /* PlanManager.swift */; };
+		DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D022A865BC500A56B96 /* PlanTraining.swift */; };
+		DEB55D0F2A865BC500A56B96 /* PlanOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D032A865BC500A56B96 /* PlanOnDay.swift */; };
+		DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D042A865BC500A56B96 /* PlanGame.swift */; };
+		DEB55D112A865BC500A56B96 /* PlanStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D052A865BC500A56B96 /* PlanStatus.swift */; };
+		DEB55D122A865BC500A56B96 /* GetPlanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D082A865BC500A56B96 /* GetPlanRequest.swift */; };
+		DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D092A865BC500A56B96 /* GetPlanResponse.swift */; };
+		DEB55D142A865BC500A56B96 /* ReinitPlanRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D0B2A865BC500A56B96 /* ReinitPlanRequest.swift */; };
+		DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D152A86605000A56B96 /* HomeKit.swift */; };
+		DEB55D192A8660E300A56B96 /* GetHomeKitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D182A8660E300A56B96 /* GetHomeKitRequest.swift */; };
+		DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D1A2A8660E900A56B96 /* GetHomeKitResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -360,6 +372,18 @@
 		DEB55CE52A8641EC00A56B96 /* AssignTrainingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignTrainingResponse.swift; sourceTree = "<group>"; };
 		DEB55CEA2A8641EC00A56B96 /* LogTrainingProgressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTrainingProgressResponse.swift; sourceTree = "<group>"; };
 		DEB55CEB2A8641EC00A56B96 /* LogTrainingProgressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTrainingProgressRequest.swift; sourceTree = "<group>"; };
+		DEB55CFF2A865BC500A56B96 /* PlanMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanMediator.swift; sourceTree = "<group>"; };
+		DEB55D002A865BC500A56B96 /* PlanManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanManager.swift; sourceTree = "<group>"; };
+		DEB55D022A865BC500A56B96 /* PlanTraining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanTraining.swift; sourceTree = "<group>"; };
+		DEB55D032A865BC500A56B96 /* PlanOnDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanOnDay.swift; sourceTree = "<group>"; };
+		DEB55D042A865BC500A56B96 /* PlanGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanGame.swift; sourceTree = "<group>"; };
+		DEB55D052A865BC500A56B96 /* PlanStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanStatus.swift; sourceTree = "<group>"; };
+		DEB55D082A865BC500A56B96 /* GetPlanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPlanRequest.swift; sourceTree = "<group>"; };
+		DEB55D092A865BC500A56B96 /* GetPlanResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPlanResponse.swift; sourceTree = "<group>"; };
+		DEB55D0B2A865BC500A56B96 /* ReinitPlanRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReinitPlanRequest.swift; sourceTree = "<group>"; };
+		DEB55D152A86605000A56B96 /* HomeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKit.swift; sourceTree = "<group>"; };
+		DEB55D182A8660E300A56B96 /* GetHomeKitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeKitRequest.swift; sourceTree = "<group>"; };
+		DEB55D1A2A8660E900A56B96 /* GetHomeKitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeKitResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -628,6 +652,7 @@
 		DE1F7AA72A83F10600B3FF24 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DEB55CFE2A865BC500A56B96 /* Plan */,
 				DEB55CD12A8641EC00A56B96 /* Training */,
 				DEB55CA42A86315200A56B96 /* Commands */,
 				DEB55C772A86228700A56B96 /* Games */,
@@ -918,6 +943,7 @@
 			children = (
 				DE1F7B692A861FA800B3FF24 /* SkillLevel.swift */,
 				DE1F7B782A86202600B3FF24 /* Breed.swift */,
+				DEB55D152A86605000A56B96 /* HomeKit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -925,6 +951,7 @@
 		DE1F7B6A2A861FA800B3FF24 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				DEB55D172A8660DA00A56B96 /* GetHomeKit */,
 				DE1F7B7A2A86203D00B3FF24 /* GetBreeds */,
 				DE1F7B6E2A861FA800B3FF24 /* GetSkillLevels */,
 			);
@@ -1205,6 +1232,63 @@
 			path = LogProgress;
 			sourceTree = "<group>";
 		};
+		DEB55CFE2A865BC500A56B96 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D062A865BC500A56B96 /* Request */,
+				DEB55D012A865BC500A56B96 /* Model */,
+				DEB55CFF2A865BC500A56B96 /* PlanMediator.swift */,
+				DEB55D002A865BC500A56B96 /* PlanManager.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		DEB55D012A865BC500A56B96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D032A865BC500A56B96 /* PlanOnDay.swift */,
+				DEB55D022A865BC500A56B96 /* PlanTraining.swift */,
+				DEB55D042A865BC500A56B96 /* PlanGame.swift */,
+				DEB55D052A865BC500A56B96 /* PlanStatus.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB55D062A865BC500A56B96 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D072A865BC500A56B96 /* GetPlan */,
+				DEB55D0A2A865BC500A56B96 /* ReinitPlan */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DEB55D072A865BC500A56B96 /* GetPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D082A865BC500A56B96 /* GetPlanRequest.swift */,
+				DEB55D092A865BC500A56B96 /* GetPlanResponse.swift */,
+			);
+			path = GetPlan;
+			sourceTree = "<group>";
+		};
+		DEB55D0A2A865BC500A56B96 /* ReinitPlan */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D0B2A865BC500A56B96 /* ReinitPlanRequest.swift */,
+			);
+			path = ReinitPlan;
+			sourceTree = "<group>";
+		};
+		DEB55D172A8660DA00A56B96 /* GetHomeKit */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D182A8660E300A56B96 /* GetHomeKitRequest.swift */,
+				DEB55D1A2A8660E900A56B96 /* GetHomeKitResponse.swift */,
+			);
+			path = GetHomeKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1332,7 +1416,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1F7B302A83F13200B3FF24 /* SplashReceiptValidationObserver.swift in Sources */,
+				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
+				DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */,
 				DE1F7B3D2A83F13200B3FF24 /* MainView.swift in Sources */,
 				DE1F7AD92A83F10600B3FF24 /* WeekSchedule.swift in Sources */,
 				DE1F7AE52A83F10600B3FF24 /* IAPActionResult.swift in Sources */,
@@ -1341,6 +1427,7 @@
 				DE1F7A972A83F0E700B3FF24 /* PaddingTextField.swift in Sources */,
 				DEB55C9E2A86228700A56B96 /* AssignGameRequest.swift in Sources */,
 				DE1F7AE02A83F10600B3FF24 /* SetRequest.swift in Sources */,
+				DEB55D142A865BC500A56B96 /* ReinitPlanRequest.swift in Sources */,
 				DE1F7AD82A83F10600B3FF24 /* Role.swift in Sources */,
 				DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */,
 				DE1F7ADC2A83F10600B3FF24 /* GetProfileRequest.swift in Sources */,
@@ -1359,6 +1446,7 @@
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
 				DEB55CEF2A8641EC00A56B96 /* Training.swift in Sources */,
 				DEB55CF52A8641EC00A56B96 /* ScheduleTrainingResponse.swift in Sources */,
+				DEB55D122A865BC500A56B96 /* GetPlanRequest.swift in Sources */,
 				DE1F7AE72A83F10600B3FF24 /* IAPError.swift in Sources */,
 				DE1F7A8E2A83F0E700B3FF24 /* RequestReview.swift in Sources */,
 				DEB55CCE2A86315200A56B96 /* GetCommandsGroupsResponse.swift in Sources */,
@@ -1384,11 +1472,13 @@
 				DE1F7B342A83F13200B3FF24 /* DefaultPaygate.swift in Sources */,
 				DE1F7A812A83F0E700B3FF24 /* APIRequestBody.swift in Sources */,
 				DEB55CC32A86315200A56B96 /* CommandTraining.swift in Sources */,
+				DEB55D112A865BC500A56B96 /* PlanStatus.swift in Sources */,
 				DE1F7B352A83F13200B3FF24 /* PaygateOptionInfo.swift in Sources */,
 				DE1F7B7C2A86204C00B3FF24 /* GetBreedsRequest.swift in Sources */,
 				DEB55CCF2A86315200A56B96 /* LogCommandProgressResponse.swift in Sources */,
 				DEB55C942A86228700A56B96 /* GameGroup.swift in Sources */,
 				DE1F7A7A2A83F0E700B3FF24 /* Date+Extension.swift in Sources */,
+				DEB55D192A8660E300A56B96 /* GetHomeKitRequest.swift in Sources */,
 				DEB55CF82A8641EC00A56B96 /* AssignTrainingRequest.swift in Sources */,
 				DE1F7A8D2A83F0E700B3FF24 /* Weak.swift in Sources */,
 				DE1F7ADD2A83F10600B3FF24 /* GetProfileResponse.swift in Sources */,
@@ -1425,6 +1515,7 @@
 				DE1F7A8C2A83F0E700B3FF24 /* ContentError.swift in Sources */,
 				DE1F7AD32A83F10600B3FF24 /* GetPaygateResponse.swift in Sources */,
 				DE1F7B312A83F13200B3FF24 /* SplashViewModel.swift in Sources */,
+				DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */,
 				DEB55C9B2A86228700A56B96 /* ScheduleGameResponse.swift in Sources */,
 				DEB55CCC2A86315200A56B96 /* AssignCommandResponse.swift in Sources */,
 				DEB55CBF2A86315200A56B96 /* CommandsMediator.swift in Sources */,
@@ -1441,8 +1532,10 @@
 				DEB55C992A86228700A56B96 /* GetGameTrainingRequest.swift in Sources */,
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
+				DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */,
 				DEB55C962A86228700A56B96 /* GameTraining.swift in Sources */,
 				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,
+				DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */,
 				DE1F7B792A86202600B3FF24 /* Breed.swift in Sources */,
 				DE1F7A9A2A83F0E700B3FF24 /* GradientView.swift in Sources */,
 				DE1F7B3F2A83F13200B3FF24 /* TabView.swift in Sources */,
@@ -1475,7 +1568,9 @@
 				DEB55C982A86228700A56B96 /* GetGameTrainingResponse.swift in Sources */,
 				DEB55C952A86228700A56B96 /* Game.swift in Sources */,
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
+				DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */,
 				DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */,
+				DEB55D0D2A865BC500A56B96 /* PlanManager.swift in Sources */,
 				DEB55CA22A86228700A56B96 /* LogGameProgressResponse.swift in Sources */,
 				DE1F7B412A83F13200B3FF24 /* TryAgainView.swift in Sources */,
 				DE1F7A892A83F0E700B3FF24 /* Fonts.swift in Sources */,
@@ -1484,6 +1579,7 @@
 				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
 				DEB55CA12A86228700A56B96 /* GetGameGroupsResponse.swift in Sources */,
 				DE1F7A9B2A83F0E700B3FF24 /* CircleProgressView.swift in Sources */,
+				DEB55D0F2A865BC500A56B96 /* PlanOnDay.swift in Sources */,
 				DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */,
 				DEB55CC72A86315200A56B96 /* ScheduleCommandRequest.swift in Sources */,
 				DE1F7A7B2A83F0E700B3FF24 /* Collection+Extension.swift in Sources */,
