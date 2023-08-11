@@ -165,6 +165,21 @@
 		DEB55CCE2A86315200A56B96 /* GetCommandsGroupsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CBB2A86315200A56B96 /* GetCommandsGroupsResponse.swift */; };
 		DEB55CCF2A86315200A56B96 /* LogCommandProgressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CBD2A86315200A56B96 /* LogCommandProgressResponse.swift */; };
 		DEB55CD02A86315200A56B96 /* LogCommandProgressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CBE2A86315200A56B96 /* LogCommandProgressRequest.swift */; };
+		DEB55CEC2A8641EC00A56B96 /* TrainingsMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CD22A8641EC00A56B96 /* TrainingsMediator.swift */; };
+		DEB55CED2A8641EC00A56B96 /* TrainingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CD32A8641EC00A56B96 /* TrainingsManager.swift */; };
+		DEB55CEF2A8641EC00A56B96 /* Training.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CD62A8641EC00A56B96 /* Training.swift */; };
+		DEB55CF02A8641EC00A56B96 /* TrainigDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CD72A8641EC00A56B96 /* TrainigDetails.swift */; };
+		DEB55CF12A8641EC00A56B96 /* AssignedTraining.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CD82A8641EC00A56B96 /* AssignedTraining.swift */; };
+		DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CDB2A8641EC00A56B96 /* GetTrainingResponse.swift */; };
+		DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CDC2A8641EC00A56B96 /* GetTrainingRequest.swift */; };
+		DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CDE2A8641EC00A56B96 /* ScheduleTrainingRequest.swift */; };
+		DEB55CF52A8641EC00A56B96 /* ScheduleTrainingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CDF2A8641EC00A56B96 /* ScheduleTrainingResponse.swift */; };
+		DEB55CF62A8641EC00A56B96 /* GetTrainingsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CE12A8641EC00A56B96 /* GetTrainingsRequest.swift */; };
+		DEB55CF72A8641EC00A56B96 /* GetTrainingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CE22A8641EC00A56B96 /* GetTrainingsResponse.swift */; };
+		DEB55CF82A8641EC00A56B96 /* AssignTrainingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CE42A8641EC00A56B96 /* AssignTrainingRequest.swift */; };
+		DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CE52A8641EC00A56B96 /* AssignTrainingResponse.swift */; };
+		DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CEA2A8641EC00A56B96 /* LogTrainingProgressResponse.swift */; };
+		DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55CEB2A8641EC00A56B96 /* LogTrainingProgressRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -330,6 +345,21 @@
 		DEB55CBB2A86315200A56B96 /* GetCommandsGroupsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCommandsGroupsResponse.swift; sourceTree = "<group>"; };
 		DEB55CBD2A86315200A56B96 /* LogCommandProgressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCommandProgressResponse.swift; sourceTree = "<group>"; };
 		DEB55CBE2A86315200A56B96 /* LogCommandProgressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCommandProgressRequest.swift; sourceTree = "<group>"; };
+		DEB55CD22A8641EC00A56B96 /* TrainingsMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsMediator.swift; sourceTree = "<group>"; };
+		DEB55CD32A8641EC00A56B96 /* TrainingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingsManager.swift; sourceTree = "<group>"; };
+		DEB55CD62A8641EC00A56B96 /* Training.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Training.swift; sourceTree = "<group>"; };
+		DEB55CD72A8641EC00A56B96 /* TrainigDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainigDetails.swift; sourceTree = "<group>"; };
+		DEB55CD82A8641EC00A56B96 /* AssignedTraining.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignedTraining.swift; sourceTree = "<group>"; };
+		DEB55CDB2A8641EC00A56B96 /* GetTrainingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTrainingResponse.swift; sourceTree = "<group>"; };
+		DEB55CDC2A8641EC00A56B96 /* GetTrainingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTrainingRequest.swift; sourceTree = "<group>"; };
+		DEB55CDE2A8641EC00A56B96 /* ScheduleTrainingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTrainingRequest.swift; sourceTree = "<group>"; };
+		DEB55CDF2A8641EC00A56B96 /* ScheduleTrainingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTrainingResponse.swift; sourceTree = "<group>"; };
+		DEB55CE12A8641EC00A56B96 /* GetTrainingsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTrainingsRequest.swift; sourceTree = "<group>"; };
+		DEB55CE22A8641EC00A56B96 /* GetTrainingsResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTrainingsResponse.swift; sourceTree = "<group>"; };
+		DEB55CE42A8641EC00A56B96 /* AssignTrainingRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignTrainingRequest.swift; sourceTree = "<group>"; };
+		DEB55CE52A8641EC00A56B96 /* AssignTrainingResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignTrainingResponse.swift; sourceTree = "<group>"; };
+		DEB55CEA2A8641EC00A56B96 /* LogTrainingProgressResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTrainingProgressResponse.swift; sourceTree = "<group>"; };
+		DEB55CEB2A8641EC00A56B96 /* LogTrainingProgressRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogTrainingProgressRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -598,6 +628,7 @@
 		DE1F7AA72A83F10600B3FF24 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DEB55CD12A8641EC00A56B96 /* Training */,
 				DEB55CA42A86315200A56B96 /* Commands */,
 				DEB55C772A86228700A56B96 /* Games */,
 				DE1F7B652A861FA800B3FF24 /* Content */,
@@ -1096,6 +1127,84 @@
 			path = LogProgress;
 			sourceTree = "<group>";
 		};
+		DEB55CD12A8641EC00A56B96 /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CD92A8641EC00A56B96 /* Request */,
+				DEB55CD42A8641EC00A56B96 /* Model */,
+				DEB55CD22A8641EC00A56B96 /* TrainingsMediator.swift */,
+				DEB55CD32A8641EC00A56B96 /* TrainingsManager.swift */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		DEB55CD42A8641EC00A56B96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CD62A8641EC00A56B96 /* Training.swift */,
+				DEB55CD72A8641EC00A56B96 /* TrainigDetails.swift */,
+				DEB55CD82A8641EC00A56B96 /* AssignedTraining.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB55CD92A8641EC00A56B96 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CDA2A8641EC00A56B96 /* GetTraining */,
+				DEB55CDD2A8641EC00A56B96 /* ScheduleTraining */,
+				DEB55CE02A8641EC00A56B96 /* GetTrainings */,
+				DEB55CE32A8641EC00A56B96 /* AssignTraining */,
+				DEB55CE92A8641EC00A56B96 /* LogProgress */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		DEB55CDA2A8641EC00A56B96 /* GetTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CDB2A8641EC00A56B96 /* GetTrainingResponse.swift */,
+				DEB55CDC2A8641EC00A56B96 /* GetTrainingRequest.swift */,
+			);
+			path = GetTraining;
+			sourceTree = "<group>";
+		};
+		DEB55CDD2A8641EC00A56B96 /* ScheduleTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CDE2A8641EC00A56B96 /* ScheduleTrainingRequest.swift */,
+				DEB55CDF2A8641EC00A56B96 /* ScheduleTrainingResponse.swift */,
+			);
+			path = ScheduleTraining;
+			sourceTree = "<group>";
+		};
+		DEB55CE02A8641EC00A56B96 /* GetTrainings */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CE12A8641EC00A56B96 /* GetTrainingsRequest.swift */,
+				DEB55CE22A8641EC00A56B96 /* GetTrainingsResponse.swift */,
+			);
+			path = GetTrainings;
+			sourceTree = "<group>";
+		};
+		DEB55CE32A8641EC00A56B96 /* AssignTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CE42A8641EC00A56B96 /* AssignTrainingRequest.swift */,
+				DEB55CE52A8641EC00A56B96 /* AssignTrainingResponse.swift */,
+			);
+			path = AssignTraining;
+			sourceTree = "<group>";
+		};
+		DEB55CE92A8641EC00A56B96 /* LogProgress */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55CEA2A8641EC00A56B96 /* LogTrainingProgressResponse.swift */,
+				DEB55CEB2A8641EC00A56B96 /* LogTrainingProgressRequest.swift */,
+			);
+			path = LogProgress;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1244,9 +1353,12 @@
 				DE1F7B402A83F13200B3FF24 /* MainViewCoordinator.swift in Sources */,
 				DEB55C972A86228700A56B96 /* AssignedGame.swift in Sources */,
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
+				DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */,
 				DE1F7B392A83F13200B3FF24 /* PaygateViewController.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
+				DEB55CEF2A8641EC00A56B96 /* Training.swift in Sources */,
+				DEB55CF52A8641EC00A56B96 /* ScheduleTrainingResponse.swift in Sources */,
 				DE1F7AE72A83F10600B3FF24 /* IAPError.swift in Sources */,
 				DE1F7A8E2A83F0E700B3FF24 /* RequestReview.swift in Sources */,
 				DEB55CCE2A86315200A56B96 /* GetCommandsGroupsResponse.swift in Sources */,
@@ -1262,11 +1374,13 @@
 				DEB55CC92A86315200A56B96 /* GetCommandsRequest.swift in Sources */,
 				DE1F7A7E2A83F0E700B3FF24 /* UIViewRxExtension.swift in Sources */,
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
+				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
 				DE1F7A8A2A83F0E700B3FF24 /* SignError.swift in Sources */,
 				DE1F7A9E2A83F0E700B3FF24 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE1F7B432A83F13200B3FF24 /* OCombineData.swift in Sources */,
+				DEB55CF72A8641EC00A56B96 /* GetTrainingsResponse.swift in Sources */,
 				DE1F7B342A83F13200B3FF24 /* DefaultPaygate.swift in Sources */,
 				DE1F7A812A83F0E700B3FF24 /* APIRequestBody.swift in Sources */,
 				DEB55CC32A86315200A56B96 /* CommandTraining.swift in Sources */,
@@ -1275,11 +1389,14 @@
 				DEB55CCF2A86315200A56B96 /* LogCommandProgressResponse.swift in Sources */,
 				DEB55C942A86228700A56B96 /* GameGroup.swift in Sources */,
 				DE1F7A7A2A83F0E700B3FF24 /* Date+Extension.swift in Sources */,
+				DEB55CF82A8641EC00A56B96 /* AssignTrainingRequest.swift in Sources */,
 				DE1F7A8D2A83F0E700B3FF24 /* Weak.swift in Sources */,
 				DE1F7ADD2A83F10600B3FF24 /* GetProfileResponse.swift in Sources */,
 				DE1F7B442A83F13200B3FF24 /* OnboardingViewController.swift in Sources */,
 				DE1F7B372A83F13200B3FF24 /* PaygateInteractor.swift in Sources */,
 				DE1F7AD02A83F10600B3FF24 /* PaygateOptionLineComponent.swift in Sources */,
+				DEB55CEC2A8641EC00A56B96 /* TrainingsMediator.swift in Sources */,
+				DEB55CF12A8641EC00A56B96 /* AssignedTraining.swift in Sources */,
 				DE1F7AE92A83F10600B3FF24 /* Session.swift in Sources */,
 				DEB55C9F2A86228700A56B96 /* AssignGameResponse.swift in Sources */,
 				DE1F7B3E2A83F13200B3FF24 /* TabItemView.swift in Sources */,
@@ -1287,11 +1404,14 @@
 				DE1F7A862A83F0E700B3FF24 /* ScreenSize.swift in Sources */,
 				DE1F7A962A83F0E700B3FF24 /* ScreenPreloader.swift in Sources */,
 				DE1F7AE32A83F10600B3FF24 /* PurchaseValidationObserver.swift in Sources */,
+				DEB55CF62A8641EC00A56B96 /* GetTrainingsRequest.swift in Sources */,
 				DE1F7AA62A83F0E700B3FF24 /* FacebookManager.swift in Sources */,
 				DE1F7A822A83F0E700B3FF24 /* RestAPITransport.swift in Sources */,
 				DE1F7A922A83F0E700B3FF24 /* NavigationControllerSettings.swift in Sources */,
 				DE1F7A7C2A83F0E700B3FF24 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE1F7AE42A83F10600B3FF24 /* ProductPrice.swift in Sources */,
+				DEB55CED2A8641EC00A56B96 /* TrainingsManager.swift in Sources */,
+				DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */,
 				DEB55C9D2A86228700A56B96 /* GetGamesResponse.swift in Sources */,
 				DE1F7A772A83F0E700B3FF24 /* UIApplication+Extension.swift in Sources */,
 				DE1F7AD42A83F10600B3FF24 /* GetPaygateRequest.swift in Sources */,
@@ -1322,6 +1442,7 @@
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
 				DEB55C962A86228700A56B96 /* GameTraining.swift in Sources */,
+				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,
 				DE1F7B792A86202600B3FF24 /* Breed.swift in Sources */,
 				DE1F7A9A2A83F0E700B3FF24 /* GradientView.swift in Sources */,
 				DE1F7B3F2A83F13200B3FF24 /* TabView.swift in Sources */,
@@ -1339,6 +1460,7 @@
 				DE1F7B762A861FA800B3FF24 /* GetSkillLevelsResponse.swift in Sources */,
 				DEB55CCD2A86315200A56B96 /* GetCommandsGroupsRequest.swift in Sources */,
 				DE1F7AE82A83F10600B3FF24 /* IAPErrorHelper.swift in Sources */,
+				DEB55CF02A8641EC00A56B96 /* TrainigDetails.swift in Sources */,
 				DE1F7AE22A83F10600B3FF24 /* IAPManager.swift in Sources */,
 				DE1F7A952A83F0E700B3FF24 /* Spinner.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
@@ -1353,11 +1475,13 @@
 				DEB55C982A86228700A56B96 /* GetGameTrainingResponse.swift in Sources */,
 				DEB55C952A86228700A56B96 /* Game.swift in Sources */,
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
+				DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */,
 				DEB55CA22A86228700A56B96 /* LogGameProgressResponse.swift in Sources */,
 				DE1F7B412A83F13200B3FF24 /* TryAgainView.swift in Sources */,
 				DE1F7A892A83F0E700B3FF24 /* Fonts.swift in Sources */,
 				DEB55CC22A86315200A56B96 /* Command.swift in Sources */,
 				DE1F7B3B2A83F13200B3FF24 /* PaygateInfoCell.swift in Sources */,
+				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
 				DEB55CA12A86228700A56B96 /* GetGameGroupsResponse.swift in Sources */,
 				DE1F7A9B2A83F0E700B3FF24 /* CircleProgressView.swift in Sources */,
 				DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */,

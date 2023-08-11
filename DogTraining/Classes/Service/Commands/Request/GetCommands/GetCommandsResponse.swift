@@ -25,7 +25,7 @@ final class GetCommandsResponse {
                 let imagePath = commandJSON["image"] as? String,
                 let imageUrl = URL(string: imagePath),
                 let commandGroupId = commandJSON["command_group_id"] as? Int,
-                let explanation = commandJSON["description"] as? String
+                let instruction = commandJSON["description"] as? String
             else {
                 return nil
             }
@@ -37,7 +37,7 @@ final class GetCommandsResponse {
                 name: name,
                 image: imageUrl,
                 paid: data["paid"] as? Bool ?? false,
-                explanation: explanation
+                instruction: instruction
             )
         }
     }

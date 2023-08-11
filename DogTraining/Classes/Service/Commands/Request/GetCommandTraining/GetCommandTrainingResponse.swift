@@ -18,7 +18,7 @@ final class GetCommandTrainingResponse {
             let imagePath = data["image"] as? String,
             let imageUrl = URL(string: imagePath),
             let commandGroupId = data["customer_command_id"] as? Int,
-            let explanation = data["description"] as? String,
+            let instruction = data["description"] as? String,
             let customerCommandId = data["customer_command_id"] as? Int,
             let finished = data["finished"] as? Bool,
             let trainedTime = data["trained_time"] as? Int
@@ -35,7 +35,7 @@ final class GetCommandTrainingResponse {
             name: name,
             image: imageUrl,
             paid: data["paid"] as? Bool ?? false,
-            explanation: explanation
+            instruction: instruction
         )
         
         var scheduleDate: Date? = nil
