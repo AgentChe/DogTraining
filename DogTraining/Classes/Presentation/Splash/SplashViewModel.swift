@@ -24,6 +24,9 @@ final class SplashViewModel {
     private lazy var sessionManager = SessionManager()
     private lazy var profileManager = ProfileManager()
     private lazy var paygateManager = PaygateManager()
+    private lazy var contentManager = ContentManager()
+    private lazy var gamesManager = GamesManager()
+    private lazy var commandsManager = CommandsManager()
     
     private lazy var observableRetrySingle = ObservableRetrySingle()
 }
@@ -103,10 +106,30 @@ private extension SplashViewModel {
             let paygate = paygateManager
                 .obtainPaygate(forceUpdate: true)
                 .mapToVoid()
+            let profile = profileManager
+                .obtainProfile(forceUpdate: true)
+                .mapToVoid()
+            let breeds = contentManager
+                .obtainBreeds(forceUpdate: true)
+                .mapToVoid()
+            let levels = contentManager
+                .obtainLevels(forceUpdate: true)
+                .mapToVoid()
+            let gamesGroups = gamesManager
+                .obtainGameGroups(forceUpdate: true)
+                .mapToVoid()
+            let commandsGroups = commandsManager
+                .obtainCommandsGroups(forceUpdate: true)
+                .mapToVoid()
             
             return Single
                 .zip([
-                    paygate
+                    paygate,
+                    profile,
+                    breeds,
+                    levels,
+                    gamesGroups,
+                    commandsGroups
                 ])
                 .mapToVoid()
         }

@@ -27,18 +27,12 @@ final class GetProfileResponse {
             sa: weekScheduleArray.contains(6)
         )
         
-        let drillsIds = data["drill_category_ids"] as? [Int]
-        
-        let focusZonesIds = data["body_part_ids"] as? [Int]
-        
-        let gender = (data["gender"] as? Int).flatMap { Gender(code: $0)}
+        let commandGroupIds = data["command_group_ids"] as? [Int]
         
         return Profile(
             skillLevelId: skillLevelId,
-            gender: gender,
             weekSchedule: weekSchedule,
-            drillsIds: drillsIds,
-            focusZonesIds: focusZonesIds
+            commandGroupIds: commandGroupIds
         )
     }
 }

@@ -10,9 +10,7 @@ import RxSwift
 protocol ProfileManagerProtocol {
     func set(skillLevelId: Int?,
              weekSchedule: WeekSchedule?,
-             drillsIds: [Int]?,
-             focusZonesIds: [Int]?,
-             gender: Gender?) -> Single<Void>
+             commandGroupIds: [Int]?) -> Single<Void>
     func obtainProfile(forceUpdate: Bool) -> Single<Profile?>
     func syncTokens(oldToken: String, newToken: String) -> Single<Void>
     func login(userToken: String) -> Single<Void>
@@ -22,9 +20,7 @@ final class ProfileManager {
     enum Constants {
         static let skillLevelId = "profile_manager_skill_level_id_key"
         static let weekSchedule = "profile_manager_week_schedule_key"
-        static let drillsIds = "profile_manager_drills_ids_key"
-        static let focusZonesIds = "profile_manager_focus_zones_ids_key"
-        static let gender = "profile_manager_gender_key"
+        static let commandGroupIds = "profile_manager_command_group_ids_key"
     }
     
     private lazy var defaultRequestWrapper = DefaultRequestWrapper()
@@ -36,9 +32,7 @@ final class ProfileManager {
 extension ProfileManager: ProfileManagerProtocol {
     func set(skillLevelId: Int? = nil,
              weekSchedule: WeekSchedule? = nil,
-             drillsIds: [Int]? = nil,
-             focusZonesIds: [Int]? = nil,
-             gender: Gender? = nil) -> Single<Void> {
+             commandGroupIds: [Int]? = nil) -> Single<Void> {
         guard let userToken = sessionManager.getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
@@ -61,10 +55,8 @@ extension ProfileManager: ProfileManagerProtocol {
             userToken: userToken,
             skillLevel: skillLevelId,
             weekSchedule: weekScheduleDays,
-            drills: drillsIds,
-            focusZones: focusZonesIds,
-            timezone: timezone,
-            gender: gender?.code
+            commandGroupIds: commandGroupIds,
+            timezone: timezone
         )
         
         return defaultRequestWrapper
@@ -72,10 +64,8 @@ extension ProfileManager: ProfileManagerProtocol {
             .mapToVoid()
             .do(onSuccess: { [weak self] in
                 self?.store(skillLevelId: skillLevelId)
-                self?.store(gender: gender)
                 self?.store(weekSchedule: weekSchedule)
-                self?.store(drillsIds: drillsIds)
-                self?.store(focusZonesIds: focusZonesIds)
+                self?.store(commandGroupIds: commandGroupIds)
             })
     }
     
@@ -116,9 +106,7 @@ private extension ProfileManager {
             .do(onSuccess: { [weak self] profile in
                 self?.store(skillLevelId: profile?.skillLevelId)
                 self?.store(weekSchedule: profile?.weekSchedule)
-                self?.store(drillsIds: profile?.drillsIds)
-                self?.store(focusZonesIds: profile?.focusZonesIds)
-                self?.store(gender: profile?.gender)
+                self?.store(commandGroupIds: profile?.commandGroupIds)
             })
     }
     
@@ -126,17 +114,13 @@ private extension ProfileManager {
         Single
             .zip(
                 cachedSkillLevelId(),
-                cachedGender(),
                 cachedWeekSchedule(),
-                cachedDrillsIds(),
-                cachedFocusZonesIds()
+                cachedCommandGroupIds()
             )
-            .map { skillLevelId, gender, weekSchedule, drillsIds, focusZonesIds -> Profile in
+            .map { skillLevelId, weekSchedule, commandGroupIds -> Profile in
                 Profile(skillLevelId: skillLevelId,
-                        gender: gender,
                         weekSchedule: weekSchedule,
-                        drillsIds: drillsIds,
-                        focusZonesIds: focusZonesIds)
+                        commandGroupIds: commandGroupIds)
             }
     }
     
@@ -187,59 +171,21 @@ private extension ProfileManager {
         }
     }
     
-    func store(drillsIds: [Int]?) {
-        guard let drillsIds = drillsIds else {
+    func store(commandGroupIds: [Int]?) {
+        guard let commandGroupIds = commandGroupIds else {
             return
         }
         
-        UserDefaults.standard.set(drillsIds, forKey: Constants.drillsIds)
+        UserDefaults.standard.set(commandGroupIds, forKey: Constants.commandGroupIds)
         
-        ProfileMediator.shared.notify(drillsIds: drillsIds)
+        ProfileMediator.shared.notify(commandGroupIds: commandGroupIds)
     }
     
-    func cachedDrillsIds() -> Single<[Int]?> {
+    func cachedCommandGroupIds() -> Single<[Int]?> {
         Single<[Int]?>.create { event in
-            let drillsIds = UserDefaults.standard.value(forKey: Constants.drillsIds) as? [Int]
+            let commandGroupIds = UserDefaults.standard.value(forKey: Constants.commandGroupIds) as? [Int]
             
-            event(.success(drillsIds))
-            
-            return Disposables.create()
-        }
-    }
-    
-    func store(focusZonesIds: [Int]?) {
-        guard let focusZonesIds = focusZonesIds else {
-            return
-        }
-        
-        UserDefaults.standard.set(focusZonesIds, forKey: Constants.focusZonesIds)
-        
-        ProfileMediator.shared.notify(focusZonesIds: focusZonesIds)
-    }
-    
-    func cachedFocusZonesIds() -> Single<[Int]?> {
-        Single<[Int]?>.create { event in
-            let focusZonesIds = UserDefaults.standard.value(forKey: Constants.focusZonesIds) as? [Int]
-            
-            event(.success(focusZonesIds))
-            
-            return Disposables.create()
-        }
-    }
-    
-    func store(gender: Gender?) {
-        guard let gender else {
-            return
-        }
-        
-        UserDefaults.standard.set(gender.code, forKey: Constants.gender)
-    }
-    
-    func cachedGender() -> Single<Gender?> {
-        Single<Gender?>.create { event in
-            let genderCode = UserDefaults.standard.value(forKey: Constants.gender) as? Int
-            let gender = genderCode.flatMap { Gender(code: $0)}
-            event(.success(gender))
+            event(.success(commandGroupIds))
             
             return Disposables.create()
         }

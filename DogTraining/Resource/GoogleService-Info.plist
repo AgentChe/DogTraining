@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>756262953707-6fagbp1a0b8a9m192hj3njulb7tsb04k.apps.googleusercontent.com</string>
+	<string>1072711745820-av7031jjjgunplbniebjsifgdjv6i5pq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.756262953707-6fagbp1a0b8a9m192hj3njulb7tsb04k</string>
+	<string>com.googleusercontent.apps.1072711745820-av7031jjjgunplbniebjsifgdjv6i5pq</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAI4wVF5387Xjq_QgUwx940-NCplnSFmF4</string>
+	<string>AIzaSyCPh_4i9RxiVvZNc9tnH_PL9y0WDx3CvqA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>756262953707</string>
+	<string>1072711745820</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>training.app.soccer</string>
+	<string>training.app.dogs</string>
 	<key>PROJECT_ID</key>
-	<string>soccer-ad8b1</string>
+	<string>dog-trai</string>
 	<key>STORAGE_BUCKET</key>
-	<string>soccer-ad8b1.appspot.com</string>
+	<string>dog-trai.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:756262953707:ios:968abc9cf3ce5f27ce94ae</string>
+	<string>1:1072711745820:ios:1243dff5d71864adf17ad9</string>
 </dict>
 </plist>

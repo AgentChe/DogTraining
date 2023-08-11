@@ -13,8 +13,7 @@ final class ProfileMediator {
     
     private lazy var skillLevelIdChangeTrigger = PublishRelay<Int>()
     private lazy var weekScheduleChangeTrigger = PublishRelay<WeekSchedule>()
-    private lazy var drillsIdsChangeTrigger = PublishRelay<[Int]>()
-    private lazy var focusZonesIdsChangeTrigger = PublishRelay<[Int]>()
+    private lazy var commandGroupIdsChangeTrigger = PublishRelay<[Int]>()
     
     private init() {}
 }
@@ -33,15 +32,9 @@ extension ProfileMediator {
         }
     }
     
-    func notify(drillsIds: [Int]) {
+    func notify(commandGroupIds: [Int]) {
         DispatchQueue.main.async { [weak self] in
-            self?.drillsIdsChangeTrigger.accept(drillsIds)
-        }
-    }
-    
-    func notify(focusZonesIds: [Int]) {
-        DispatchQueue.main.async { [weak self] in
-            self?.focusZonesIdsChangeTrigger.accept(focusZonesIds)
+            self?.commandGroupIdsChangeTrigger.accept(commandGroupIds)
         }
     }
 }
@@ -56,11 +49,7 @@ extension ProfileMediator {
         weekScheduleChangeTrigger.asSignal()
     }
     
-    var drillsIdsChange: Signal<[Int]> {
-        drillsIdsChangeTrigger.asSignal()
-    }
-    
-    var focusZonesIdsChange: Signal<[Int]> {
-        focusZonesIdsChangeTrigger.asSignal()
+    var commandGroupIdsChange: Signal<[Int]> {
+        commandGroupIdsChangeTrigger.asSignal()
     }
 }

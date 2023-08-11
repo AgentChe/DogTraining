@@ -6,15 +6,15 @@
 //
 
 final class GlobalDefinitions {
-    static let domain = "https://soccer.kyotosaka.com"
-    static let apiKey = "4Mf7e1kE1sJHZraKrR8o"
+    static let domain = "https://dogs.kyotosaka.com"
+    static let apiKey = "z60lMgbvjPyDcMhuziUZ"
     
     static let otterScaleHost = "https://api.korrekted.com"
-    static let otterScaleApiKey = "aCdEI1BBlcghnB5s"
+    static let otterScaleApiKey = "0Al8tBJCnr8cMXiq"
     
-    static let appleAppID = "6449255756"
+    static let appleAppID = "6459968251"
     
-    static let applicationTag = "SOCCER"
+    static let applicationTag = "DOG_TRAINING"
     static let amplitudeApiKey = "11f36fb9021dbfca4a1349a3b2284224"
     static let appsFlyerApiKey = "DCciCfYXjMQ8QnkdCg8qzk"
     
@@ -22,8 +22,9 @@ final class GlobalDefinitions {
     static let privacyPolicyUrl = "https://kyotosaka.com/policy.html"
     static let contactUsUrl = "https://kyotosaka.com/index.html#careers"
     
+    // TODO
     enum Paygate {
-        static let defaultLifetime = "training.app.soccer.endless"
-        static let defaultMonthly = "training.app.soccer.monthly"
+        static let defaultLifetime = ""
+        static let defaultMonthly = ""
     }
 }

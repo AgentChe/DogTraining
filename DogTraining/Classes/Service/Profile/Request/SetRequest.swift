@@ -11,10 +11,8 @@ struct SetRequest: APIRequestBody {
     let userToken: String
     let skillLevel: Int?
     let weekSchedule: [Int]?
-    let drills: [Int]?
-    let focusZones: [Int]?
+    let commandGroupIds: [Int]?
     let timezone: String?
-    let gender: Int?
     
     var url: String {
         GlobalDefinitions.domain + "/api/users/set"
@@ -38,20 +36,12 @@ struct SetRequest: APIRequestBody {
             params["training_days"] = weekSchedule
         }
         
-        if let drills = drills {
-            params["drill_category_ids"] = drills
-        }
-        
-        if let focusZones = focusZones {
-            params["body_part_ids"] = focusZones
+        if let commandGroupIds = commandGroupIds {
+            params["command_group_ids"] = commandGroupIds
         }
         
         if let timezone = timezone {
             params["timezone"] = timezone
-        }
-        
-        if let gender = gender {
-            params["gender"] = gender
         }
         
         return params
