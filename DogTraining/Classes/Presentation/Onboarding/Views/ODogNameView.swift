@@ -52,7 +52,9 @@ private extension ODogNameView {
     }
     
     func checkEnable() {
-        continueButton.isHidden = (textField.textField.text ?? "").isEmpty
+       let marked = !(textField.textField.text ?? "").isEmpty
+        continueButton.isEnabled = marked
+        continueButton.alpha = marked ? 1 : 0.4
     }
     
     @objc

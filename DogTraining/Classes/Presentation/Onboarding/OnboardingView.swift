@@ -9,13 +9,15 @@ import UIKit
 
 final class OnboardingView: UIView {
     enum Step: Int {
-        case welcome, role, breed, dogName, age, skillLevel, behavior, daysOfWeek, whereTrain
+        case welcome, role, breed, dogName, age, skillLevel, behavior, daysOfWeek, whereTrain, commands, topics, preloader
     }
     
     var didFinish: (() -> Void)?
     
     private lazy var skillLevelView = OSkillLevelView(step: .skillLevel)
     private lazy var daysOfWeekView = ODaysOfWeekView(step: .daysOfWeek)
+    private lazy var commandsView = OCommandsView(step: .commands)
+    private lazy var preloaderView = OPreloaderView(step: .preloader, combineData: combineData)
     
     private lazy var contentViews: [OSlideView] = {
         [
@@ -28,6 +30,9 @@ final class OnboardingView: UIView {
             OBehaviorView(step: .behavior),
             daysOfWeekView,
             OWhereTrainView(step: .whereTrain),
+            commandsView,
+            OTopicsView(step: .topics),
+            preloaderView
         ]
     }()
     
@@ -95,6 +100,8 @@ private extension OnboardingView {
         
         skillLevelView.mainDelegate = combineData
         daysOfWeekView.mainDelegate = combineData
+        commandsView.mainDelegate = combineData
+        preloaderView.vc = vc
     }
     
     func scroll(to newStep: Step) {

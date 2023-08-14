@@ -48,7 +48,8 @@ private extension OWhereTrainView {
     
     func checkEnabled() {
         let marked = [indoorButton, outdoorButton].contains(where: { $0.marked })
-        continueButton.isHidden = !marked
+        continueButton.isEnabled = marked
+        continueButton.alpha = marked ? 1 : 0.4
     }
 }
 

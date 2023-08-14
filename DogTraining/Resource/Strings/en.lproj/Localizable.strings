@@ -86,3 +86,14 @@
 "Onboarding.WhereTrain.Title" = "Where do you prefer to\ntrain?";
 "Onboarding.WhereTrain.Indoor" = "Indoor";
 "Onboarding.WhereTrain.Outdoor" = "Outdoor";
+"Onboarding.Commands.Title" = "Choose commands you\nwant your friend to know";
+"Onboarding.Topics.Title" = "What topics would you\nlike to know better?";
+"Onboarding.Topics.1" = "Regular exercises";
+"Onboarding.Topics.2" = "Proper dog nutrition";
+"Onboarding.Topics.3" = "Dog behavior issues";
+"Onboarding.Topics.4" = "Safe and dog-friendly environment";
+"Onboarding.Topics.5" = "Socialization for dogs";
+"Onboarding.Preloader.Text1" = "Analyzing your preferences...";
+"Onboarding.Preloader.Text2" = "Identifying your dog’s training\nlevel...";
+"Onboarding.Preloader.Text3" = "Creating personalized\ntrainings...";
+"Onboarding.Preloader.Text4" = "Setting up training program...";

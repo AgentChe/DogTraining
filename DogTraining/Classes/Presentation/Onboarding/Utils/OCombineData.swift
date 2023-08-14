@@ -10,23 +10,27 @@ import Foundation
 struct OCombineData {
     let skillLevel: SkillLevel
     let weekSchedule: WeekSchedule
+    let commandsGroupsIds: [Int]
 }
 
 final class OnboardingCombineData {
     private var skillLevel: SkillLevel?
     private var weekSchedule: WeekSchedule?
+    private var commandsGroups: [CommandGroup]?
     
     func combineData() -> OCombineData? {
         guard
             let skillLevel = skillLevel,
-            let weekSchedule = weekSchedule
+            let weekSchedule = weekSchedule,
+            let commandsGroups = commandsGroups
         else {
             return nil
         }
         
         return OCombineData(
             skillLevel: skillLevel,
-            weekSchedule: weekSchedule
+            weekSchedule: weekSchedule,
+            commandsGroupsIds: commandsGroups.map { $0.id }
         )
     }
 }
@@ -42,5 +46,12 @@ extension OnboardingCombineData: OSkillLevelViewDelegate {
 extension OnboardingCombineData: ODaysOfWeekViewDelegate {
     func daysOfWeekViewDidSelect(weekSchedule: WeekSchedule) {
         self.weekSchedule = weekSchedule
+    }
+}
+
+// MARK: OCommandsViewDelegate
+extension OnboardingCombineData: OCommandsViewDelegate {
+    func didSelect(commandsGroups: [CommandGroup]) {
+        self.commandsGroups = commandsGroups
     }
 }

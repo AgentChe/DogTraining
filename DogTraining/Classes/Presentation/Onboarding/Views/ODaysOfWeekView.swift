@@ -80,7 +80,8 @@ private extension ODaysOfWeekView {
             saButton
         ]
         let marked = buttons.contains(where: { $0.marked })
-        continueButton.isHidden = !marked
+        continueButton.isEnabled = marked
+        continueButton.alpha = marked ? 1 : 0.4
     }
 }
 
@@ -184,7 +185,7 @@ private extension ODaysOfWeekView {
         view.backgroundColor = Appearance.primary
         view.layer.cornerRadius = 8.scale
         view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
-        view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
+        view.addTarget(self, action: #selector(nextTapped), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

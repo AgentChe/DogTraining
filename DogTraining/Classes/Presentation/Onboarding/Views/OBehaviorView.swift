@@ -59,7 +59,8 @@ private extension OBehaviorView {
     
     func checkEnable() {
         let marked = behaviorsButtons.contains(where: { $0.marked })
-        continueButton.isHidden = !marked
+        continueButton.isEnabled = marked
+        continueButton.alpha = marked ? 1 : 0.4
     }
 }
 

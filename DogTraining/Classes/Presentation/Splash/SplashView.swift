@@ -38,7 +38,7 @@ private extension SplashView {
             imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
             imageView.heightAnchor.constraint(equalToConstant: 388.scale),
-            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 212.scale)
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 212.scale : 100.scale)
         ])
         
         NSLayoutConstraint.activate([

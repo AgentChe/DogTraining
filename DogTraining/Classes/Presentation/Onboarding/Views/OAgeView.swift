@@ -42,7 +42,7 @@ private extension OAgeView {
     func initialize() {
         backgroundColor = Appearance.background
         
-        continueButton.isHidden = true
+        continueButton(enable: false)
     }
     
     @objc
@@ -51,13 +51,18 @@ private extension OAgeView {
         
         sender.layer.borderColor = Appearance.primary.cgColor
         
-        continueButton.isHidden = false
+        continueButton(enable: true)
     }
     
     func setupDefaultBorders() {
         agesButtons.forEach {
             $0.layer.borderColor = UIColor(integralRed: 233, green: 225, blue: 217).cgColor
         }
+    }
+    
+    func continueButton(enable: Bool) {
+        continueButton.isEnabled = enable
+        continueButton.alpha = enable ? 1 : 0.4
     }
 }
 
@@ -73,35 +78,35 @@ private extension OAgeView {
             age1Button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             age1Button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             age1Button.heightAnchor.constraint(equalToConstant: 80.scale),
-            age1Button.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30.scale)
+            age1Button.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 30.scale : 16.scale)
         ])
         
         NSLayoutConstraint.activate([
             age2Button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             age2Button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             age2Button.heightAnchor.constraint(equalToConstant: 80.scale),
-            age2Button.topAnchor.constraint(equalTo: age1Button.bottomAnchor, constant: 16.scale)
+            age2Button.topAnchor.constraint(equalTo: age1Button.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 16.scale : 8.scale)
         ])
         
         NSLayoutConstraint.activate([
             age3Button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             age3Button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             age3Button.heightAnchor.constraint(equalToConstant: 80.scale),
-            age3Button.topAnchor.constraint(equalTo: age2Button.bottomAnchor, constant: 16.scale)
+            age3Button.topAnchor.constraint(equalTo: age2Button.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 16.scale : 8.scale)
         ])
         
         NSLayoutConstraint.activate([
             age4Button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             age4Button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             age4Button.heightAnchor.constraint(equalToConstant: 80.scale),
-            age4Button.topAnchor.constraint(equalTo: age3Button.bottomAnchor, constant: 16.scale)
+            age4Button.topAnchor.constraint(equalTo: age3Button.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 16.scale : 8.scale)
         ])
         
         NSLayoutConstraint.activate([
             age5Button.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             age5Button.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
             age5Button.heightAnchor.constraint(equalToConstant: 80.scale),
-            age5Button.topAnchor.constraint(equalTo: age4Button.bottomAnchor, constant: 16.scale)
+            age5Button.topAnchor.constraint(equalTo: age4Button.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 16.scale : 8.scale)
         ])
         
         NSLayoutConstraint.activate([

@@ -181,7 +181,7 @@ private extension OSkillLevelView {
         view.backgroundColor = Appearance.primary
         view.layer.cornerRadius = 8.scale
         view.setAttributedTitle("Continue".localized.attributed(with: attrs), for: .normal)
-        view.addTarget(self, action: #selector(onNext), for: .touchUpInside)
+        view.addTarget(self, action: #selector(nextTapped), for: .touchUpInside)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

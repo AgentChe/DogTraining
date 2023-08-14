@@ -209,6 +209,13 @@
 		DEFE7EA32A8A4FEF00FB96F0 /* ODaysOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA22A8A4FEF00FB96F0 /* ODaysOfWeekView.swift */; };
 		DEFE7EA52A8A545800FB96F0 /* OWhereTrainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA42A8A545800FB96F0 /* OWhereTrainButton.swift */; };
 		DEFE7EA72A8A546900FB96F0 /* OWhereTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA62A8A546900FB96F0 /* OWhereTrainView.swift */; };
+		DEFE7EAA2A8A684000FB96F0 /* OCommandsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA92A8A684000FB96F0 /* OCommandsTableView.swift */; };
+		DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EAB2A8A684600FB96F0 /* OCommandsTableCell.swift */; };
+		DEFE7EAE2A8A684E00FB96F0 /* OCommandsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EAD2A8A684E00FB96F0 /* OCommandsTableElement.swift */; };
+		DEFE7EB02A8A6BEC00FB96F0 /* OCommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EAF2A8A6BEC00FB96F0 /* OCommandsView.swift */; };
+		DEFE7EB22A8A75F400FB96F0 /* OTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB12A8A75F400FB96F0 /* OTopicsView.swift */; };
+		DEFE7EB42A8A795D00FB96F0 /* OCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */; };
+		DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -418,6 +425,13 @@
 		DEFE7EA22A8A4FEF00FB96F0 /* ODaysOfWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODaysOfWeekView.swift; sourceTree = "<group>"; };
 		DEFE7EA42A8A545800FB96F0 /* OWhereTrainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWhereTrainButton.swift; sourceTree = "<group>"; };
 		DEFE7EA62A8A546900FB96F0 /* OWhereTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWhereTrainView.swift; sourceTree = "<group>"; };
+		DEFE7EA92A8A684000FB96F0 /* OCommandsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCommandsTableView.swift; sourceTree = "<group>"; };
+		DEFE7EAB2A8A684600FB96F0 /* OCommandsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCommandsTableCell.swift; sourceTree = "<group>"; };
+		DEFE7EAD2A8A684E00FB96F0 /* OCommandsTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCommandsTableElement.swift; sourceTree = "<group>"; };
+		DEFE7EAF2A8A6BEC00FB96F0 /* OCommandsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCommandsView.swift; sourceTree = "<group>"; };
+		DEFE7EB12A8A75F400FB96F0 /* OTopicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTopicsView.swift; sourceTree = "<group>"; };
+		DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCircleProgressView.swift; sourceTree = "<group>"; };
+		DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPreloaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -960,6 +974,9 @@
 				DEFE7E9E2A8A4B2400FB96F0 /* OBehaviorView.swift */,
 				DEFE7EA22A8A4FEF00FB96F0 /* ODaysOfWeekView.swift */,
 				DEFE7EA62A8A546900FB96F0 /* OWhereTrainView.swift */,
+				DEFE7EAF2A8A6BEC00FB96F0 /* OCommandsView.swift */,
+				DEFE7EB12A8A75F400FB96F0 /* OTopicsView.swift */,
+				DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -967,6 +984,7 @@
 		DE1F7B102A83F13200B3FF24 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE7EA82A8A683300FB96F0 /* Commands */,
 				DEB55D242A86729A00A56B96 /* Breeds */,
 				DEB55D202A866D2500A56B96 /* ORoleButton.swift */,
 				DEB55D292A8678D700A56B96 /* ClearedTextField.swift */,
@@ -974,6 +992,7 @@
 				DEFE7E9C2A8A488000FB96F0 /* OBehaviorButton.swift */,
 				DEFE7EA02A8A4FDC00FB96F0 /* ODayOfWeekButton.swift */,
 				DEFE7EA42A8A545800FB96F0 /* OWhereTrainButton.swift */,
+				DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -1348,6 +1367,16 @@
 			path = Breeds;
 			sourceTree = "<group>";
 		};
+		DEFE7EA82A8A683300FB96F0 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EA92A8A684000FB96F0 /* OCommandsTableView.swift */,
+				DEFE7EAB2A8A684600FB96F0 /* OCommandsTableCell.swift */,
+				DEFE7EAD2A8A684E00FB96F0 /* OCommandsTableElement.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1477,6 +1506,7 @@
 				DE1F7B302A83F13200B3FF24 /* SplashReceiptValidationObserver.swift in Sources */,
 				DEFE7E9F2A8A4B2400FB96F0 /* OBehaviorView.swift in Sources */,
 				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
+				DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
 				DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */,
 				DE1F7B3D2A83F13200B3FF24 /* MainView.swift in Sources */,
@@ -1525,13 +1555,16 @@
 				DEB55CC42A86315200A56B96 /* AssignedCommand.swift in Sources */,
 				DE1F7B2F2A83F13200B3FF24 /* SplashActivity.swift in Sources */,
 				DEB55CC62A86315200A56B96 /* GetCommandTrainingRequest.swift in Sources */,
+				DEFE7EAA2A8A684000FB96F0 /* OCommandsTableView.swift in Sources */,
 				DEB55CC92A86315200A56B96 /* GetCommandsRequest.swift in Sources */,
 				DE1F7A7E2A83F0E700B3FF24 /* UIViewRxExtension.swift in Sources */,
+				DEFE7EB02A8A6BEC00FB96F0 /* OCommandsView.swift in Sources */,
 				DEB55D1F2A866D0F00A56B96 /* ORoleView.swift in Sources */,
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
+				DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */,
 				DE1F7A8A2A83F0E700B3FF24 /* SignError.swift in Sources */,
 				DE1F7A9E2A83F0E700B3FF24 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE1F7B432A83F13200B3FF24 /* OCombineData.swift in Sources */,
@@ -1543,6 +1576,7 @@
 				DE1F7B352A83F13200B3FF24 /* PaygateOptionInfo.swift in Sources */,
 				DE1F7B7C2A86204C00B3FF24 /* GetBreedsRequest.swift in Sources */,
 				DEB55CCF2A86315200A56B96 /* LogCommandProgressResponse.swift in Sources */,
+				DEFE7EB22A8A75F400FB96F0 /* OTopicsView.swift in Sources */,
 				DEB55C942A86228700A56B96 /* GameGroup.swift in Sources */,
 				DE1F7A7A2A83F0E700B3FF24 /* Date+Extension.swift in Sources */,
 				DEB55D192A8660E300A56B96 /* GetHomeKitRequest.swift in Sources */,
@@ -1570,6 +1604,7 @@
 				DE1F7A7C2A83F0E700B3FF24 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE1F7AE42A83F10600B3FF24 /* ProductPrice.swift in Sources */,
 				DEB55CED2A8641EC00A56B96 /* TrainingsManager.swift in Sources */,
+				DEFE7EB42A8A795D00FB96F0 /* OCircleProgressView.swift in Sources */,
 				DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */,
 				DEB55C9D2A86228700A56B96 /* GetGamesResponse.swift in Sources */,
 				DE1F7A772A83F0E700B3FF24 /* UIApplication+Extension.swift in Sources */,
@@ -1635,6 +1670,7 @@
 				DEB55CA02A86228700A56B96 /* GetGameGroupsRequest.swift in Sources */,
 				DE1F7A7F2A83F0E700B3FF24 /* GlobalDefinitions.swift in Sources */,
 				DE1F7AA52A83F0E700B3FF24 /* FirebaseManager.swift in Sources */,
+				DEFE7EAE2A8A684E00FB96F0 /* OCommandsTableElement.swift in Sources */,
 				DE1F7B602A83F13200B3FF24 /* OnboardingView.swift in Sources */,
 				DE1F7AD52A83F10600B3FF24 /* PaygateManager.swift in Sources */,
 				DE1F7B2E2A83F13200B3FF24 /* SplashViewController.swift in Sources */,

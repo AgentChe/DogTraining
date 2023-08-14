@@ -88,7 +88,9 @@ private extension OBreedView {
     }
     
     func checkEnable() {
-        continueButton.isHidden = selectedBreed == nil
+        let marked = selectedBreed != nil
+        continueButton.isEnabled = marked
+        continueButton.alpha = marked ? 1 : 0.4
     }
 }
 
@@ -97,7 +99,7 @@ private extension OBreedView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
             skipButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            skipButton.topAnchor.constraint(equalTo: topAnchor, constant: 70.scale)
+            skipButton.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 70.scale : 30.scale)
         ])
         
         NSLayoutConstraint.activate([

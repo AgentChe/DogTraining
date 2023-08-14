@@ -47,7 +47,8 @@ private extension ORoleView {
     
     func checkEnabled() {
         let marked = [ownerButton, trainerButton, sitterButton].contains(where: { $0.marked })
-        continueButton.isHidden = !marked
+        continueButton.isEnabled = marked
+        continueButton.alpha = marked ? 1 : 0.4
     }
 }
 
@@ -55,7 +56,7 @@ private extension ORoleView {
 private extension ORoleView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 52.scale),
+            titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 120.scale),
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor)
         ])
         
@@ -63,21 +64,21 @@ private extension ORoleView {
             ownerButton.widthAnchor.constraint(equalToConstant: 103.scale),
             ownerButton.heightAnchor.constraint(equalToConstant: 121.scale),
             ownerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 23.scale),
-            ownerButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 140.scale)
+            ownerButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 60.scale)
         ])
         
         NSLayoutConstraint.activate([
             trainerButton.widthAnchor.constraint(equalToConstant: 103.scale),
             trainerButton.heightAnchor.constraint(equalToConstant: 121.scale),
             trainerButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 136.scale),
-            trainerButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 140.scale)
+            trainerButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 60.scale)
         ])
         
         NSLayoutConstraint.activate([
             sitterButton.widthAnchor.constraint(equalToConstant: 103.scale),
             sitterButton.heightAnchor.constraint(equalToConstant: 121.scale),
             sitterButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 249.scale),
-            sitterButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 140.scale)
+            sitterButton.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: ScreenSize.isIphoneXFamily ? 140.scale : 60.scale)
         ])
         
         NSLayoutConstraint.activate([
