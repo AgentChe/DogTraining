@@ -9,6 +9,7 @@ import UIKit
 
 final class TryAgainView: UIView {
     lazy var imageView = makeImageView()
+    lazy var scrollView = makeScrollView()
     lazy var titleLabel = makeTitleLabel()
     lazy var subTitleLabel = makeSubTitleLabel()
     lazy var tryAgainButton = makeButton()
@@ -33,7 +34,7 @@ final class TryAgainView: UIView {
 // MARK: Private
 private extension TryAgainView {
     func initialize() {
-        backgroundColor = Appearance.black
+        backgroundColor = Appearance.background
     }
     
     func errorMessage() -> String {
@@ -54,22 +55,32 @@ private extension TryAgainView {
 private extension TryAgainView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 154.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 161.scale),
-            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: topAnchor, constant: ScreenSize.isIphoneXFamily ? 120.scale : 50.scale)
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 275.scale),
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 50.scale)
         ])
         
         NSLayoutConstraint.activate([
-            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor),
-            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 22.scale)
+            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            scrollView.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 2.scale),
+            scrollView.bottomAnchor.constraint(equalTo: tryAgainButton.topAnchor, constant: -2.scale)
         ])
         
         NSLayoutConstraint.activate([
-            subTitleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24.scale),
-            subTitleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24.scale),
-            subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12.scale)
+            titleLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32.scale),
+            titleLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32.scale),
+            titleLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 32.scale),
+            titleLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -32.scale),
+            titleLabel.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 22.scale)
+        ])
+        
+        NSLayoutConstraint.activate([
+            subTitleLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 32.scale),
+            subTitleLabel.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: -32.scale),
+            subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 12.scale),
+            subTitleLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -16.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -99,35 +110,44 @@ private extension TryAgainView {
         return view
     }
     
+    func makeScrollView() -> UIScrollView {
+        let view = UIScrollView()
+        view.contentInset = UIEdgeInsets.zero
+        view.setContentOffset(CGPoint.zero, animated: false)
+        view.backgroundColor = UIColor.clear
+        view.showsVerticalScrollIndicator = false
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
     func makeTitleLabel() -> UILabel {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
-            .font(Fonts.Inter.bold(size: 24.scale))
-            .lineHeight(28.scale)
-            .letterSpacing(-0.3.scale)
+            .textColor(Appearance.black)
+            .font(Fonts.Inter.bold(size: 20.scale))
+            .lineHeight(24.scale)
             .textAlignment(.center)
         
         let view = UILabel()
         view.numberOfLines = 0
         view.attributedText = "TryAgain.Title".localized.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
+        scrollView.addSubview(view)
         return view
     }
     
     func makeSubTitleLabel() -> UILabel {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
-            .font(Fonts.Inter.regular(size: 17.scale))
-            .lineHeight(27.2.scale)
-            .letterSpacing(-0.41.scale)
+            .textColor(Appearance.black)
+            .font(Fonts.Inter.regular(size: 16.scale))
+            .lineHeight(25.6.scale)
             .textAlignment(.center)
         
         let view = UILabel()
         view.numberOfLines = 0
         view.attributedText = errorMessage().attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
-        addSubview(view)
+        scrollView.addSubview(view)
         return view
     }
     
@@ -147,13 +167,13 @@ private extension TryAgainView {
     
     func makeContactButton() -> UIButton {
         let attrs = TextAttributes()
-            .textColor(Appearance.white)
-            .font(Fonts.Inter.semiBold(size: 17.scale))
+            .textColor(Appearance.black)
+            .font(Fonts.Inter.semiBold(size: 16.scale))
         
         let view = UIButton()
         view.setAttributedTitle("TryAgain.Contact".localized.attributed(with: attrs), for: .normal)
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = UIColor(integralRed: 51, green: 51, blue: 51)
+        view.backgroundColor = UIColor(integralRed: 233, green: 225, blue: 217)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
