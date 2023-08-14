@@ -5,20 +5,20 @@
 //  Created by Андрей Чернышев on 01.02.2023.
 //
 
-enum SoccerRole: Codable, Hashable {
-    case player, coach, amateur
+enum DogOwnerRole: Codable, Hashable {
+    case owner, trainer, sitter
 }
 
 // MARK: Public
-extension SoccerRole {
+extension DogOwnerRole {
     init?(code: Int) {
         switch code {
         case 0:
-            self = .player
+            self = .owner
         case 1:
-            self = .coach
+            self = .trainer
         case 2:
-            self = .amateur
+            self = .sitter
         default:
             return nil
         }
@@ -26,11 +26,11 @@ extension SoccerRole {
     
     var code: Int {
         switch self {
-        case .player:
+        case .owner:
             return 0
-        case .coach:
+        case .trainer:
             return 1
-        case .amateur:
+        case .sitter:
             return 2
         }
     }

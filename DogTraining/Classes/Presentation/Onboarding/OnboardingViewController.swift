@@ -39,7 +39,7 @@ final class OnboardingViewController: UIViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
+        .darkContent
     }
 }
 
@@ -59,8 +59,10 @@ extension OnboardingViewController: PaygateViewControllerDelegate {
 
 // MARK: Public
 extension OnboardingViewController {
+    // TODO
     static func wasViewed() -> Bool {
-        UserDefaults.standard.bool(forKey: OnboardingViewController.Constants.wasViewedKey)
+        false
+//        UserDefaults.standard.bool(forKey: OnboardingViewController.Constants.wasViewedKey)
     }
 }
 

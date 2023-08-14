@@ -192,6 +192,23 @@
 		DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D152A86605000A56B96 /* HomeKit.swift */; };
 		DEB55D192A8660E300A56B96 /* GetHomeKitRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D182A8660E300A56B96 /* GetHomeKitRequest.swift */; };
 		DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D1A2A8660E900A56B96 /* GetHomeKitResponse.swift */; };
+		DEB55D1D2A866AA000A56B96 /* OWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D1C2A866AA000A56B96 /* OWelcomeView.swift */; };
+		DEB55D1F2A866D0F00A56B96 /* ORoleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D1E2A866D0F00A56B96 /* ORoleView.swift */; };
+		DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D202A866D2500A56B96 /* ORoleButton.swift */; };
+		DEB55D232A86724B00A56B96 /* OBreedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D222A86724B00A56B96 /* OBreedView.swift */; };
+		DEB55D262A8672A900A56B96 /* OBreedsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D252A8672A900A56B96 /* OBreedsTableView.swift */; };
+		DEB55D282A8672AE00A56B96 /* OBreedsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D272A8672AE00A56B96 /* OBreedsTableCell.swift */; };
+		DEB55D2A2A8678D700A56B96 /* ClearedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB55D292A8678D700A56B96 /* ClearedTextField.swift */; };
+		DEFE7E932A8A38E400FB96F0 /* ODogNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7E922A8A38E400FB96F0 /* ODogNameView.swift */; };
+		DEFE7E952A8A3C4500FB96F0 /* OAgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7E942A8A3C4500FB96F0 /* OAgeView.swift */; };
+		DEFE7E992A8A42DE00FB96F0 /* OSkillLevelScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7E982A8A42DE00FB96F0 /* OSkillLevelScoreView.swift */; };
+		DEFE7E9B2A8A42FB00FB96F0 /* OSkillLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7E9A2A8A42FB00FB96F0 /* OSkillLevelView.swift */; };
+		DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7E9C2A8A488000FB96F0 /* OBehaviorButton.swift */; };
+		DEFE7E9F2A8A4B2400FB96F0 /* OBehaviorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7E9E2A8A4B2400FB96F0 /* OBehaviorView.swift */; };
+		DEFE7EA12A8A4FDC00FB96F0 /* ODayOfWeekButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA02A8A4FDC00FB96F0 /* ODayOfWeekButton.swift */; };
+		DEFE7EA32A8A4FEF00FB96F0 /* ODaysOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA22A8A4FEF00FB96F0 /* ODaysOfWeekView.swift */; };
+		DEFE7EA52A8A545800FB96F0 /* OWhereTrainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA42A8A545800FB96F0 /* OWhereTrainButton.swift */; };
+		DEFE7EA72A8A546900FB96F0 /* OWhereTrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EA62A8A546900FB96F0 /* OWhereTrainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -384,6 +401,23 @@
 		DEB55D152A86605000A56B96 /* HomeKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeKit.swift; sourceTree = "<group>"; };
 		DEB55D182A8660E300A56B96 /* GetHomeKitRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeKitRequest.swift; sourceTree = "<group>"; };
 		DEB55D1A2A8660E900A56B96 /* GetHomeKitResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHomeKitResponse.swift; sourceTree = "<group>"; };
+		DEB55D1C2A866AA000A56B96 /* OWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWelcomeView.swift; sourceTree = "<group>"; };
+		DEB55D1E2A866D0F00A56B96 /* ORoleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORoleView.swift; sourceTree = "<group>"; };
+		DEB55D202A866D2500A56B96 /* ORoleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ORoleButton.swift; sourceTree = "<group>"; };
+		DEB55D222A86724B00A56B96 /* OBreedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBreedView.swift; sourceTree = "<group>"; };
+		DEB55D252A8672A900A56B96 /* OBreedsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBreedsTableView.swift; sourceTree = "<group>"; };
+		DEB55D272A8672AE00A56B96 /* OBreedsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBreedsTableCell.swift; sourceTree = "<group>"; };
+		DEB55D292A8678D700A56B96 /* ClearedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearedTextField.swift; sourceTree = "<group>"; };
+		DEFE7E922A8A38E400FB96F0 /* ODogNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODogNameView.swift; sourceTree = "<group>"; };
+		DEFE7E942A8A3C4500FB96F0 /* OAgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAgeView.swift; sourceTree = "<group>"; };
+		DEFE7E982A8A42DE00FB96F0 /* OSkillLevelScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSkillLevelScoreView.swift; sourceTree = "<group>"; };
+		DEFE7E9A2A8A42FB00FB96F0 /* OSkillLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSkillLevelView.swift; sourceTree = "<group>"; };
+		DEFE7E9C2A8A488000FB96F0 /* OBehaviorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBehaviorButton.swift; sourceTree = "<group>"; };
+		DEFE7E9E2A8A4B2400FB96F0 /* OBehaviorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBehaviorView.swift; sourceTree = "<group>"; };
+		DEFE7EA02A8A4FDC00FB96F0 /* ODayOfWeekButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODayOfWeekButton.swift; sourceTree = "<group>"; };
+		DEFE7EA22A8A4FEF00FB96F0 /* ODaysOfWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODaysOfWeekView.swift; sourceTree = "<group>"; };
+		DEFE7EA42A8A545800FB96F0 /* OWhereTrainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWhereTrainButton.swift; sourceTree = "<group>"; };
+		DEFE7EA62A8A546900FB96F0 /* OWhereTrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OWhereTrainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -917,6 +951,15 @@
 			children = (
 				DE1F7B102A83F13200B3FF24 /* Atoms */,
 				DE1F7B242A83F13200B3FF24 /* OSlideView.swift */,
+				DEB55D1C2A866AA000A56B96 /* OWelcomeView.swift */,
+				DEB55D1E2A866D0F00A56B96 /* ORoleView.swift */,
+				DEB55D222A86724B00A56B96 /* OBreedView.swift */,
+				DEFE7E922A8A38E400FB96F0 /* ODogNameView.swift */,
+				DEFE7E942A8A3C4500FB96F0 /* OAgeView.swift */,
+				DEFE7E9A2A8A42FB00FB96F0 /* OSkillLevelView.swift */,
+				DEFE7E9E2A8A4B2400FB96F0 /* OBehaviorView.swift */,
+				DEFE7EA22A8A4FEF00FB96F0 /* ODaysOfWeekView.swift */,
+				DEFE7EA62A8A546900FB96F0 /* OWhereTrainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -924,6 +967,13 @@
 		DE1F7B102A83F13200B3FF24 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				DEB55D242A86729A00A56B96 /* Breeds */,
+				DEB55D202A866D2500A56B96 /* ORoleButton.swift */,
+				DEB55D292A8678D700A56B96 /* ClearedTextField.swift */,
+				DEFE7E982A8A42DE00FB96F0 /* OSkillLevelScoreView.swift */,
+				DEFE7E9C2A8A488000FB96F0 /* OBehaviorButton.swift */,
+				DEFE7EA02A8A4FDC00FB96F0 /* ODayOfWeekButton.swift */,
+				DEFE7EA42A8A545800FB96F0 /* OWhereTrainButton.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -1289,6 +1339,15 @@
 			path = GetHomeKit;
 			sourceTree = "<group>";
 		};
+		DEB55D242A86729A00A56B96 /* Breeds */ = {
+			isa = PBXGroup;
+			children = (
+				DEB55D252A8672A900A56B96 /* OBreedsTableView.swift */,
+				DEB55D272A8672AE00A56B96 /* OBreedsTableCell.swift */,
+			);
+			path = Breeds;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1416,14 +1475,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1F7B302A83F13200B3FF24 /* SplashReceiptValidationObserver.swift in Sources */,
+				DEFE7E9F2A8A4B2400FB96F0 /* OBehaviorView.swift in Sources */,
 				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
 				DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */,
 				DE1F7B3D2A83F13200B3FF24 /* MainView.swift in Sources */,
+				DEB55D2A2A8678D700A56B96 /* ClearedTextField.swift in Sources */,
 				DE1F7AD92A83F10600B3FF24 /* WeekSchedule.swift in Sources */,
 				DE1F7AE52A83F10600B3FF24 /* IAPActionResult.swift in Sources */,
 				DE1F7ADB2A83F10600B3FF24 /* Profile.swift in Sources */,
 				DE1F7A942A83F0E700B3FF24 /* TapAreaButton.swift in Sources */,
+				DEFE7E9B2A8A42FB00FB96F0 /* OSkillLevelView.swift in Sources */,
+				DEFE7E952A8A3C4500FB96F0 /* OAgeView.swift in Sources */,
 				DE1F7A972A83F0E700B3FF24 /* PaddingTextField.swift in Sources */,
 				DEB55C9E2A86228700A56B96 /* AssignGameRequest.swift in Sources */,
 				DE1F7AE02A83F10600B3FF24 /* SetRequest.swift in Sources */,
@@ -1442,8 +1505,10 @@
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
 				DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */,
 				DE1F7B392A83F13200B3FF24 /* PaygateViewController.swift in Sources */,
+				DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
+				DEFE7EA52A8A545800FB96F0 /* OWhereTrainButton.swift in Sources */,
 				DEB55CEF2A8641EC00A56B96 /* Training.swift in Sources */,
 				DEB55CF52A8641EC00A56B96 /* ScheduleTrainingResponse.swift in Sources */,
 				DEB55D122A865BC500A56B96 /* GetPlanRequest.swift in Sources */,
@@ -1456,11 +1521,13 @@
 				DE1F7A7D2A83F0E700B3FF24 /* String+Extension.swift in Sources */,
 				DE1F7A902A83F0E700B3FF24 /* RxActivityIndicator.swift in Sources */,
 				DE1F7B772A861FA800B3FF24 /* GetSkillLevelsRequest.swift in Sources */,
+				DEFE7EA72A8A546900FB96F0 /* OWhereTrainView.swift in Sources */,
 				DEB55CC42A86315200A56B96 /* AssignedCommand.swift in Sources */,
 				DE1F7B2F2A83F13200B3FF24 /* SplashActivity.swift in Sources */,
 				DEB55CC62A86315200A56B96 /* GetCommandTrainingRequest.swift in Sources */,
 				DEB55CC92A86315200A56B96 /* GetCommandsRequest.swift in Sources */,
 				DE1F7A7E2A83F0E700B3FF24 /* UIViewRxExtension.swift in Sources */,
+				DEB55D1F2A866D0F00A56B96 /* ORoleView.swift in Sources */,
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
@@ -1484,6 +1551,7 @@
 				DE1F7ADD2A83F10600B3FF24 /* GetProfileResponse.swift in Sources */,
 				DE1F7B442A83F13200B3FF24 /* OnboardingViewController.swift in Sources */,
 				DE1F7B372A83F13200B3FF24 /* PaygateInteractor.swift in Sources */,
+				DEB55D232A86724B00A56B96 /* OBreedView.swift in Sources */,
 				DE1F7AD02A83F10600B3FF24 /* PaygateOptionLineComponent.swift in Sources */,
 				DEB55CEC2A8641EC00A56B96 /* TrainingsMediator.swift in Sources */,
 				DEB55CF12A8641EC00A56B96 /* AssignedTraining.swift in Sources */,
@@ -1491,6 +1559,7 @@
 				DEB55C9F2A86228700A56B96 /* AssignGameResponse.swift in Sources */,
 				DE1F7B3E2A83F13200B3FF24 /* TabItemView.swift in Sources */,
 				DE1F7AA12A83F0E700B3FF24 /* Appearance.swift in Sources */,
+				DEFE7EA32A8A4FEF00FB96F0 /* ODaysOfWeekView.swift in Sources */,
 				DE1F7A862A83F0E700B3FF24 /* ScreenSize.swift in Sources */,
 				DE1F7A962A83F0E700B3FF24 /* ScreenPreloader.swift in Sources */,
 				DE1F7AE32A83F10600B3FF24 /* PurchaseValidationObserver.swift in Sources */,
@@ -1515,12 +1584,14 @@
 				DE1F7A8C2A83F0E700B3FF24 /* ContentError.swift in Sources */,
 				DE1F7AD32A83F10600B3FF24 /* GetPaygateResponse.swift in Sources */,
 				DE1F7B312A83F13200B3FF24 /* SplashViewModel.swift in Sources */,
+				DEFE7E932A8A38E400FB96F0 /* ODogNameView.swift in Sources */,
 				DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */,
 				DEB55C9B2A86228700A56B96 /* ScheduleGameResponse.swift in Sources */,
 				DEB55CCC2A86315200A56B96 /* AssignCommandResponse.swift in Sources */,
 				DEB55CBF2A86315200A56B96 /* CommandsMediator.swift in Sources */,
 				DE1F7A832A83F0E700B3FF24 /* Scalable.swift in Sources */,
 				DE1F7B3A2A83F13200B3FF24 /* PaygateProductButton.swift in Sources */,
+				DEB55D282A8672AE00A56B96 /* OBreedsTableCell.swift in Sources */,
 				DE1F7AD62A83F10600B3FF24 /* ProfileManager.swift in Sources */,
 				DE1F7B612A83F13200B3FF24 /* OnboardingViewModel.swift in Sources */,
 				DE1F7ADF2A83F10600B3FF24 /* SyncTokensRequest.swift in Sources */,
@@ -1529,6 +1600,7 @@
 				DEB55CC52A86315200A56B96 /* GetCommandTrainingResponse.swift in Sources */,
 				DE1F7A932A83F0E700B3FF24 /* NavigationController.swift in Sources */,
 				DE1F7AD22A83F10600B3FF24 /* Paygate.swift in Sources */,
+				DEB55D1D2A866AA000A56B96 /* OWelcomeView.swift in Sources */,
 				DEB55C992A86228700A56B96 /* GetGameTrainingRequest.swift in Sources */,
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
@@ -1541,6 +1613,7 @@
 				DE1F7B3F2A83F13200B3FF24 /* TabView.swift in Sources */,
 				DE1F7A992A83F0E700B3FF24 /* CircleView.swift in Sources */,
 				DE1F7A8B2A83F0E700B3FF24 /* NetworkError.swift in Sources */,
+				DEFE7E992A8A42DE00FB96F0 /* OSkillLevelScoreView.swift in Sources */,
 				DE1F7A852A83F0E700B3FF24 /* TextAttributes.swift in Sources */,
 				DEB55CCA2A86315200A56B96 /* GetCommandsResponse.swift in Sources */,
 				DE1F7A982A83F0E700B3FF24 /* PaddingLabel.swift in Sources */,
@@ -1575,7 +1648,9 @@
 				DE1F7B412A83F13200B3FF24 /* TryAgainView.swift in Sources */,
 				DE1F7A892A83F0E700B3FF24 /* Fonts.swift in Sources */,
 				DEB55CC22A86315200A56B96 /* Command.swift in Sources */,
+				DEFE7EA12A8A4FDC00FB96F0 /* ODayOfWeekButton.swift in Sources */,
 				DE1F7B3B2A83F13200B3FF24 /* PaygateInfoCell.swift in Sources */,
+				DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */,
 				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
 				DEB55CA12A86228700A56B96 /* GetGameGroupsResponse.swift in Sources */,
 				DE1F7A9B2A83F0E700B3FF24 /* CircleProgressView.swift in Sources */,
@@ -1583,6 +1658,7 @@
 				DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */,
 				DEB55CC72A86315200A56B96 /* ScheduleCommandRequest.swift in Sources */,
 				DE1F7A7B2A83F0E700B3FF24 /* Collection+Extension.swift in Sources */,
+				DEB55D262A8672A900A56B96 /* OBreedsTableView.swift in Sources */,
 				DEB55C9A2A86228700A56B96 /* ScheduleGameRequest.swift in Sources */,
 				DE1F7B712A861FA800B3FF24 /* ContentManager.swift in Sources */,
 			);

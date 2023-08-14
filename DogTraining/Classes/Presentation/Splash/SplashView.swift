@@ -35,10 +35,10 @@ private extension SplashView {
 private extension SplashView {
     func makeConstraints() {
         NSLayoutConstraint.activate([
-            imageView.widthAnchor.constraint(equalToConstant: 100.scale),
-            imageView.heightAnchor.constraint(equalToConstant: 100.scale),
-            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            imageView.centerYAnchor.constraint(equalTo: centerYAnchor)
+            imageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            imageView.heightAnchor.constraint(equalToConstant: 388.scale),
+            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 212.scale)
         ])
         
         NSLayoutConstraint.activate([
