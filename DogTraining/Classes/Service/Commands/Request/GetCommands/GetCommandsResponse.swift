@@ -36,7 +36,7 @@ final class GetCommandsResponse {
                 commandGroupId: commandGroupId,
                 name: name,
                 image: imageUrl,
-                paid: data["paid"] as? Bool ?? false,
+                paid: commandJSON["paid"] as? Bool ?? false,
                 instruction: instruction
             )
         }

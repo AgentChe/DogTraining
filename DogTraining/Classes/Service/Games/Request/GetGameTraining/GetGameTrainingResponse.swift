@@ -27,8 +27,6 @@ final class GetGameTrainingResponse {
             return nil
         }
         
-        let paid = data["paid"] as? Bool
-        
         let game = Game(
             id: id,
             skillLevelId: skillLevelId,

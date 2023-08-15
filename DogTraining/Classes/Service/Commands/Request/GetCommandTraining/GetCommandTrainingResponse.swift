@@ -26,8 +26,6 @@ final class GetCommandTrainingResponse {
             return nil
         }
         
-        let paid = data["paid"] as? Bool
-        
         let command = Command(
             id: id,
             skillLevelId: skillLevelId,

@@ -10,8 +10,18 @@ import UIKit
 final class MainViewCoordinator {
     weak var parentVC: MainViewController?
     
-    lazy var homeVC = NavigationController(rootViewController: UIViewController())
+    // TODO
+    lazy var homeVC = NavigationController(rootViewController: HomeViewController.make(seeAllCommands: { [weak self] in
+        self?.change(tab: .train)
+//        self?.trainController.select(filter: .drills)
+    }, seeAllGames: { [weak self] in
+        self?.change(tab: .train)
+//        self?.trainController.select(filter: .workouts)
+    }, addTrainings: { [weak self] in
+        self?.change(tab: .train)
+    }))
     lazy var trainVC = NavigationController(rootViewController: UIViewController())
+    lazy var clickerVC = NavigationController(rootViewController: UIViewController())
     lazy var profileVC = NavigationController(rootViewController: UIViewController())
     
     private var previousVC: UIViewController?
@@ -28,6 +38,8 @@ final class MainViewCoordinator {
             changeVC(on: homeVC)
         case .train:
             changeVC(on: trainVC)
+        case .clicker:
+            changeVC(on: clickerVC)
         case .profile:
             changeVC(on: profileVC)
         }

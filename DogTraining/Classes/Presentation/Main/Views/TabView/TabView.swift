@@ -9,11 +9,12 @@ import UIKit
 
 final class TabView: UIView {
     enum Tab {
-        case home, train, profile
+        case home, train, clicker, profile
     }
     
     lazy var homeItem = makeItem(code: "Main.Home")
     lazy var trainItem = makeItem(code: "Main.Train")
+    lazy var clickerItem = makeItem(code: "Main.Clicker")
     lazy var profileItem = makeItem(code: "Main.Profile")
     
     var selectedTab = Tab.home {
@@ -39,6 +40,7 @@ private extension TabView {
         [
             homeItem,
             trainItem,
+            clickerItem,
             profileItem
         ]
         .forEach {
@@ -50,6 +52,8 @@ private extension TabView {
             homeItem.mode = .selected
         case .train:
             trainItem.mode = .selected
+        case .clicker:
+            clickerItem.mode = .selected
         case .profile:
             profileItem.mode = .selected
         }
@@ -70,11 +74,18 @@ private extension TabView {
             trainItem.leadingAnchor.constraint(equalTo: homeItem.trailingAnchor),
             trainItem.bottomAnchor.constraint(equalTo: bottomAnchor),
             trainItem.topAnchor.constraint(equalTo: topAnchor),
-            trainItem.widthAnchor.constraint(equalTo: profileItem.widthAnchor)
+            trainItem.widthAnchor.constraint(equalTo: clickerItem.widthAnchor)
         ])
         
         NSLayoutConstraint.activate([
-            profileItem.leadingAnchor.constraint(equalTo: trainItem.trailingAnchor),
+            clickerItem.leadingAnchor.constraint(equalTo: trainItem.trailingAnchor),
+            clickerItem.bottomAnchor.constraint(equalTo: bottomAnchor),
+            clickerItem.topAnchor.constraint(equalTo: topAnchor),
+            clickerItem.widthAnchor.constraint(equalTo: profileItem.widthAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            profileItem.leadingAnchor.constraint(equalTo: clickerItem.trailingAnchor),
             profileItem.bottomAnchor.constraint(equalTo: bottomAnchor),
             profileItem.topAnchor.constraint(equalTo: topAnchor),
             profileItem.trailingAnchor.constraint(equalTo: trailingAnchor)

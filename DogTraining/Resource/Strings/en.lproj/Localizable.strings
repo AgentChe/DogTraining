@@ -97,3 +97,26 @@
 "Onboarding.Preloader.Text2" = "Identifying your dog’s training\nlevel...";
 "Onboarding.Preloader.Text3" = "Creating personalized\ntrainings...";
 "Onboarding.Preloader.Text4" = "Setting up training program...";
+
+// MARK: Home
+"Home.DailyPicks" = "Daily picks";
+"Home.Game" = "Game";
+"Home.Training" = "Training";
+"Home.Command" = "Command";
+"Home.SeeAll" = "See all";
+"Home.TryCommands" = "Try commands";
+"Home.Games" = "Games";
+"Home.StartTraining" = "Start training";
+"Home.StartGame" = "Start game";
+"Home.YourScore" = "Your score";
+"Home.Level" = "Level - %@";
+"Home.Schedule" = "Schedule • %@";
+"Home.NoTrainings" = "No trainings for today";
+"Home.AddTraining" = "Add a training";
+"Home.Completed" = "Completed";
+
+// MARK: Main
+"Main.Home" = "Home";
+"Main.Train" = "Train";
+"Main.Clicker" = "Clicker";
+"Main.Profile" = "Profile";

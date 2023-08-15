@@ -11,5 +11,6 @@ struct HomeKit: Codable, Hashable {
     let dailyGames: [Game]
     let dailyTrainings: [Training]
     let plan: [PlanOnDay]
-    let tryGames: [Game]
+    let tryCommands: [Command]
+    let games: [Game]
 }

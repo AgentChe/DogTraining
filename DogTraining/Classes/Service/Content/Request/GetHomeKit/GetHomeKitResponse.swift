@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: try_commands и games из респонса
 final class GetHomeKitResponse {
     static func map(from response: Any) -> HomeKit? {
         guard
@@ -16,18 +17,21 @@ final class GetHomeKitResponse {
             let levelId = data["level_id"] as? Int,
             let dailyPicks = data["daily_picks"] as? [String: Any],
             let dailyGamesArray = dailyPicks["games"] as? [[String: Any]],
-            let dailyTrainingsArray = dailyPicks["trainings"] as? [[String: Any]],
-            let tryGamesArray = data["try_games"] as? [[String: Any]]
+            let dailyTrainingsArray = dailyPicks["trainings"] as? [[String: Any]]
         else {
             return nil
         }
+        
+        let tryCommandsArray = data["try_commands"] as? [[String: Any]]
+        let gamesArray = data["games"] as? [[String: Any]]
         
         let planJSON = data["plan"] as? [String: [String: Any]]
         
         let dailyGames = map(gamesArray: dailyGamesArray)
         let dailyTrainings = map(trainingsArray: dailyTrainingsArray)
         let plan = GetPlanResponse.map(planJSON: planJSON ?? [:])
-        let tryGames = map(gamesArray: tryGamesArray)
+        let tryCommands = map(commandsArray: tryCommandsArray ?? [])
+        let games = map(gamesArray: gamesArray ?? dailyGamesArray)
         
         return HomeKit(
             score: score,
@@ -35,7 +39,8 @@ final class GetHomeKitResponse {
             dailyGames: dailyGames,
             dailyTrainings: dailyTrainings,
             plan: plan,
-            tryGames: tryGames
+            tryCommands: tryCommands,
+            games: games
         )
     }
 }
@@ -115,6 +120,32 @@ private extension GetHomeKitResponse {
                 image: imageUrl,
                 commands: commands,
                 commandGroupsIds: commandGroupsIds
+            )
+        }
+    }
+    
+    static func map(commandsArray: [[String: Any]]) -> [Command] {
+        commandsArray.compactMap { commandJSON -> Command? in
+            guard
+                let id = commandJSON["command_id"] as? Int,
+                let name = commandJSON["name"] as? String,
+                let skillLevelId = commandJSON["level_id"] as? Int,
+                let imagePath = commandJSON["image"] as? String,
+                let imageUrl = URL(string: imagePath),
+                let commandGroupId = commandJSON["command_group_id"] as? Int,
+                let instruction = commandJSON["description"] as? String
+            else {
+                return nil
+            }
+            
+            return Command(
+                id: id,
+                skillLevelId: skillLevelId,
+                commandGroupId: commandGroupId,
+                name: name,
+                image: imageUrl,
+                paid: commandJSON["paid"] as? Bool ?? false,
+                instruction: instruction
             )
         }
     }

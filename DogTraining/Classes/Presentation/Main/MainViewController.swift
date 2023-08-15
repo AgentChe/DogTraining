@@ -46,7 +46,7 @@ final class MainViewController: UIViewController {
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
-        .lightContent
+        .darkContent
     }
 }
 
@@ -74,10 +74,10 @@ private extension MainViewController {
             .merge([
                 mainView.tabView.homeItem
                     .rx.tap.map { TabView.Tab.home },
-                
                 mainView.tabView.trainItem
                     .rx.tap.map { TabView.Tab.train },
-                
+                mainView.tabView.clickerItem
+                    .rx.tap.map { TabView.Tab.clicker },
                 mainView.tabView.profileItem
                     .rx.tap.map { TabView.Tab.profile }
             ])

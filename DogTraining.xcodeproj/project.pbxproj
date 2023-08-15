@@ -217,6 +217,30 @@
 		DEFE7EB42A8A795D00FB96F0 /* OCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */; };
 		DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */; };
 		DEFE7EB82A8B6FC900FB96F0 /* PlanCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB72A8B6FC900FB96F0 /* PlanCommand.swift */; };
+		DEFE7EDC2A8B7DD600FB96F0 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EBA2A8B7DD600FB96F0 /* HomeViewModel.swift */; };
+		DEFE7EDD2A8B7DD600FB96F0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EBB2A8B7DD600FB96F0 /* HomeView.swift */; };
+		DEFE7EDE2A8B7DD600FB96F0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EBC2A8B7DD600FB96F0 /* HomeViewController.swift */; };
+		DEFE7EDF2A8B7DD600FB96F0 /* SeeAllTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC02A8B7DD600FB96F0 /* SeeAllTableCell.swift */; };
+		DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC22A8B7DD600FB96F0 /* HomeGamesCell.swift */; };
+		DEFE7EE12A8B7DD600FB96F0 /* HomeGamesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC42A8B7DD600FB96F0 /* HomeGamesCollectionCell.swift */; };
+		DEFE7EE22A8B7DD600FB96F0 /* HomeGamesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC52A8B7DD600FB96F0 /* HomeGamesCollectionView.swift */; };
+		DEFE7EE32A8B7DD600FB96F0 /* PlanWeekDayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC72A8B7DD600FB96F0 /* PlanWeekDayButton.swift */; };
+		DEFE7EE42A8B7DD600FB96F0 /* PlanWeekdaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC82A8B7DD600FB96F0 /* PlanWeekdaysCell.swift */; };
+		DEFE7EE52A8B7DD600FB96F0 /* HomeTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EC92A8B7DD600FB96F0 /* HomeTitleCell.swift */; };
+		DEFE7EE62A8B7DD600FB96F0 /* HomeNoTrainingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ECA2A8B7DD600FB96F0 /* HomeNoTrainingsCell.swift */; };
+		DEFE7EE72A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ECD2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionCell.swift */; };
+		DEFE7EE82A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ECE2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift */; };
+		DEFE7EE92A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ECF2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionLayout.swift */; };
+		DEFE7EEA2A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED02A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift */; };
+		DEFE7EEB2A8B7DD600FB96F0 /* DailyPicksTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED22A8B7DD600FB96F0 /* DailyPicksTableCell.swift */; };
+		DEFE7EEC2A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED42A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift */; };
+		DEFE7EED2A8B7DD600FB96F0 /* DailyPicksCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED52A8B7DD600FB96F0 /* DailyPicksCollectionView.swift */; };
+		DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED62A8B7DD600FB96F0 /* HomeAddTrainingCell.swift */; };
+		DEFE7EEF2A8B7DD600FB96F0 /* HomeStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED72A8B7DD600FB96F0 /* HomeStatsCell.swift */; };
+		DEFE7EF02A8B7DD600FB96F0 /* HomeCommandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED82A8B7DD600FB96F0 /* HomeCommandCell.swift */; };
+		DEFE7EF12A8B7DD600FB96F0 /* HomePlanTrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED92A8B7DD600FB96F0 /* HomePlanTrainingCell.swift */; };
+		DEFE7EF22A8B7DD600FB96F0 /* HomeTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EDA2A8B7DD600FB96F0 /* HomeTableElement.swift */; };
+		DEFE7EF32A8B7DD600FB96F0 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EDB2A8B7DD600FB96F0 /* HomeTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -434,6 +458,30 @@
 		DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCircleProgressView.swift; sourceTree = "<group>"; };
 		DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPreloaderView.swift; sourceTree = "<group>"; };
 		DEFE7EB72A8B6FC900FB96F0 /* PlanCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCommand.swift; sourceTree = "<group>"; };
+		DEFE7EBA2A8B7DD600FB96F0 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DEFE7EBB2A8B7DD600FB96F0 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DEFE7EBC2A8B7DD600FB96F0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DEFE7EC02A8B7DD600FB96F0 /* SeeAllTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeeAllTableCell.swift; sourceTree = "<group>"; };
+		DEFE7EC22A8B7DD600FB96F0 /* HomeGamesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGamesCell.swift; sourceTree = "<group>"; };
+		DEFE7EC42A8B7DD600FB96F0 /* HomeGamesCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGamesCollectionCell.swift; sourceTree = "<group>"; };
+		DEFE7EC52A8B7DD600FB96F0 /* HomeGamesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeGamesCollectionView.swift; sourceTree = "<group>"; };
+		DEFE7EC72A8B7DD600FB96F0 /* PlanWeekDayButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanWeekDayButton.swift; sourceTree = "<group>"; };
+		DEFE7EC82A8B7DD600FB96F0 /* PlanWeekdaysCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanWeekdaysCell.swift; sourceTree = "<group>"; };
+		DEFE7EC92A8B7DD600FB96F0 /* HomeTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTitleCell.swift; sourceTree = "<group>"; };
+		DEFE7ECA2A8B7DD600FB96F0 /* HomeNoTrainingsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNoTrainingsCell.swift; sourceTree = "<group>"; };
+		DEFE7ECD2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommandsGroupsCollectionCell.swift; sourceTree = "<group>"; };
+		DEFE7ECE2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommandsGroupsCollectionView.swift; sourceTree = "<group>"; };
+		DEFE7ECF2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommandsGroupsCollectionLayout.swift; sourceTree = "<group>"; };
+		DEFE7ED02A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommandsGroupsCell.swift; sourceTree = "<group>"; };
+		DEFE7ED22A8B7DD600FB96F0 /* DailyPicksTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPicksTableCell.swift; sourceTree = "<group>"; };
+		DEFE7ED42A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPicksCollectionCell.swift; sourceTree = "<group>"; };
+		DEFE7ED52A8B7DD600FB96F0 /* DailyPicksCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyPicksCollectionView.swift; sourceTree = "<group>"; };
+		DEFE7ED62A8B7DD600FB96F0 /* HomeAddTrainingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAddTrainingCell.swift; sourceTree = "<group>"; };
+		DEFE7ED72A8B7DD600FB96F0 /* HomeStatsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStatsCell.swift; sourceTree = "<group>"; };
+		DEFE7ED82A8B7DD600FB96F0 /* HomeCommandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCommandCell.swift; sourceTree = "<group>"; };
+		DEFE7ED92A8B7DD600FB96F0 /* HomePlanTrainingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePlanTrainingCell.swift; sourceTree = "<group>"; };
+		DEFE7EDA2A8B7DD600FB96F0 /* HomeTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableElement.swift; sourceTree = "<group>"; };
+		DEFE7EDB2A8B7DD600FB96F0 /* HomeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -844,6 +892,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE7EB92A8B7DD600FB96F0 /* Home */,
 				DE1F7AEC2A83F13200B3FF24 /* Splash */,
 				DE1F7AF32A83F13200B3FF24 /* Paygate */,
 				DE1F7AFF2A83F13200B3FF24 /* Main */,
@@ -1380,6 +1429,117 @@
 			path = Commands;
 			sourceTree = "<group>";
 		};
+		DEFE7EB92A8B7DD600FB96F0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EBD2A8B7DD600FB96F0 /* Views */,
+				DEFE7EBC2A8B7DD600FB96F0 /* HomeViewController.swift */,
+				DEFE7EBA2A8B7DD600FB96F0 /* HomeViewModel.swift */,
+				DEFE7EBB2A8B7DD600FB96F0 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DEFE7EBD2A8B7DD600FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EBE2A8B7DD600FB96F0 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE7EBE2A8B7DD600FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EBF2A8B7DD600FB96F0 /* Cells */,
+				DEFE7EDA2A8B7DD600FB96F0 /* HomeTableElement.swift */,
+				DEFE7EDB2A8B7DD600FB96F0 /* HomeTableView.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEFE7EBF2A8B7DD600FB96F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7ED12A8B7DD600FB96F0 /* DailyPicks */,
+				DEFE7ECB2A8B7DD600FB96F0 /* CommandsGroups */,
+				DEFE7EC62A8B7DD600FB96F0 /* Plan */,
+				DEFE7EC12A8B7DD600FB96F0 /* Games */,
+				DEFE7EC02A8B7DD600FB96F0 /* SeeAllTableCell.swift */,
+				DEFE7EC92A8B7DD600FB96F0 /* HomeTitleCell.swift */,
+				DEFE7ECA2A8B7DD600FB96F0 /* HomeNoTrainingsCell.swift */,
+				DEFE7ED62A8B7DD600FB96F0 /* HomeAddTrainingCell.swift */,
+				DEFE7ED72A8B7DD600FB96F0 /* HomeStatsCell.swift */,
+				DEFE7ED82A8B7DD600FB96F0 /* HomeCommandCell.swift */,
+				DEFE7ED92A8B7DD600FB96F0 /* HomePlanTrainingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEFE7EC12A8B7DD600FB96F0 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EC32A8B7DD600FB96F0 /* Collection */,
+				DEFE7EC22A8B7DD600FB96F0 /* HomeGamesCell.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		DEFE7EC32A8B7DD600FB96F0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EC42A8B7DD600FB96F0 /* HomeGamesCollectionCell.swift */,
+				DEFE7EC52A8B7DD600FB96F0 /* HomeGamesCollectionView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		DEFE7EC62A8B7DD600FB96F0 /* Plan */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7EC72A8B7DD600FB96F0 /* PlanWeekDayButton.swift */,
+				DEFE7EC82A8B7DD600FB96F0 /* PlanWeekdaysCell.swift */,
+			);
+			path = Plan;
+			sourceTree = "<group>";
+		};
+		DEFE7ECB2A8B7DD600FB96F0 /* CommandsGroups */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7ECC2A8B7DD600FB96F0 /* Collection */,
+				DEFE7ED02A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift */,
+			);
+			path = CommandsGroups;
+			sourceTree = "<group>";
+		};
+		DEFE7ECC2A8B7DD600FB96F0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7ECD2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionCell.swift */,
+				DEFE7ECE2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift */,
+				DEFE7ECF2A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionLayout.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		DEFE7ED12A8B7DD600FB96F0 /* DailyPicks */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7ED32A8B7DD600FB96F0 /* Collection */,
+				DEFE7ED22A8B7DD600FB96F0 /* DailyPicksTableCell.swift */,
+			);
+			path = DailyPicks;
+			sourceTree = "<group>";
+		};
+		DEFE7ED32A8B7DD600FB96F0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7ED42A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift */,
+				DEFE7ED52A8B7DD600FB96F0 /* DailyPicksCollectionView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1525,18 +1685,24 @@
 				DE1F7AE02A83F10600B3FF24 /* SetRequest.swift in Sources */,
 				DEB55D142A865BC500A56B96 /* ReinitPlanRequest.swift in Sources */,
 				DE1F7AD82A83F10600B3FF24 /* Role.swift in Sources */,
+				DEFE7EE72A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionCell.swift in Sources */,
+				DEFE7EEA2A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift in Sources */,
 				DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */,
 				DE1F7ADC2A83F10600B3FF24 /* GetProfileRequest.swift in Sources */,
 				DE1F7B7E2A86205200B3FF24 /* GetBreedsResponse.swift in Sources */,
 				DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */,
+				DEFE7EDC2A8B7DD600FB96F0 /* HomeViewModel.swift in Sources */,
 				DE1F7B332A83F13200B3FF24 /* PaygateViewModel.swift in Sources */,
 				DE1F7A9C2A83F0E700B3FF24 /* AppDelegate.swift in Sources */,
 				DE1F7A792A83F0E700B3FF24 /* UIColor+Extension.swift in Sources */,
 				DE1F7AD12A83F10600B3FF24 /* PaygateOptionConfig.swift in Sources */,
+				DEFE7EEB2A8B7DD600FB96F0 /* DailyPicksTableCell.swift in Sources */,
 				DE1F7B402A83F13200B3FF24 /* MainViewCoordinator.swift in Sources */,
 				DEB55C972A86228700A56B96 /* AssignedGame.swift in Sources */,
+				DEFE7EE82A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift in Sources */,
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
 				DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */,
+				DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */,
 				DE1F7B392A83F13200B3FF24 /* PaygateViewController.swift in Sources */,
 				DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
@@ -1548,6 +1714,7 @@
 				DE1F7AE72A83F10600B3FF24 /* IAPError.swift in Sources */,
 				DE1F7A8E2A83F0E700B3FF24 /* RequestReview.swift in Sources */,
 				DEB55CCE2A86315200A56B96 /* GetCommandsGroupsResponse.swift in Sources */,
+				DEFE7EE12A8B7DD600FB96F0 /* HomeGamesCollectionCell.swift in Sources */,
 				DE1F7A8F2A83F0E700B3FF24 /* ImagePicker.swift in Sources */,
 				DE1F7B322A83F13200B3FF24 /* SplashView.swift in Sources */,
 				DE1F7B382A83F13200B3FF24 /* PaygateView.swift in Sources */,
@@ -1565,6 +1732,7 @@
 				DEB55D1F2A866D0F00A56B96 /* ORoleView.swift in Sources */,
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
+				DEFE7EE42A8B7DD600FB96F0 /* PlanWeekdaysCell.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
 				DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */,
@@ -1582,6 +1750,7 @@
 				DEFE7EB22A8A75F400FB96F0 /* OTopicsView.swift in Sources */,
 				DEB55C942A86228700A56B96 /* GameGroup.swift in Sources */,
 				DE1F7A7A2A83F0E700B3FF24 /* Date+Extension.swift in Sources */,
+				DEFE7EE62A8B7DD600FB96F0 /* HomeNoTrainingsCell.swift in Sources */,
 				DEB55D192A8660E300A56B96 /* GetHomeKitRequest.swift in Sources */,
 				DEB55CF82A8641EC00A56B96 /* AssignTrainingRequest.swift in Sources */,
 				DE1F7A8D2A83F0E700B3FF24 /* Weak.swift in Sources */,
@@ -1590,17 +1759,22 @@
 				DE1F7B372A83F13200B3FF24 /* PaygateInteractor.swift in Sources */,
 				DEB55D232A86724B00A56B96 /* OBreedView.swift in Sources */,
 				DE1F7AD02A83F10600B3FF24 /* PaygateOptionLineComponent.swift in Sources */,
+				DEFE7EE22A8B7DD600FB96F0 /* HomeGamesCollectionView.swift in Sources */,
 				DEB55CEC2A8641EC00A56B96 /* TrainingsMediator.swift in Sources */,
 				DEB55CF12A8641EC00A56B96 /* AssignedTraining.swift in Sources */,
 				DE1F7AE92A83F10600B3FF24 /* Session.swift in Sources */,
 				DEB55C9F2A86228700A56B96 /* AssignGameResponse.swift in Sources */,
+				DEFE7EF02A8B7DD600FB96F0 /* HomeCommandCell.swift in Sources */,
 				DE1F7B3E2A83F13200B3FF24 /* TabItemView.swift in Sources */,
 				DE1F7AA12A83F0E700B3FF24 /* Appearance.swift in Sources */,
+				DEFE7EE32A8B7DD600FB96F0 /* PlanWeekDayButton.swift in Sources */,
 				DEFE7EA32A8A4FEF00FB96F0 /* ODaysOfWeekView.swift in Sources */,
 				DE1F7A862A83F0E700B3FF24 /* ScreenSize.swift in Sources */,
 				DE1F7A962A83F0E700B3FF24 /* ScreenPreloader.swift in Sources */,
 				DE1F7AE32A83F10600B3FF24 /* PurchaseValidationObserver.swift in Sources */,
+				DEFE7EDE2A8B7DD600FB96F0 /* HomeViewController.swift in Sources */,
 				DEB55CF62A8641EC00A56B96 /* GetTrainingsRequest.swift in Sources */,
+				DEFE7EED2A8B7DD600FB96F0 /* DailyPicksCollectionView.swift in Sources */,
 				DE1F7AA62A83F0E700B3FF24 /* FacebookManager.swift in Sources */,
 				DE1F7A822A83F0E700B3FF24 /* RestAPITransport.swift in Sources */,
 				DE1F7A922A83F0E700B3FF24 /* NavigationControllerSettings.swift in Sources */,
@@ -1627,7 +1801,9 @@
 				DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */,
 				DEB55C9B2A86228700A56B96 /* ScheduleGameResponse.swift in Sources */,
 				DEB55CCC2A86315200A56B96 /* AssignCommandResponse.swift in Sources */,
+				DEFE7EE52A8B7DD600FB96F0 /* HomeTitleCell.swift in Sources */,
 				DEB55CBF2A86315200A56B96 /* CommandsMediator.swift in Sources */,
+				DEFE7EEF2A8B7DD600FB96F0 /* HomeStatsCell.swift in Sources */,
 				DE1F7A832A83F0E700B3FF24 /* Scalable.swift in Sources */,
 				DE1F7B3A2A83F13200B3FF24 /* PaygateProductButton.swift in Sources */,
 				DEB55D282A8672AE00A56B96 /* OBreedsTableCell.swift in Sources */,
@@ -1640,11 +1816,13 @@
 				DE1F7A932A83F0E700B3FF24 /* NavigationController.swift in Sources */,
 				DE1F7AD22A83F10600B3FF24 /* Paygate.swift in Sources */,
 				DEB55D1D2A866AA000A56B96 /* OWelcomeView.swift in Sources */,
+				DEFE7EEC2A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift in Sources */,
 				DEB55C992A86228700A56B96 /* GetGameTrainingRequest.swift in Sources */,
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
 				DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */,
 				DEB55C962A86228700A56B96 /* GameTraining.swift in Sources */,
+				DEFE7EDF2A8B7DD600FB96F0 /* SeeAllTableCell.swift in Sources */,
 				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,
 				DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */,
 				DE1F7B792A86202600B3FF24 /* Breed.swift in Sources */,
@@ -1664,12 +1842,14 @@
 				DEB55CD02A86315200A56B96 /* LogCommandProgressRequest.swift in Sources */,
 				DE1F7B762A861FA800B3FF24 /* GetSkillLevelsResponse.swift in Sources */,
 				DEB55CCD2A86315200A56B96 /* GetCommandsGroupsRequest.swift in Sources */,
+				DEFE7EDD2A8B7DD600FB96F0 /* HomeView.swift in Sources */,
 				DE1F7AE82A83F10600B3FF24 /* IAPErrorHelper.swift in Sources */,
 				DEB55CF02A8641EC00A56B96 /* TrainigDetails.swift in Sources */,
 				DE1F7AE22A83F10600B3FF24 /* IAPManager.swift in Sources */,
 				DE1F7A952A83F0E700B3FF24 /* Spinner.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
+				DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */,
 				DEB55CCB2A86315200A56B96 /* AssignCommandRequest.swift in Sources */,
 				DEB55CA02A86228700A56B96 /* GetGameGroupsRequest.swift in Sources */,
 				DE1F7A7F2A83F0E700B3FF24 /* GlobalDefinitions.swift in Sources */,
@@ -1683,6 +1863,7 @@
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
 				DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */,
 				DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */,
+				DEFE7EE92A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionLayout.swift in Sources */,
 				DEB55D0D2A865BC500A56B96 /* PlanManager.swift in Sources */,
 				DEB55CA22A86228700A56B96 /* LogGameProgressResponse.swift in Sources */,
 				DE1F7B412A83F13200B3FF24 /* TryAgainView.swift in Sources */,
@@ -1692,12 +1873,15 @@
 				DE1F7B3B2A83F13200B3FF24 /* PaygateInfoCell.swift in Sources */,
 				DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */,
 				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
+				DEFE7EF32A8B7DD600FB96F0 /* HomeTableView.swift in Sources */,
 				DEB55CA12A86228700A56B96 /* GetGameGroupsResponse.swift in Sources */,
 				DE1F7A9B2A83F0E700B3FF24 /* CircleProgressView.swift in Sources */,
 				DEB55D0F2A865BC500A56B96 /* PlanOnDay.swift in Sources */,
 				DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */,
 				DEB55CC72A86315200A56B96 /* ScheduleCommandRequest.swift in Sources */,
 				DE1F7A7B2A83F0E700B3FF24 /* Collection+Extension.swift in Sources */,
+				DEFE7EF12A8B7DD600FB96F0 /* HomePlanTrainingCell.swift in Sources */,
+				DEFE7EF22A8B7DD600FB96F0 /* HomeTableElement.swift in Sources */,
 				DEB55D262A8672A900A56B96 /* OBreedsTableView.swift in Sources */,
 				DEB55C9A2A86228700A56B96 /* ScheduleGameRequest.swift in Sources */,
 				DE1F7B712A861FA800B3FF24 /* ContentManager.swift in Sources */,

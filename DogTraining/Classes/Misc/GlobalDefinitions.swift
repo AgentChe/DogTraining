@@ -23,7 +23,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = "https://kyotosaka.com/index.html#careers"
     
     enum Paygate {
-        static let defaultLifetime = "training.app.soccer.endless"
-        static let defaultMonthly = "training.app.soccer.monthly"
+        static let defaultLifetime = "training.app.dogs.lt100"
+        static let defaultMonthly = "training.app.dogs.month25"
     }
 }
