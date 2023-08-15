@@ -7,10 +7,10 @@
 
 import Foundation
 
-// TODO: добавить команды
 struct PlanOnDay: Codable, Hashable {
     let day: Date
     let status: PlanStatus
     let games: [PlanGame]
     let trainings: [PlanTraining]
+    let commands: [PlanCommand]
 }

@@ -12,6 +12,7 @@ final class GetTrainingResponse {
         guard
             let json = response as? [String: Any],
             let data = json["_data"] as? [String: Any],
+            let id = data["training_id"] as? Int,
             let name = data["name"] as? String,
             let skillLevelId = data["level_id"] as? Int,
             let imagePath = data["image"] as? String,
@@ -19,7 +20,8 @@ final class GetTrainingResponse {
             let commandsArray = data["commands"] as? [[String: Any]],
             let customerTrainingId = data["customer_training_id"] as? Int,
             let finished = data["finished"] as? Bool,
-            let trainedTime = data["trained_time"] as? Int
+            let trainedTime = data["trained_time"] as? Int,
+            let commandGroupIds = data["command_group_ids"] as? [Int]
         else {
             return nil
         }
@@ -49,12 +51,12 @@ final class GetTrainingResponse {
         }
         
         let training = Training(
-            id: 1, // TODO: с бэка
+            id: id,
             levelId: skillLevelId,
             name: name,
             image: imageUrl,
             commands: commands,
-            commandGroupsIds: [] // TODO: с бэка
+            commandGroupsIds: commandGroupIds
         )
         
         var scheduleDate: Date? = nil

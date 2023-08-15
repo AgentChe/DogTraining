@@ -22,9 +22,8 @@ final class GlobalDefinitions {
     static let privacyPolicyUrl = "https://kyotosaka.com/policy.html"
     static let contactUsUrl = "https://kyotosaka.com/index.html#careers"
     
-    // TODO
     enum Paygate {
-        static let defaultLifetime = ""
-        static let defaultMonthly = ""
+        static let defaultLifetime = "training.app.soccer.endless"
+        static let defaultMonthly = "training.app.soccer.monthly"
     }
 }

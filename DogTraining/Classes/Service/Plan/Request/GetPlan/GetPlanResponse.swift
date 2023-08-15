@@ -32,6 +32,7 @@ final class GetPlanResponse {
             
             let gamesArray = planJSON["games"] as? [[String: Any]]
             let trainingsArray = planJSON["trainings"] as? [[String: Any]]
+            let commandsArray = planJSON["commands"] as? [[String: Any]]
             
             let games = (gamesArray ?? []).compactMap { gameJSON -> PlanGame? in
                 guard
@@ -79,11 +80,34 @@ final class GetPlanResponse {
                 )
             }
             
+            let commands = (commandsArray ?? []).compactMap { commandJSON -> PlanCommand? in
+                guard
+                    let customerCommandId = commandJSON["customer_command_id"] as? Int,
+                    let name = commandJSON["name"] as? String,
+                    let imagePath = commandJSON["image"] as? String,
+                    let imageUrl = URL(string: imagePath),
+                    let levelId = commandJSON["level_id"] as? Int,
+                    let statusCode = commandJSON["status"] as? Int,
+                    let status = Self.status(from: statusCode)
+                else {
+                    return nil
+                }
+                
+                return PlanCommand(
+                    customerCommandId: customerCommandId,
+                    name: name,
+                    image: imageUrl,
+                    levelId: levelId,
+                    status: status
+                )
+            }
+            
             return PlanOnDay(
                 day: Date(timeIntervalSince1970: day),
                 status: status,
                 games: games,
-                trainings: trainings
+                trainings: trainings,
+                commands: commands
             )
         }
     }

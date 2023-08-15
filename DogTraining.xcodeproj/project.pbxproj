@@ -216,6 +216,7 @@
 		DEFE7EB22A8A75F400FB96F0 /* OTopicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB12A8A75F400FB96F0 /* OTopicsView.swift */; };
 		DEFE7EB42A8A795D00FB96F0 /* OCircleProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */; };
 		DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */; };
+		DEFE7EB82A8B6FC900FB96F0 /* PlanCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EB72A8B6FC900FB96F0 /* PlanCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -432,6 +433,7 @@
 		DEFE7EB12A8A75F400FB96F0 /* OTopicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTopicsView.swift; sourceTree = "<group>"; };
 		DEFE7EB32A8A795D00FB96F0 /* OCircleProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCircleProgressView.swift; sourceTree = "<group>"; };
 		DEFE7EB52A8A797100FB96F0 /* OPreloaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPreloaderView.swift; sourceTree = "<group>"; };
+		DEFE7EB72A8B6FC900FB96F0 /* PlanCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1319,6 +1321,7 @@
 				DEB55D022A865BC500A56B96 /* PlanTraining.swift */,
 				DEB55D042A865BC500A56B96 /* PlanGame.swift */,
 				DEB55D052A865BC500A56B96 /* PlanStatus.swift */,
+				DEFE7EB72A8B6FC900FB96F0 /* PlanCommand.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1609,6 +1612,7 @@
 				DEB55C9D2A86228700A56B96 /* GetGamesResponse.swift in Sources */,
 				DE1F7A772A83F0E700B3FF24 /* UIApplication+Extension.swift in Sources */,
 				DE1F7AD42A83F10600B3FF24 /* GetPaygateRequest.swift in Sources */,
+				DEFE7EB82A8B6FC900FB96F0 /* PlanCommand.swift in Sources */,
 				DE1F7AA32A83F0E700B3FF24 /* BranchManager.swift in Sources */,
 				DEB55CC82A86315200A56B96 /* ScheduleCommandResponse.swift in Sources */,
 				DE1F7ADA2A83F10600B3FF24 /* DayOfWeek.swift in Sources */,
