@@ -11,6 +11,11 @@ final class PaygateInfoCell: UIView {
     lazy var imageView = makeImageView()
     lazy var label = makeLabel()
     
+    private lazy var attrs = TextAttributes()
+        .textColor(Appearance.black)
+        .font(Fonts.Inter.regular(size: 16.scale))
+        .lineHeight(25.6.scale)
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -25,11 +30,6 @@ final class PaygateInfoCell: UIView {
 // MARK: Public
 extension PaygateInfoCell {
     func setup(text: String) {
-        let attrs = TextAttributes()
-            .textColor(Appearance.white)
-            .font(Fonts.Inter.regular(size: 16.scale))
-            .lineHeight(19.6.scale)
-            .letterSpacing(-0.41.scale)
         label.attributedText = text.attributed(with: attrs)
     }
 }
