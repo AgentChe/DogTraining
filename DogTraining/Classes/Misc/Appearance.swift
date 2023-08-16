@@ -8,7 +8,7 @@
 import UIKit
 
 struct Appearance {
-    static let background = UIColor(integralRed: 241, green: 237, blue: 232)
+    static let background = UIColor(integralRed: 242, green: 237, blue: 232)
     static let primary = UIColor(integralRed: 65, green: 147, blue: 88)
     static let secondary = UIColor(integralRed: 232, green: 108, blue: 69)
     static let third = UIColor(integralRed: 103, green: 171, blue: 218)

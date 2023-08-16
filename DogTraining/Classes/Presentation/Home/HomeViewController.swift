@@ -130,7 +130,8 @@ extension HomeViewController: HomeTableViewDelegate {
     }
     
     func homeTableDidTap(commandGroup: CommandGroup) {
-        // TODO: open screen
+        let vc = CommandsViewController.make(commandGroup: commandGroup)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func homeTableDidTapTryCommands() {
