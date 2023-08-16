@@ -98,7 +98,8 @@ extension HomeViewController: HomeTableViewDelegate {
             let vc = PaygateViewController.make()
             present(vc, animated: true)
         } else {
-            // TODO: open screen
+            let vc = GameInstructionViewController.make(game: game)
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
     
@@ -111,7 +112,8 @@ extension HomeViewController: HomeTableViewDelegate {
     }
     
     func homeTableDidTap(planGame: PlanGame) {
-        // TODO: open screen
+        let vc = GameInstructionViewController.make(planGame: planGame)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func homeTableDidTap(planTraining: PlanTraining) {

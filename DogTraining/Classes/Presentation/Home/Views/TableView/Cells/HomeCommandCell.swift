@@ -10,12 +10,12 @@ import Kingfisher
 
 final class HomeCommandCell: UITableViewCell {
     lazy var pictureView = makeImageView()
-    lazy var drillTypeLabel = makeLabel(numberOfLines: 1)
+    lazy var gameTypeLabel = makeLabel(numberOfLines: 1)
     lazy var nameLabel = makeLabel(numberOfLines: 2)
     lazy var skillLevelLabel = makeLabel(numberOfLines: 1)
     lazy var arrowView = makeArrowView()
     
-    private lazy var drillTypeAttrs = TextAttributes()
+    private lazy var gameTypeAttrs = TextAttributes()
         .textColor(Appearance.primary)
         .font(Fonts.Inter.regular(size: 12.scale))
         .lineHeight(15.6.scale)
@@ -56,7 +56,7 @@ extension HomeCommandCell {
     func setup(element: HomeCommandElement) {
         pictureView.kf.setImage(with: element.command.image)
         
-        drillTypeLabel.attributedText = element.commandGroup.name.uppercased().attributed(with: drillTypeAttrs)
+        gameTypeLabel.attributedText = element.commandGroup.name.uppercased().attributed(with: gameTypeAttrs)
         nameLabel.attributedText = element.command.name.attributed(with: nameAttrs)
         skillLevelLabel.attributedText = element.skillLevel.name.attributed(with: skillLevelAttrs)
     }
@@ -83,9 +83,9 @@ private extension HomeCommandCell {
         ])
         
         NSLayoutConstraint.activate([
-            drillTypeLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 122.scale),
-            drillTypeLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -56.scale),
-            drillTypeLabel.bottomAnchor.constraint(equalTo: nameLabel.topAnchor, constant: -5.scale)
+            gameTypeLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 122.scale),
+            gameTypeLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -56.scale),
+            gameTypeLabel.bottomAnchor.constraint(equalTo: nameLabel.topAnchor, constant: -5.scale)
         ])
         
         NSLayoutConstraint.activate([

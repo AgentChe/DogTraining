@@ -7,7 +7,6 @@
 
 import Foundation
 
-// TODO: try_commands и games из респонса
 final class GetHomeKitResponse {
     static func map(from response: Any) -> HomeKit? {
         guard
@@ -17,21 +16,20 @@ final class GetHomeKitResponse {
             let levelId = data["level_id"] as? Int,
             let dailyPicks = data["daily_picks"] as? [String: Any],
             let dailyGamesArray = dailyPicks["games"] as? [[String: Any]],
-            let dailyTrainingsArray = dailyPicks["trainings"] as? [[String: Any]]
+            let dailyTrainingsArray = dailyPicks["trainings"] as? [[String: Any]],
+            let tryCommandsArray = data["try_commands"] as? [[String: Any]],
+            let gamesArray = data["games"] as? [[String: Any]]
         else {
             return nil
         }
-        
-        let tryCommandsArray = data["try_commands"] as? [[String: Any]]
-        let gamesArray = data["games"] as? [[String: Any]]
         
         let planJSON = data["plan"] as? [String: [String: Any]]
         
         let dailyGames = map(gamesArray: dailyGamesArray)
         let dailyTrainings = map(trainingsArray: dailyTrainingsArray)
         let plan = GetPlanResponse.map(planJSON: planJSON ?? [:])
-        let tryCommands = map(commandsArray: tryCommandsArray ?? [])
-        let games = map(gamesArray: gamesArray ?? dailyGamesArray)
+        let tryCommands = map(commandsArray: tryCommandsArray)
+        let games = map(gamesArray: gamesArray)
         
         return HomeKit(
             score: score,

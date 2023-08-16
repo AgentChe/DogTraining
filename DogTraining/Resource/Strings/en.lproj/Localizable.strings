@@ -24,7 +24,7 @@
 
 // MARK: Splash
 "Splash.Preloader1" = "Checking your account...";
-"Splash.Preloader2" = "Syncing the soccer library";
+"Splash.Preloader2" = "Syncing the dog library";
 "Splash.Preloader3" = "Setting up your account...";
 
 // MARK: Paygate
@@ -120,3 +120,24 @@
 "Main.Train" = "Train";
 "Main.Clicker" = "Clicker";
 "Main.Profile" = "Profile";
+
+// MARK: GameInstruction
+"GameInstruction.ShowMore" = " ...Show more";
+"GameInstruction.StartGame" = "Start game";
+"GameInstruction.Instruction" = "Instruction";
+
+// MARK: GameTraining
+"GameTraining.Go" = "GO";
+"GameTraining.FinishTraining" = "Finish game";
+"GameTraining.Instruction" = "Instruction";
+"GameTraining.Paused" = "PAUSED";
+
+// MARK: GameTrainingResult
+"GameTrainingResult.Title" = "Game completed";
+"GameTrainingResult.Duration" = "Duration:";
+
+// MARK: GameTrainingQuit
+"GameTrainingQuit.Title" = "Are you sure?";
+"GameTrainingQuit.SubTitle" = "Do you really want to end the game?";
+"GameTrainingQuit.Continue" = "Continue game";
+"GameTrainingQuit.Finish" = "Finish game";

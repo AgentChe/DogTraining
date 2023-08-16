@@ -241,6 +241,30 @@
 		DEFE7EF12A8B7DD600FB96F0 /* HomePlanTrainingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7ED92A8B7DD600FB96F0 /* HomePlanTrainingCell.swift */; };
 		DEFE7EF22A8B7DD600FB96F0 /* HomeTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EDA2A8B7DD600FB96F0 /* HomeTableElement.swift */; };
 		DEFE7EF32A8B7DD600FB96F0 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7EDB2A8B7DD600FB96F0 /* HomeTableView.swift */; };
+		DEFE7F4D2A8CBA3800FB96F0 /* GameTrainingQuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F2E2A8CBA3800FB96F0 /* GameTrainingQuitViewController.swift */; };
+		DEFE7F4E2A8CBA3800FB96F0 /* GameTrainingQuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F2F2A8CBA3800FB96F0 /* GameTrainingQuitView.swift */; };
+		DEFE7F4F2A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F312A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift */; };
+		DEFE7F502A8CBA3800FB96F0 /* GameTrainingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F322A8CBA3800FB96F0 /* GameTrainingResultViewController.swift */; };
+		DEFE7F512A8CBA3800FB96F0 /* GameTrainingResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F332A8CBA3800FB96F0 /* GameTrainingResultView.swift */; };
+		DEFE7F522A8CBA3800FB96F0 /* GameTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F352A8CBA3800FB96F0 /* GameTrainingViewController.swift */; };
+		DEFE7F532A8CBA3800FB96F0 /* GameTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F362A8CBA3800FB96F0 /* GameTrainingView.swift */; };
+		DEFE7F542A8CBA3800FB96F0 /* GameTrainingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F372A8CBA3800FB96F0 /* GameTrainingAssembly.swift */; };
+		DEFE7F552A8CBA3800FB96F0 /* GameTrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F382A8CBA3800FB96F0 /* GameTrainingViewModel.swift */; };
+		DEFE7F562A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F3A2A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift */; };
+		DEFE7F572A8CBA3800FB96F0 /* GameTrainingInstructionScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F3C2A8CBA3800FB96F0 /* GameTrainingInstructionScrollView.swift */; };
+		DEFE7F582A8CBA3800FB96F0 /* GameTrainingPlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F3D2A8CBA3800FB96F0 /* GameTrainingPlayPauseButton.swift */; };
+		DEFE7F592A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F3E2A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift */; };
+		DEFE7F5A2A8CBA3800FB96F0 /* GameTrainingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F3F2A8CBA3800FB96F0 /* GameTrainingMenuView.swift */; };
+		DEFE7F5B2A8CBA3800FB96F0 /* GameInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F412A8CBA3800FB96F0 /* GameInstructionView.swift */; };
+		DEFE7F5C2A8CBA3800FB96F0 /* GameInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F422A8CBA3800FB96F0 /* GameInstructionViewModel.swift */; };
+		DEFE7F5D2A8CBA3800FB96F0 /* GameInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F432A8CBA3800FB96F0 /* GameInstructionViewController.swift */; };
+		DEFE7F5E2A8CBA3800FB96F0 /* GIDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F472A8CBA3800FB96F0 /* GIDescriptionCell.swift */; };
+		DEFE7F5F2A8CBA3800FB96F0 /* GIInstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F482A8CBA3800FB96F0 /* GIInstructionCell.swift */; };
+		DEFE7F602A8CBA3800FB96F0 /* GIHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F492A8CBA3800FB96F0 /* GIHeaderCell.swift */; };
+		DEFE7F612A8CBA3800FB96F0 /* GIButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F4A2A8CBA3800FB96F0 /* GIButtonsCell.swift */; };
+		DEFE7F622A8CBA3800FB96F0 /* GITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F4B2A8CBA3800FB96F0 /* GITableView.swift */; };
+		DEFE7F632A8CBA3800FB96F0 /* GITableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F4C2A8CBA3800FB96F0 /* GITableElement.swift */; };
+		DEFE7F652A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F642A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -482,6 +506,30 @@
 		DEFE7ED92A8B7DD600FB96F0 /* HomePlanTrainingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePlanTrainingCell.swift; sourceTree = "<group>"; };
 		DEFE7EDA2A8B7DD600FB96F0 /* HomeTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableElement.swift; sourceTree = "<group>"; };
 		DEFE7EDB2A8B7DD600FB96F0 /* HomeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		DEFE7F2E2A8CBA3800FB96F0 /* GameTrainingQuitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingQuitViewController.swift; sourceTree = "<group>"; };
+		DEFE7F2F2A8CBA3800FB96F0 /* GameTrainingQuitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingQuitView.swift; sourceTree = "<group>"; };
+		DEFE7F312A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingResultViewModel.swift; sourceTree = "<group>"; };
+		DEFE7F322A8CBA3800FB96F0 /* GameTrainingResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingResultViewController.swift; sourceTree = "<group>"; };
+		DEFE7F332A8CBA3800FB96F0 /* GameTrainingResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingResultView.swift; sourceTree = "<group>"; };
+		DEFE7F352A8CBA3800FB96F0 /* GameTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingViewController.swift; sourceTree = "<group>"; };
+		DEFE7F362A8CBA3800FB96F0 /* GameTrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingView.swift; sourceTree = "<group>"; };
+		DEFE7F372A8CBA3800FB96F0 /* GameTrainingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingAssembly.swift; sourceTree = "<group>"; };
+		DEFE7F382A8CBA3800FB96F0 /* GameTrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingViewModel.swift; sourceTree = "<group>"; };
+		DEFE7F3A2A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingLifeCyrcle.swift; sourceTree = "<group>"; };
+		DEFE7F3C2A8CBA3800FB96F0 /* GameTrainingInstructionScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingInstructionScrollView.swift; sourceTree = "<group>"; };
+		DEFE7F3D2A8CBA3800FB96F0 /* GameTrainingPlayPauseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingPlayPauseButton.swift; sourceTree = "<group>"; };
+		DEFE7F3E2A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingBackgroundImageView.swift; sourceTree = "<group>"; };
+		DEFE7F3F2A8CBA3800FB96F0 /* GameTrainingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTrainingMenuView.swift; sourceTree = "<group>"; };
+		DEFE7F412A8CBA3800FB96F0 /* GameInstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructionView.swift; sourceTree = "<group>"; };
+		DEFE7F422A8CBA3800FB96F0 /* GameInstructionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructionViewModel.swift; sourceTree = "<group>"; };
+		DEFE7F432A8CBA3800FB96F0 /* GameInstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInstructionViewController.swift; sourceTree = "<group>"; };
+		DEFE7F472A8CBA3800FB96F0 /* GIDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIDescriptionCell.swift; sourceTree = "<group>"; };
+		DEFE7F482A8CBA3800FB96F0 /* GIInstructionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIInstructionCell.swift; sourceTree = "<group>"; };
+		DEFE7F492A8CBA3800FB96F0 /* GIHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIHeaderCell.swift; sourceTree = "<group>"; };
+		DEFE7F4A2A8CBA3800FB96F0 /* GIButtonsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GIButtonsCell.swift; sourceTree = "<group>"; };
+		DEFE7F4B2A8CBA3800FB96F0 /* GITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GITableView.swift; sourceTree = "<group>"; };
+		DEFE7F4C2A8CBA3800FB96F0 /* GITableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GITableElement.swift; sourceTree = "<group>"; };
+		DEFE7F642A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -633,6 +681,7 @@
 				DE1F7A422A83F0E700B3FF24 /* ObservableAndSingle+Extension.swift */,
 				DE1F7A432A83F0E700B3FF24 /* String+Extension.swift */,
 				DE1F7A442A83F0E700B3FF24 /* UIViewRxExtension.swift */,
+				DEFE7F642A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -892,6 +941,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE7F2C2A8CBA3800FB96F0 /* Game */,
 				DEFE7EB92A8B7DD600FB96F0 /* Home */,
 				DE1F7AEC2A83F13200B3FF24 /* Splash */,
 				DE1F7AF32A83F13200B3FF24 /* Paygate */,
@@ -1540,6 +1590,108 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
+		DEFE7F2C2A8CBA3800FB96F0 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F2D2A8CBA3800FB96F0 /* Quit */,
+				DEFE7F302A8CBA3800FB96F0 /* GameTrainingResult */,
+				DEFE7F342A8CBA3800FB96F0 /* GameTraining */,
+				DEFE7F402A8CBA3800FB96F0 /* Instruction */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		DEFE7F2D2A8CBA3800FB96F0 /* Quit */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F2E2A8CBA3800FB96F0 /* GameTrainingQuitViewController.swift */,
+				DEFE7F2F2A8CBA3800FB96F0 /* GameTrainingQuitView.swift */,
+			);
+			path = Quit;
+			sourceTree = "<group>";
+		};
+		DEFE7F302A8CBA3800FB96F0 /* GameTrainingResult */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F322A8CBA3800FB96F0 /* GameTrainingResultViewController.swift */,
+				DEFE7F312A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift */,
+				DEFE7F332A8CBA3800FB96F0 /* GameTrainingResultView.swift */,
+			);
+			path = GameTrainingResult;
+			sourceTree = "<group>";
+		};
+		DEFE7F342A8CBA3800FB96F0 /* GameTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F392A8CBA3800FB96F0 /* Utils */,
+				DEFE7F3B2A8CBA3800FB96F0 /* Views */,
+				DEFE7F352A8CBA3800FB96F0 /* GameTrainingViewController.swift */,
+				DEFE7F382A8CBA3800FB96F0 /* GameTrainingViewModel.swift */,
+				DEFE7F362A8CBA3800FB96F0 /* GameTrainingView.swift */,
+				DEFE7F372A8CBA3800FB96F0 /* GameTrainingAssembly.swift */,
+			);
+			path = GameTraining;
+			sourceTree = "<group>";
+		};
+		DEFE7F392A8CBA3800FB96F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F3A2A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEFE7F3B2A8CBA3800FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F3C2A8CBA3800FB96F0 /* GameTrainingInstructionScrollView.swift */,
+				DEFE7F3D2A8CBA3800FB96F0 /* GameTrainingPlayPauseButton.swift */,
+				DEFE7F3E2A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift */,
+				DEFE7F3F2A8CBA3800FB96F0 /* GameTrainingMenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE7F402A8CBA3800FB96F0 /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F442A8CBA3800FB96F0 /* Views */,
+				DEFE7F432A8CBA3800FB96F0 /* GameInstructionViewController.swift */,
+				DEFE7F422A8CBA3800FB96F0 /* GameInstructionViewModel.swift */,
+				DEFE7F412A8CBA3800FB96F0 /* GameInstructionView.swift */,
+			);
+			path = Instruction;
+			sourceTree = "<group>";
+		};
+		DEFE7F442A8CBA3800FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F452A8CBA3800FB96F0 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE7F452A8CBA3800FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F462A8CBA3800FB96F0 /* Cells */,
+				DEFE7F4B2A8CBA3800FB96F0 /* GITableView.swift */,
+				DEFE7F4C2A8CBA3800FB96F0 /* GITableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEFE7F462A8CBA3800FB96F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7F492A8CBA3800FB96F0 /* GIHeaderCell.swift */,
+				DEFE7F472A8CBA3800FB96F0 /* GIDescriptionCell.swift */,
+				DEFE7F4A2A8CBA3800FB96F0 /* GIButtonsCell.swift */,
+				DEFE7F482A8CBA3800FB96F0 /* GIInstructionCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1667,14 +1819,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE1F7B302A83F13200B3FF24 /* SplashReceiptValidationObserver.swift in Sources */,
+				DEFE7F4D2A8CBA3800FB96F0 /* GameTrainingQuitViewController.swift in Sources */,
+				DEFE7F592A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift in Sources */,
 				DEFE7E9F2A8A4B2400FB96F0 /* OBehaviorView.swift in Sources */,
 				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
 				DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
 				DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */,
+				DEFE7F5F2A8CBA3800FB96F0 /* GIInstructionCell.swift in Sources */,
 				DE1F7B3D2A83F13200B3FF24 /* MainView.swift in Sources */,
 				DEB55D2A2A8678D700A56B96 /* ClearedTextField.swift in Sources */,
 				DE1F7AD92A83F10600B3FF24 /* WeekSchedule.swift in Sources */,
+				DEFE7F582A8CBA3800FB96F0 /* GameTrainingPlayPauseButton.swift in Sources */,
 				DE1F7AE52A83F10600B3FF24 /* IAPActionResult.swift in Sources */,
 				DE1F7ADB2A83F10600B3FF24 /* Profile.swift in Sources */,
 				DE1F7A942A83F0E700B3FF24 /* TapAreaButton.swift in Sources */,
@@ -1687,12 +1843,14 @@
 				DE1F7AD82A83F10600B3FF24 /* Role.swift in Sources */,
 				DEFE7EE72A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionCell.swift in Sources */,
 				DEFE7EEA2A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift in Sources */,
+				DEFE7F632A8CBA3800FB96F0 /* GITableElement.swift in Sources */,
 				DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */,
 				DE1F7ADC2A83F10600B3FF24 /* GetProfileRequest.swift in Sources */,
 				DE1F7B7E2A86205200B3FF24 /* GetBreedsResponse.swift in Sources */,
 				DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */,
 				DEFE7EDC2A8B7DD600FB96F0 /* HomeViewModel.swift in Sources */,
 				DE1F7B332A83F13200B3FF24 /* PaygateViewModel.swift in Sources */,
+				DEFE7F612A8CBA3800FB96F0 /* GIButtonsCell.swift in Sources */,
 				DE1F7A9C2A83F0E700B3FF24 /* AppDelegate.swift in Sources */,
 				DE1F7A792A83F0E700B3FF24 /* UIColor+Extension.swift in Sources */,
 				DE1F7AD12A83F10600B3FF24 /* PaygateOptionConfig.swift in Sources */,
@@ -1705,7 +1863,9 @@
 				DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */,
 				DE1F7B392A83F13200B3FF24 /* PaygateViewController.swift in Sources */,
 				DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */,
+				DEFE7F652A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
+				DEFE7F5D2A8CBA3800FB96F0 /* GameInstructionViewController.swift in Sources */,
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
 				DEFE7EA52A8A545800FB96F0 /* OWhereTrainButton.swift in Sources */,
 				DEB55CEF2A8641EC00A56B96 /* Training.swift in Sources */,
@@ -1719,6 +1879,7 @@
 				DE1F7B322A83F13200B3FF24 /* SplashView.swift in Sources */,
 				DE1F7B382A83F13200B3FF24 /* PaygateView.swift in Sources */,
 				DE1F7A7D2A83F0E700B3FF24 /* String+Extension.swift in Sources */,
+				DEFE7F532A8CBA3800FB96F0 /* GameTrainingView.swift in Sources */,
 				DE1F7A902A83F0E700B3FF24 /* RxActivityIndicator.swift in Sources */,
 				DE1F7B772A861FA800B3FF24 /* GetSkillLevelsRequest.swift in Sources */,
 				DEFE7EA72A8A546900FB96F0 /* OWhereTrainView.swift in Sources */,
@@ -1733,6 +1894,7 @@
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
 				DEFE7EE42A8B7DD600FB96F0 /* PlanWeekdaysCell.swift in Sources */,
+				DEFE7F562A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
 				DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */,
@@ -1757,8 +1919,11 @@
 				DE1F7ADD2A83F10600B3FF24 /* GetProfileResponse.swift in Sources */,
 				DE1F7B442A83F13200B3FF24 /* OnboardingViewController.swift in Sources */,
 				DE1F7B372A83F13200B3FF24 /* PaygateInteractor.swift in Sources */,
+				DEFE7F572A8CBA3800FB96F0 /* GameTrainingInstructionScrollView.swift in Sources */,
+				DEFE7F5B2A8CBA3800FB96F0 /* GameInstructionView.swift in Sources */,
 				DEB55D232A86724B00A56B96 /* OBreedView.swift in Sources */,
 				DE1F7AD02A83F10600B3FF24 /* PaygateOptionLineComponent.swift in Sources */,
+				DEFE7F5E2A8CBA3800FB96F0 /* GIDescriptionCell.swift in Sources */,
 				DEFE7EE22A8B7DD600FB96F0 /* HomeGamesCollectionView.swift in Sources */,
 				DEB55CEC2A8641EC00A56B96 /* TrainingsMediator.swift in Sources */,
 				DEB55CF12A8641EC00A56B96 /* AssignedTraining.swift in Sources */,
@@ -1775,6 +1940,7 @@
 				DEFE7EDE2A8B7DD600FB96F0 /* HomeViewController.swift in Sources */,
 				DEB55CF62A8641EC00A56B96 /* GetTrainingsRequest.swift in Sources */,
 				DEFE7EED2A8B7DD600FB96F0 /* DailyPicksCollectionView.swift in Sources */,
+				DEFE7F5C2A8CBA3800FB96F0 /* GameInstructionViewModel.swift in Sources */,
 				DE1F7AA62A83F0E700B3FF24 /* FacebookManager.swift in Sources */,
 				DE1F7A822A83F0E700B3FF24 /* RestAPITransport.swift in Sources */,
 				DE1F7A922A83F0E700B3FF24 /* NavigationControllerSettings.swift in Sources */,
@@ -1794,6 +1960,7 @@
 				DE1F7A912A83F0E700B3FF24 /* Toast.swift in Sources */,
 				DE1F7A782A83F0E700B3FF24 /* UIDevice+Extension.swift in Sources */,
 				DE1F7A882A83F0E700B3FF24 /* XOREncryption.swift in Sources */,
+				DEFE7F522A8CBA3800FB96F0 /* GameTrainingViewController.swift in Sources */,
 				DE1F7A8C2A83F0E700B3FF24 /* ContentError.swift in Sources */,
 				DE1F7AD32A83F10600B3FF24 /* GetPaygateResponse.swift in Sources */,
 				DE1F7B312A83F13200B3FF24 /* SplashViewModel.swift in Sources */,
@@ -1809,6 +1976,7 @@
 				DEB55D282A8672AE00A56B96 /* OBreedsTableCell.swift in Sources */,
 				DE1F7AD62A83F10600B3FF24 /* ProfileManager.swift in Sources */,
 				DE1F7B612A83F13200B3FF24 /* OnboardingViewModel.swift in Sources */,
+				DEFE7F5A2A8CBA3800FB96F0 /* GameTrainingMenuView.swift in Sources */,
 				DE1F7ADF2A83F10600B3FF24 /* SyncTokensRequest.swift in Sources */,
 				DE1F7A9D2A83F0E700B3FF24 /* PushNotificationsManager.swift in Sources */,
 				DE1F7AEA2A83F10600B3FF24 /* SessionManager.swift in Sources */,
@@ -1825,17 +1993,21 @@
 				DEFE7EDF2A8B7DD600FB96F0 /* SeeAllTableCell.swift in Sources */,
 				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,
 				DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */,
+				DEFE7F622A8CBA3800FB96F0 /* GITableView.swift in Sources */,
 				DE1F7B792A86202600B3FF24 /* Breed.swift in Sources */,
 				DE1F7A9A2A83F0E700B3FF24 /* GradientView.swift in Sources */,
 				DE1F7B3F2A83F13200B3FF24 /* TabView.swift in Sources */,
 				DE1F7A992A83F0E700B3FF24 /* CircleView.swift in Sources */,
 				DE1F7A8B2A83F0E700B3FF24 /* NetworkError.swift in Sources */,
+				DEFE7F542A8CBA3800FB96F0 /* GameTrainingAssembly.swift in Sources */,
 				DEFE7E992A8A42DE00FB96F0 /* OSkillLevelScoreView.swift in Sources */,
 				DE1F7A852A83F0E700B3FF24 /* TextAttributes.swift in Sources */,
 				DEB55CCA2A86315200A56B96 /* GetCommandsResponse.swift in Sources */,
 				DE1F7A982A83F0E700B3FF24 /* PaddingLabel.swift in Sources */,
 				DE1F7A842A83F0E700B3FF24 /* NumberLaunches.swift in Sources */,
 				DE1F7AE62A83F10600B3FF24 /* IAPProduct.swift in Sources */,
+				DEFE7F4E2A8CBA3800FB96F0 /* GameTrainingQuitView.swift in Sources */,
+				DEFE7F502A8CBA3800FB96F0 /* GameTrainingResultViewController.swift in Sources */,
 				DEB55CA32A86228700A56B96 /* LogGameProgressRequest.swift in Sources */,
 				DEB55C932A86228700A56B96 /* GamesManager.swift in Sources */,
 				DE1F7ADE2A83F10600B3FF24 /* LoginRequest.swift in Sources */,
@@ -1860,6 +2032,7 @@
 				DE1F7B2E2A83F13200B3FF24 /* SplashViewController.swift in Sources */,
 				DEB55C982A86228700A56B96 /* GetGameTrainingResponse.swift in Sources */,
 				DEB55C952A86228700A56B96 /* Game.swift in Sources */,
+				DEFE7F512A8CBA3800FB96F0 /* GameTrainingResultView.swift in Sources */,
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
 				DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */,
 				DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */,
@@ -1869,8 +2042,11 @@
 				DE1F7B412A83F13200B3FF24 /* TryAgainView.swift in Sources */,
 				DE1F7A892A83F0E700B3FF24 /* Fonts.swift in Sources */,
 				DEB55CC22A86315200A56B96 /* Command.swift in Sources */,
+				DEFE7F552A8CBA3800FB96F0 /* GameTrainingViewModel.swift in Sources */,
 				DEFE7EA12A8A4FDC00FB96F0 /* ODayOfWeekButton.swift in Sources */,
 				DE1F7B3B2A83F13200B3FF24 /* PaygateInfoCell.swift in Sources */,
+				DEFE7F602A8CBA3800FB96F0 /* GIHeaderCell.swift in Sources */,
+				DEFE7F4F2A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift in Sources */,
 				DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */,
 				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
 				DEFE7EF32A8B7DD600FB96F0 /* HomeTableView.swift in Sources */,
@@ -2030,9 +2206,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DogTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2045,9 +2223,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = training.app.soccer;
+				PRODUCT_BUNDLE_IDENTIFIER = app.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -2063,9 +2242,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DogTraining/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -2078,9 +2259,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = training.app.soccer;
+				PRODUCT_BUNDLE_IDENTIFIER = app.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
