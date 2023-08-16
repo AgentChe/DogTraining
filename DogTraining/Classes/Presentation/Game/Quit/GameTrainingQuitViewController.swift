@@ -9,13 +9,50 @@ import UIKit
 import RxSwift
 
 final class GameTrainingQuitViewController: UIViewController {
-    lazy var mainView = GameTrainingQuitView()
+    enum Element {
+        case game, command
+        
+        var subTitle: String {
+            switch self {
+            case .game:
+                return "GameTrainingQuit.SubTitle".localized
+            case .command:
+                return "CommandTrainingQuit.SubTitle".localized
+            }
+        }
+        
+        var continueButtonTitle: String {
+            switch self {
+            case .game:
+                return "GameTrainingQuit.Continue".localized
+            case .command:
+                return "CommandTrainingQuit.Continue".localized
+            }
+        }
+        
+        var finishButtonTitle: String {
+            switch self {
+            case .game:
+                return "GameTrainingQuit.Finish".localized
+            case .command:
+                return "CommandTrainingQuit.Finish".localized
+            }
+        }
+    }
+    
+    lazy var mainView = GameTrainingQuitView(
+        subTitle: element.subTitle,
+        continueButton: element.continueButtonTitle,
+        finishButton: element.finishButtonTitle
+    )
 
     private lazy var disposeBag = DisposeBag()
 
+    private let element: Element
     private let completion: (Bool) -> Void
 
-    private init(completion: @escaping (Bool) -> Void) {
+    private init(element: Element, completion: @escaping (Bool) -> Void) {
+        self.element = element
         self.completion = completion
 
         super.init(nibName: nil, bundle: nil)
@@ -52,8 +89,8 @@ final class GameTrainingQuitViewController: UIViewController {
 
 // MARK: Make
 extension GameTrainingQuitViewController {
-    static func make(completion: @escaping (Bool) -> Void) -> GameTrainingQuitViewController {
-        let vc = GameTrainingQuitViewController(completion: completion)
+    static func make(element: Element, completion: @escaping (Bool) -> Void) -> GameTrainingQuitViewController {
+        let vc = GameTrainingQuitViewController(element: element, completion: completion)
         vc.modalPresentationStyle = .overFullScreen
         return vc
     }

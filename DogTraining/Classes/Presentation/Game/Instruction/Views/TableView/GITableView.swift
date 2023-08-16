@@ -63,7 +63,7 @@ extension GITableView: UITableViewDataSource {
                 self?.mainDelegate?.giTableDidTappedShowMore()
             }
             return cell
-        case .buttons:
+        case .buttons(let element):
             let cell = dequeueReusableCell(withIdentifier: String(describing: GIButtonsCell.self)) as! GIButtonsCell
             cell.didTapCalendar = { [weak self] in
                 self?.mainDelegate?.giTableDidTappedCalendar()
@@ -71,6 +71,7 @@ extension GITableView: UITableViewDataSource {
             cell.didTapStart = { [weak self] in
                 self?.mainDelegate?.giTableDidTappedStartTraining()
             }
+            cell.setup(element: element)
             return cell
         case .instruction(let element):
             let cell = dequeueReusableCell(withIdentifier: String(describing: GIInstructionCell.self)) as! GIInstructionCell

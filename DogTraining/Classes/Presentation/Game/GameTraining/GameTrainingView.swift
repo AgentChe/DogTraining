@@ -215,7 +215,7 @@ private extension GameTrainingView {
     }
     
     func makeMenuView() -> GameTrainingMenuView {
-        let view = GameTrainingMenuView()
+        let view = GameTrainingMenuView(finishTitle: "GameTraining.FinishTraining".localized)
         view.backgroundColor = UIColor.clear
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)

@@ -26,10 +26,21 @@ final class GameTrainingResultView: UIView {
         .lineHeight(14.4.scale)
         .textAlignment(.center)
     
-    private let gameTraining: GameTraining
+    private let title: String
+    private let image: URL
+    private let name: String
+    private let trainedTime: Int
     
-    init(gameTraining: GameTraining) {
-        self.gameTraining = gameTraining
+    init(
+        title: String,
+        image: URL,
+        name: String,
+        trainedTime: Int
+    ) {
+        self.title = title
+        self.image = image
+        self.name = name
+        self.trainedTime = trainedTime
         
         super.init(frame: .zero)
         
@@ -48,8 +59,8 @@ extension GameTrainingResultView {
         skillLevelLabel.attributedText = skillLevel.name.attributed(with: tagAttrs)
     }
     
-    func setup(gameGroup: GameGroup) {
-        gameCategoryLabel.attributedText = gameGroup.name.attributed(with: tagAttrs)
+    func setup(gameGroupName: String) {
+        gameCategoryLabel.attributedText = gameGroupName.attributed(with: tagAttrs)
     }
 }
 
@@ -142,7 +153,7 @@ private extension GameTrainingResultView {
             .textAlignment(.center)
         
         let view = UILabel()
-        view.attributedText = "GameTrainingResult.Title".localized.attributed(with: attrs)
+        view.attributedText = title.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view
@@ -164,7 +175,7 @@ private extension GameTrainingResultView {
         view.contentMode = .scaleAspectFill
         view.layer.cornerRadius = 10.scale
         view.layer.masksToBounds = true
-        view.kf.setImage(with: gameTraining.game.image)
+        view.kf.setImage(with: image)
         view.translatesAutoresizingMaskIntoConstraints = false
         gameContainer.addSubview(view)
         return view
@@ -178,7 +189,7 @@ private extension GameTrainingResultView {
             .textAlignment(.center)
         
         let view = UILabel()
-        view.attributedText = gameTraining.game.name.attributed(with: attrs)
+        view.attributedText = name.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         gameContainer.addSubview(view)
         return view
@@ -216,12 +227,11 @@ private extension GameTrainingResultView {
             .lineHeight(38.4.scale)
             .textAlignment(.center)
         
-        let seconds = gameTraining.assignedGame.trainedTime
         var mins = 0
-        var secs = seconds
-        if seconds >= 60 {
-            mins = Int(seconds / 60)
-            secs = seconds - (mins * 60)
+        var secs = trainedTime
+        if trainedTime >= 60 {
+            mins = Int(trainedTime / 60)
+            secs = trainedTime - (mins * 60)
         }
         let string = String(format: "%02d:%02d", mins, secs)
         

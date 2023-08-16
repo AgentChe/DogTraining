@@ -150,7 +150,7 @@ private extension GameInstructionViewModel {
                 
                 result.append(contentsOf: [
                     .offset(16.scale),
-                    .buttons
+                    .buttons("GameInstruction.StartGame".localized)
                 ])
                 
                 result.append(contentsOf: [

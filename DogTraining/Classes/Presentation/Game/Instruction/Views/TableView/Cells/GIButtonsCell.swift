@@ -15,6 +15,11 @@ final class GIButtonsCell: UITableViewCell {
     lazy var calendarIconView = makeCalendarIconView()
     lazy var startButton = makeStartButton()
     
+    private lazy var attrs = TextAttributes()
+        .textColor(Appearance.white)
+        .font(Fonts.Inter.semiBold(size: 16.scale))
+        .lineHeight(19.scale)
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -24,6 +29,13 @@ final class GIButtonsCell: UITableViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+// MARK: Public
+extension GIButtonsCell {
+    func setup(element: String) {
+        startButton.setAttributedTitle(element.attributed(with: attrs), for: .normal)
     }
 }
 
@@ -97,13 +109,7 @@ private extension GIButtonsCell {
     }
     
     func makeStartButton() -> UIButton {
-        let attrs = TextAttributes()
-            .textColor(Appearance.white)
-            .font(Fonts.Inter.semiBold(size: 16.scale))
-            .lineHeight(19.scale)
-        
         let view = UIButton()
-        view.setAttributedTitle("GameInstruction.StartGame".localized.attributed(with: attrs), for: .normal)
         view.layer.cornerRadius = 8.scale
         view.backgroundColor = Appearance.primary
             view.addTarget(self, action: #selector(startTapped), for: .touchUpInside)

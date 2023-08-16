@@ -9,7 +9,12 @@ import UIKit
 import RxSwift
 
 final class GameTrainingResultViewController: UIViewController {
-    lazy var mainView = GameTrainingResultView(gameTraining: gameTraining)
+    lazy var mainView = GameTrainingResultView(
+        title: "GameTrainingResult.Title".localized,
+        image: gameTraining.game.image,
+        name: gameTraining.game.name,
+        trainedTime: gameTraining.assignedGame.trainedTime
+    )
     
     private lazy var viewModel = GameTrainingResultViewModel(gameTraining: gameTraining)
     
@@ -52,7 +57,7 @@ final class GameTrainingResultViewController: UIViewController {
         
         viewModel.gameGroup
             .drive(Binder(mainView) { base, gameGroup in
-                base.setup(gameGroup: gameGroup)
+                base.setup(gameGroupName: gameGroup.name)
             })
             .disposed(by: disposeBag)
     }

@@ -11,7 +11,7 @@ enum GITableElement {
     case offset(CGFloat)
     case header(GIHeaderElement)
     case description(GIDescriptionElement)
-    case buttons
+    case buttons(String)
     case instruction(String)
 }
 

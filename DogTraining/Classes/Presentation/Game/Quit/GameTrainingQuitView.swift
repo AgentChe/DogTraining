@@ -17,8 +17,20 @@ final class GameTrainingQuitView: UIView {
 
     lazy var containerBottomConstraint = NSLayoutConstraint()
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private let subTitle: String
+    private let continueButtonTitle: String
+    private let finishButtonTitle: String
+    
+    init(
+        subTitle: String,
+        continueButton: String,
+        finishButton: String
+    ) {
+        self.subTitle = subTitle
+        self.continueButtonTitle = continueButton
+        self.finishButtonTitle = finishButton
+        
+        super.init(frame: .zero)
 
         makeConstraints()
     }
@@ -115,7 +127,7 @@ private extension GameTrainingQuitView {
             .textAlignment(.center)
         
         let view = UILabel()
-        view.attributedText = "GameTrainingQuit.SubTitle".localized.attributed(with: attrs)
+        view.attributedText = subTitle.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(view)
         return view
@@ -129,7 +141,7 @@ private extension GameTrainingQuitView {
             .textAlignment(.center)
 
         let view = UIButton()
-        view.setAttributedTitle("GameTrainingQuit.Continue".localized.attributed(with: attrs), for: .normal)
+        view.setAttributedTitle(continueButtonTitle.attributed(with: attrs), for: .normal)
         view.backgroundColor = Appearance.primary
         view.layer.cornerRadius = 8.scale
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -145,7 +157,7 @@ private extension GameTrainingQuitView {
             .textAlignment(.center)
 
         let view = UIButton()
-        view.setAttributedTitle("GameTrainingQuit.Finish".localized.attributed(with: attrs), for: .normal)
+        view.setAttributedTitle(finishButtonTitle.attributed(with: attrs), for: .normal)
         view.backgroundColor = UIColor(integralRed: 233, green: 225, blue: 217)
         view.layer.cornerRadius = 8.scale
         view.translatesAutoresizingMaskIntoConstraints = false

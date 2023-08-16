@@ -141,3 +141,17 @@
 "GameTrainingQuit.SubTitle" = "Do you really want to end the game?";
 "GameTrainingQuit.Continue" = "Continue game";
 "GameTrainingQuit.Finish" = "Finish game";
+
+// MARK: CommandInstruction
+"CommandInstruction.StartCommand" = "Start command";
+
+// MARK: CommandTraining
+"CommandTraining.FinishTraining" = "Finish command";
+
+// MARK: CommandTrainingResult
+"CommandTrainingResult.Title" = "Command completed";
+
+// MARK: CommandTrainingQuit
+"CommandTrainingQuit.SubTitle" = "Do you really want to end the command?";
+"CommandTrainingQuit.Continue" = "Continue command";
+"CommandTrainingQuit.Finish" = "Finish command";

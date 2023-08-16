@@ -203,7 +203,7 @@ private extension GameTrainingViewController {
         mainView.instruction(hidden: true, animated: false)
         mainView.menu(hidden: true, animated: false)
         
-        let vc = GameTrainingQuitViewController.make { [weak self] finish in
+        let vc = GameTrainingQuitViewController.make(element: .game) { [weak self] finish in
             if finish {
                 self?.lifeCyrcle.stopTraining()
             } else {

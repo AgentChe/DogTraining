@@ -265,6 +265,14 @@
 		DEFE7F622A8CBA3800FB96F0 /* GITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F4B2A8CBA3800FB96F0 /* GITableView.swift */; };
 		DEFE7F632A8CBA3800FB96F0 /* GITableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F4C2A8CBA3800FB96F0 /* GITableElement.swift */; };
 		DEFE7F652A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7F642A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift */; };
+		DEFE7FC32A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FA52A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift */; };
+		DEFE7FC42A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FA62A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift */; };
+		DEFE7FC52A8CF96C00FB96F0 /* CommandInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FA82A8CF96C00FB96F0 /* CommandInstructionViewController.swift */; };
+		DEFE7FC62A8CF96C00FB96F0 /* CommandInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FA92A8CF96C00FB96F0 /* CommandInstructionViewModel.swift */; };
+		DEFE7FCE2A8CF96C00FB96F0 /* CommandTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FB52A8CF96C00FB96F0 /* CommandTrainingViewController.swift */; };
+		DEFE7FCF2A8CF96C00FB96F0 /* CommandTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FB62A8CF96C00FB96F0 /* CommandTrainingView.swift */; };
+		DEFE7FD12A8CF96C00FB96F0 /* CommandTrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FB92A8CF96C00FB96F0 /* CommandTrainingViewModel.swift */; };
+		DEFE7FD22A8CF96C00FB96F0 /* CommandTrainingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FBA2A8CF96C00FB96F0 /* CommandTrainingAssembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -530,6 +538,14 @@
 		DEFE7F4B2A8CBA3800FB96F0 /* GITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GITableView.swift; sourceTree = "<group>"; };
 		DEFE7F4C2A8CBA3800FB96F0 /* GITableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GITableElement.swift; sourceTree = "<group>"; };
 		DEFE7F642A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		DEFE7FA52A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTrainingResultViewModel.swift; sourceTree = "<group>"; };
+		DEFE7FA62A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTrainingResultViewController.swift; sourceTree = "<group>"; };
+		DEFE7FA82A8CF96C00FB96F0 /* CommandInstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionViewController.swift; sourceTree = "<group>"; };
+		DEFE7FA92A8CF96C00FB96F0 /* CommandInstructionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionViewModel.swift; sourceTree = "<group>"; };
+		DEFE7FB52A8CF96C00FB96F0 /* CommandTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTrainingViewController.swift; sourceTree = "<group>"; };
+		DEFE7FB62A8CF96C00FB96F0 /* CommandTrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTrainingView.swift; sourceTree = "<group>"; };
+		DEFE7FB92A8CF96C00FB96F0 /* CommandTrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTrainingViewModel.swift; sourceTree = "<group>"; };
+		DEFE7FBA2A8CF96C00FB96F0 /* CommandTrainingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTrainingAssembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -941,6 +957,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE7F9F2A8CF96C00FB96F0 /* Command */,
 				DEFE7F2C2A8CBA3800FB96F0 /* Game */,
 				DEFE7EB92A8B7DD600FB96F0 /* Home */,
 				DE1F7AEC2A83F13200B3FF24 /* Splash */,
@@ -1692,6 +1709,45 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DEFE7F9F2A8CF96C00FB96F0 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FA32A8CF96C00FB96F0 /* CommandTrainingResult */,
+				DEFE7FB42A8CF96C00FB96F0 /* CommandTraining */,
+				DEFE7FA72A8CF96C00FB96F0 /* Instruction */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
+		DEFE7FA32A8CF96C00FB96F0 /* CommandTrainingResult */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FA62A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift */,
+				DEFE7FA52A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift */,
+			);
+			path = CommandTrainingResult;
+			sourceTree = "<group>";
+		};
+		DEFE7FA72A8CF96C00FB96F0 /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FA82A8CF96C00FB96F0 /* CommandInstructionViewController.swift */,
+				DEFE7FA92A8CF96C00FB96F0 /* CommandInstructionViewModel.swift */,
+			);
+			path = Instruction;
+			sourceTree = "<group>";
+		};
+		DEFE7FB42A8CF96C00FB96F0 /* CommandTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FB52A8CF96C00FB96F0 /* CommandTrainingViewController.swift */,
+				DEFE7FB92A8CF96C00FB96F0 /* CommandTrainingViewModel.swift */,
+				DEFE7FB62A8CF96C00FB96F0 /* CommandTrainingView.swift */,
+				DEFE7FBA2A8CF96C00FB96F0 /* CommandTrainingAssembly.swift */,
+			);
+			path = CommandTraining;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1847,6 +1903,7 @@
 				DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */,
 				DE1F7ADC2A83F10600B3FF24 /* GetProfileRequest.swift in Sources */,
 				DE1F7B7E2A86205200B3FF24 /* GetBreedsResponse.swift in Sources */,
+				DEFE7FC42A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift in Sources */,
 				DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */,
 				DEFE7EDC2A8B7DD600FB96F0 /* HomeViewModel.swift in Sources */,
 				DE1F7B332A83F13200B3FF24 /* PaygateViewModel.swift in Sources */,
@@ -1869,6 +1926,7 @@
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
 				DEFE7EA52A8A545800FB96F0 /* OWhereTrainButton.swift in Sources */,
 				DEB55CEF2A8641EC00A56B96 /* Training.swift in Sources */,
+				DEFE7FCE2A8CF96C00FB96F0 /* CommandTrainingViewController.swift in Sources */,
 				DEB55CF52A8641EC00A56B96 /* ScheduleTrainingResponse.swift in Sources */,
 				DEB55D122A865BC500A56B96 /* GetPlanRequest.swift in Sources */,
 				DE1F7AE72A83F10600B3FF24 /* IAPError.swift in Sources */,
@@ -1886,6 +1944,7 @@
 				DEB55CC42A86315200A56B96 /* AssignedCommand.swift in Sources */,
 				DE1F7B2F2A83F13200B3FF24 /* SplashActivity.swift in Sources */,
 				DEB55CC62A86315200A56B96 /* GetCommandTrainingRequest.swift in Sources */,
+				DEFE7FC52A8CF96C00FB96F0 /* CommandInstructionViewController.swift in Sources */,
 				DEFE7EAA2A8A684000FB96F0 /* OCommandsTableView.swift in Sources */,
 				DEB55CC92A86315200A56B96 /* GetCommandsRequest.swift in Sources */,
 				DE1F7A7E2A83F0E700B3FF24 /* UIViewRxExtension.swift in Sources */,
@@ -1954,6 +2013,7 @@
 				DE1F7AD42A83F10600B3FF24 /* GetPaygateRequest.swift in Sources */,
 				DEFE7EB82A8B6FC900FB96F0 /* PlanCommand.swift in Sources */,
 				DE1F7AA32A83F0E700B3FF24 /* BranchManager.swift in Sources */,
+				DEFE7FCF2A8CF96C00FB96F0 /* CommandTrainingView.swift in Sources */,
 				DEB55CC82A86315200A56B96 /* ScheduleCommandResponse.swift in Sources */,
 				DE1F7ADA2A83F10600B3FF24 /* DayOfWeek.swift in Sources */,
 				DE1F7AE12A83F10600B3FF24 /* ProfileMediator.swift in Sources */,
@@ -1966,6 +2026,8 @@
 				DE1F7B312A83F13200B3FF24 /* SplashViewModel.swift in Sources */,
 				DEFE7E932A8A38E400FB96F0 /* ODogNameView.swift in Sources */,
 				DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */,
+				DEFE7FC32A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift in Sources */,
+				DEFE7FD22A8CF96C00FB96F0 /* CommandTrainingAssembly.swift in Sources */,
 				DEB55C9B2A86228700A56B96 /* ScheduleGameResponse.swift in Sources */,
 				DEB55CCC2A86315200A56B96 /* AssignCommandResponse.swift in Sources */,
 				DEFE7EE52A8B7DD600FB96F0 /* HomeTitleCell.swift in Sources */,
@@ -1990,6 +2052,7 @@
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
 				DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */,
 				DEB55C962A86228700A56B96 /* GameTraining.swift in Sources */,
+				DEFE7FC62A8CF96C00FB96F0 /* CommandInstructionViewModel.swift in Sources */,
 				DEFE7EDF2A8B7DD600FB96F0 /* SeeAllTableCell.swift in Sources */,
 				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,
 				DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */,
@@ -2016,6 +2079,7 @@
 				DEB55CCD2A86315200A56B96 /* GetCommandsGroupsRequest.swift in Sources */,
 				DEFE7EDD2A8B7DD600FB96F0 /* HomeView.swift in Sources */,
 				DE1F7AE82A83F10600B3FF24 /* IAPErrorHelper.swift in Sources */,
+				DEFE7FD12A8CF96C00FB96F0 /* CommandTrainingViewModel.swift in Sources */,
 				DEB55CF02A8641EC00A56B96 /* TrainigDetails.swift in Sources */,
 				DE1F7AE22A83F10600B3FF24 /* IAPManager.swift in Sources */,
 				DE1F7A952A83F0E700B3FF24 /* Spinner.swift in Sources */,

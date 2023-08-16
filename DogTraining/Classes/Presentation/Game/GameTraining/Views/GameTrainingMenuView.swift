@@ -14,8 +14,12 @@ final class GameTrainingMenuView: UIView {
     lazy var refreshButton = makeRefreshButton()
     lazy var finishButton = makeFinishButton()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    private let finishTitle: String
+    
+    init(finishTitle: String) {
+        self.finishTitle = finishTitle
+        
+        super.init(frame: .zero)
         
         makeConstrains()
     }
@@ -120,7 +124,7 @@ private extension GameTrainingMenuView {
             .textAlignment(.center)
         
         let view = UIButton()
-        view.setAttributedTitle("GameTraining.FinishTraining".localized.attributed(with: attrs), for: .normal)
+        view.setAttributedTitle(finishTitle.attributed(with: attrs), for: .normal)
         view.backgroundColor = Appearance.primary
         view.layer.cornerRadius = 8.scale
         view.translatesAutoresizingMaskIntoConstraints = false

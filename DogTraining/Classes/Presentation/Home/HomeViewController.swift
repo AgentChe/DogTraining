@@ -121,7 +121,8 @@ extension HomeViewController: HomeTableViewDelegate {
     }
     
     func homeTableDidTap(planCommand: PlanCommand) {
-        // TODO: open screen
+        let vc = CommandInstructionViewController.make(planCommand: planCommand)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func homeTableDidTapAddTraining() {
@@ -141,7 +142,15 @@ extension HomeViewController: HomeTableViewDelegate {
     }
     
     func homeTableDidTap(command: Command) {
-        // TODO: open screen
+        let needPayment = command.paid ? !sessionManager.hasActiveSubscriptions() : false
+        
+        if needPayment {
+            let vc = PaygateViewController.make()
+            present(vc, animated: true)
+        } else {
+            let vc = CommandInstructionViewController.make(command: command)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
 
