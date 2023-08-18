@@ -14,4 +14,5 @@ struct Training: Codable, Hashable {
     let image: URL
     let commands: [Command]
     let commandGroupsIds: [Int]
+    let paid: Bool
 }

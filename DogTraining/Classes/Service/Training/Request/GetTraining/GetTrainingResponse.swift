@@ -58,7 +58,8 @@ final class GetTrainingResponse {
             name: name,
             image: imageUrl,
             commands: commands,
-            commandGroupsIds: commandGroupIds
+            commandGroupsIds: commandGroupIds,
+            paid: data["paid"] as? Bool ?? false
         )
         
         var scheduleDate: Date? = nil

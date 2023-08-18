@@ -62,7 +62,8 @@ final class GetTrainingsResponse {
                 name: name,
                 image: imageUrl,
                 commands: commands,
-                commandGroupsIds: commandGroupsIds
+                commandGroupsIds: commandGroupsIds,
+                paid: trainingJSON["paid"] as? Bool ?? false
             )
         }
     }
