@@ -113,10 +113,8 @@ private extension GameInstructionViewController {
         case .training(let customerGameId):
             gameTrainingAssembly.startTraining(from: self, customerGameId: customerGameId)
         case .calendar(let customerGameId):
-            // TODO
-            break
-//            let calendar = CalendarViewController.make(schedulerType: .drill(customerDrillId: customerDrillId))
-//            present(calendar, animated: true)
+            let calendar = CalendarViewController.make(schedulerType: .game(customerGameId: customerGameId))
+            present(calendar, animated: true)
         }
     }
     

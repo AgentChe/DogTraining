@@ -180,3 +180,10 @@
 
 // MARK: CommandInstruction
 "CommandInstruction.Title" = "Instruction";
+
+// MARK: Calendar
+"Calendar.Add" = "Add to schedule";
+"Calendar.Scheduled" = "Scheduled";
+"Calendar.Completed" = "Completed";
+"Calendar.Unfinished" = "Unfinished";
+"Calendar.SelectDate" = "Select Date";

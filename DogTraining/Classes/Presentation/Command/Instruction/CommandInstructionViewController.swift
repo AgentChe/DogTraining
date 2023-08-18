@@ -111,10 +111,8 @@ private extension CommandInstructionViewController {
         case .training(let customerCommandId):
             commandTrainingAssembly.startTraining(from: self, customerCommandId: customerCommandId)
         case .calendar(let customerCommandId):
-            // TODO
-            break
-//            let calendar = CalendarViewController.make(schedulerType: .drill(customerDrillId: customerDrillId))
-//            present(calendar, animated: true)
+            let calendar = CalendarViewController.make(schedulerType: .command(customerCommandId: customerCommandId))
+            present(calendar, animated: true)
         }
     }
     

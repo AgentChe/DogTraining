@@ -313,6 +313,13 @@
 		DEFE803A2A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80172A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift */; };
 		DEFE803B2A8E41D200FB96F0 /* CommandTemplateInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80182A8E41D200FB96F0 /* CommandTemplateInstructionView.swift */; };
 		DEFE803C2A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80192A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift */; };
+		DEFE804E2A8FC00B00FB96F0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80462A8FC00B00FB96F0 /* CalendarViewController.swift */; };
+		DEFE804F2A8FC00B00FB96F0 /* CalendarMonthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80482A8FC00B00FB96F0 /* CalendarMonthHeader.swift */; };
+		DEFE80502A8FC00B00FB96F0 /* CalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80492A8FC00B00FB96F0 /* CalendarCollectionView.swift */; };
+		DEFE80512A8FC00B00FB96F0 /* CalendarDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE804A2A8FC00B00FB96F0 /* CalendarDateCell.swift */; };
+		DEFE80522A8FC00B00FB96F0 /* CalendarEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE804B2A8FC00B00FB96F0 /* CalendarEventType.swift */; };
+		DEFE80532A8FC00B00FB96F0 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE804C2A8FC00B00FB96F0 /* CalendarViewModel.swift */; };
+		DEFE80542A8FC00B00FB96F0 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE804D2A8FC00B00FB96F0 /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -626,6 +633,13 @@
 		DEFE80172A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTemplateInstructionViewController.swift; sourceTree = "<group>"; };
 		DEFE80182A8E41D200FB96F0 /* CommandTemplateInstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTemplateInstructionView.swift; sourceTree = "<group>"; };
 		DEFE80192A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTemplateInstructionViewModel.swift; sourceTree = "<group>"; };
+		DEFE80462A8FC00B00FB96F0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		DEFE80482A8FC00B00FB96F0 /* CalendarMonthHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarMonthHeader.swift; sourceTree = "<group>"; };
+		DEFE80492A8FC00B00FB96F0 /* CalendarCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCollectionView.swift; sourceTree = "<group>"; };
+		DEFE804A2A8FC00B00FB96F0 /* CalendarDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarDateCell.swift; sourceTree = "<group>"; };
+		DEFE804B2A8FC00B00FB96F0 /* CalendarEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEventType.swift; sourceTree = "<group>"; };
+		DEFE804C2A8FC00B00FB96F0 /* CalendarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		DEFE804D2A8FC00B00FB96F0 /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1037,6 +1051,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE80452A8FC00B00FB96F0 /* Calendar */,
 				DEFE7FE62A8E41D200FB96F0 /* CommandsTraining */,
 				DEFE7FD72A8D155B00FB96F0 /* Commands */,
 				DEFE7F9F2A8CF96C00FB96F0 /* Command */,
@@ -2028,6 +2043,28 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		DEFE80452A8FC00B00FB96F0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80472A8FC00B00FB96F0 /* View */,
+				DEFE80462A8FC00B00FB96F0 /* CalendarViewController.swift */,
+				DEFE804C2A8FC00B00FB96F0 /* CalendarViewModel.swift */,
+				DEFE804D2A8FC00B00FB96F0 /* CalendarView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		DEFE80472A8FC00B00FB96F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80482A8FC00B00FB96F0 /* CalendarMonthHeader.swift */,
+				DEFE80492A8FC00B00FB96F0 /* CalendarCollectionView.swift */,
+				DEFE804A2A8FC00B00FB96F0 /* CalendarDateCell.swift */,
+				DEFE804B2A8FC00B00FB96F0 /* CalendarEventType.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2200,6 +2237,7 @@
 				DEFE7FE12A8D155B00FB96F0 /* CommandsViewController.swift in Sources */,
 				DE1F7B402A83F13200B3FF24 /* MainViewCoordinator.swift in Sources */,
 				DEB55C972A86228700A56B96 /* AssignedGame.swift in Sources */,
+				DEFE80502A8FC00B00FB96F0 /* CalendarCollectionView.swift in Sources */,
 				DEFE7EE82A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift in Sources */,
 				DEFE80222A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift in Sources */,
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
@@ -2207,6 +2245,7 @@
 				DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */,
 				DE1F7B392A83F13200B3FF24 /* PaygateViewController.swift in Sources */,
 				DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */,
+				DEFE80542A8FC00B00FB96F0 /* CalendarView.swift in Sources */,
 				DEFE7F652A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
 				DEFE7F5D2A8CBA3800FB96F0 /* GameInstructionViewController.swift in Sources */,
@@ -2219,6 +2258,7 @@
 				DEFE80362A8E41D200FB96F0 /* CommandInstructionNameCell.swift in Sources */,
 				DEB55D122A865BC500A56B96 /* GetPlanRequest.swift in Sources */,
 				DE1F7AE72A83F10600B3FF24 /* IAPError.swift in Sources */,
+				DEFE804F2A8FC00B00FB96F0 /* CalendarMonthHeader.swift in Sources */,
 				DEFE802E2A8E41D200FB96F0 /* TTHeaderCell.swift in Sources */,
 				DE1F7A8E2A83F0E700B3FF24 /* RequestReview.swift in Sources */,
 				DEFE80382A8E41D200FB96F0 /* CommandInstructionTableView.swift in Sources */,
@@ -2392,6 +2432,7 @@
 				DE1F7B762A861FA800B3FF24 /* GetSkillLevelsResponse.swift in Sources */,
 				DEB55CCD2A86315200A56B96 /* GetCommandsGroupsRequest.swift in Sources */,
 				DEFE7EDD2A8B7DD600FB96F0 /* HomeView.swift in Sources */,
+				DEFE80532A8FC00B00FB96F0 /* CalendarViewModel.swift in Sources */,
 				DEFE801B2A8E41D200FB96F0 /* CommandsTrainingResultView.swift in Sources */,
 				DE1F7AE82A83F10600B3FF24 /* IAPErrorHelper.swift in Sources */,
 				DEFE7FD12A8CF96C00FB96F0 /* CommandTrainingViewModel.swift in Sources */,
@@ -2399,6 +2440,8 @@
 				DE1F7AE22A83F10600B3FF24 /* IAPManager.swift in Sources */,
 				DE1F7A952A83F0E700B3FF24 /* Spinner.swift in Sources */,
 				DEFE803B2A8E41D200FB96F0 /* CommandTemplateInstructionView.swift in Sources */,
+				DEFE80512A8FC00B00FB96F0 /* CalendarDateCell.swift in Sources */,
+				DEFE80522A8FC00B00FB96F0 /* CalendarEventType.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
 				DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */,
@@ -2438,6 +2481,7 @@
 				DE1F7A9B2A83F0E700B3FF24 /* CircleProgressView.swift in Sources */,
 				DEB55D0F2A865BC500A56B96 /* PlanOnDay.swift in Sources */,
 				DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */,
+				DEFE804E2A8FC00B00FB96F0 /* CalendarViewController.swift in Sources */,
 				DEB55CC72A86315200A56B96 /* ScheduleCommandRequest.swift in Sources */,
 				DE1F7A7B2A83F0E700B3FF24 /* Collection+Extension.swift in Sources */,
 				DEFE7EF12A8B7DD600FB96F0 /* HomePlanTrainingCell.swift in Sources */,
