@@ -12,6 +12,7 @@ struct LogTrainingProgressRequest: APIRequestBody {
     let customerTrainingId: Int
     let trainedTime: Int
     let finish: Bool
+    let commandId: Int
     
     var url: String {
         GlobalDefinitions.domain + "/api/trainings/progress"
@@ -27,7 +28,8 @@ struct LogTrainingProgressRequest: APIRequestBody {
             "_user_token": userToken,
             "customer_training_id": customerTrainingId,
             "trained_time": trainedTime,
-            "finish": finish
+            "command_id": commandId,
+            "finish_workout": finish
         ]
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 final class GetTrainingResponse {
-    static func map(from response: Any) -> TrainigDetails? {
+    static func map(from response: Any) -> TrainingDetails? {
         guard
             let json = response as? [String: Any],
             let data = json["_data"] as? [String: Any],
@@ -34,7 +34,8 @@ final class GetTrainingResponse {
                 let imagePath = commandJSON["image"] as? String,
                 let imageUrl = URL(string: imagePath),
                 let commandGroupId = commandJSON["command_group_id"] as? Int,
-                let instruction = commandJSON["description"] as? String
+                let instruction = commandJSON["description"] as? String,
+                let time = commandJSON["time"] as? Int
             else {
                 return nil
             }
@@ -46,7 +47,8 @@ final class GetTrainingResponse {
                 name: name,
                 image: imageUrl,
                 paid: data["paid"] as? Bool ?? false,
-                instruction: instruction
+                instruction: instruction,
+                time: time
             )
         }
         
@@ -71,7 +73,7 @@ final class GetTrainingResponse {
             trainedTime: trainedTime
         )
         
-        return TrainigDetails(
+        return TrainingDetails(
             training: training,
             assignedTraining: assignedTraining
         )

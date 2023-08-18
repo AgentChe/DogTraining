@@ -15,4 +15,5 @@ struct Command: Codable, Hashable {
     let image: URL
     let paid: Bool
     let instruction: String
+    let time: Int
 }

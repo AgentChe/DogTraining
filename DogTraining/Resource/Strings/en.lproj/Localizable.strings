@@ -155,3 +155,28 @@
 "CommandTrainingQuit.SubTitle" = "Do you really want to end the command?";
 "CommandTrainingQuit.Continue" = "Continue command";
 "CommandTrainingQuit.Finish" = "Finish command";
+
+// MARK: TrainingTemplate
+"TrainingTemplate.StartTraining" = "Start training";
+"TrainingTemplate.CommandsGroups" = "Group of commands";
+"TrainingTemplate.Min" = "%i min";
+
+// MARK: CommandsTraining
+"CommandsTraining.Go" = "GO";
+"CommandsTraining.FinishWorkout" = "Finish training";
+"CommandsTraining.Instruction" = "Instruction";
+"CommandsTraining.Paused" = "PAUSED";
+"CommandsTraining.Next" = "NEXT";
+
+// MARK: CommandsTrainingQuit
+"CommandsTrainingQuit.Title" = "Are you sure?";
+"CommandsTrainingQuit.SubTitle" = "Do you really want to end the training?";
+"CommandsTrainingQuit.Continue" = "Continue training";
+"CommandsTrainingQuit.Finish" = "Quit training";
+
+// MARK: CommandsTrainingResult
+"CommandsTrainingResult.Title" = "Training completed";
+"CommandsTrainingResult.Duration" = "Duration:";
+
+// MARK: CommandInstruction
+"CommandInstruction.Title" = "Instruction";

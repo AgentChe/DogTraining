@@ -279,6 +279,40 @@
 		DEFE7FE32A8D155B00FB96F0 /* CommandsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FDD2A8D155B00FB96F0 /* CommandsTableView.swift */; };
 		DEFE7FE42A8D155B00FB96F0 /* CommandsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FDE2A8D155B00FB96F0 /* CommandsTableCell.swift */; };
 		DEFE7FE52A8D155B00FB96F0 /* CommandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FDF2A8D155B00FB96F0 /* CommandsView.swift */; };
+		DEFE801A2A8E41D200FB96F0 /* CommandsTrainingResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FE92A8E41D200FB96F0 /* CommandsTrainingResultViewController.swift */; };
+		DEFE801B2A8E41D200FB96F0 /* CommandsTrainingResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FEA2A8E41D200FB96F0 /* CommandsTrainingResultView.swift */; };
+		DEFE801C2A8E41D200FB96F0 /* CommandsTrainingResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FEB2A8E41D200FB96F0 /* CommandsTrainingResultViewModel.swift */; };
+		DEFE801D2A8E41D200FB96F0 /* CommandsTrainingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FED2A8E41D200FB96F0 /* CommandsTrainingViewModel.swift */; };
+		DEFE801E2A8E41D200FB96F0 /* CommandsTrainingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FEE2A8E41D200FB96F0 /* CommandsTrainingAssembly.swift */; };
+		DEFE801F2A8E41D200FB96F0 /* CommandsTrainingLifeCyrcle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF02A8E41D200FB96F0 /* CommandsTrainingLifeCyrcle.swift */; };
+		DEFE80202A8E41D200FB96F0 /* CommandsTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF12A8E41D200FB96F0 /* CommandsTrainingView.swift */; };
+		DEFE80212A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF42A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift */; };
+		DEFE80222A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF52A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift */; };
+		DEFE80232A8E41D200FB96F0 /* ProgressSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF62A8E41D200FB96F0 /* ProgressSegmentView.swift */; };
+		DEFE80242A8E41D200FB96F0 /* TrainingNameLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF72A8E41D200FB96F0 /* TrainingNameLabelView.swift */; };
+		DEFE80252A8E41D200FB96F0 /* CommandsTrainingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF82A8E41D200FB96F0 /* CommandsTrainingMenuView.swift */; };
+		DEFE80262A8E41D200FB96F0 /* CommandsTrainingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FF92A8E41D200FB96F0 /* CommandsTrainingViewController.swift */; };
+		DEFE80272A8E41D200FB96F0 /* CommandsTrainingQuitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FFB2A8E41D200FB96F0 /* CommandsTrainingQuitView.swift */; };
+		DEFE80282A8E41D200FB96F0 /* CommandsTrainingQuitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FFC2A8E41D200FB96F0 /* CommandsTrainingQuitViewController.swift */; };
+		DEFE80292A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FFE2A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift */; };
+		DEFE802A2A8E41D200FB96F0 /* CommandsTrainingTemplateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE7FFF2A8E41D200FB96F0 /* CommandsTrainingTemplateViewModel.swift */; };
+		DEFE802B2A8E41D200FB96F0 /* CommandsTrainingTemplateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80002A8E41D200FB96F0 /* CommandsTrainingTemplateView.swift */; };
+		DEFE802C2A8E41D200FB96F0 /* TTButtonsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80042A8E41D200FB96F0 /* TTButtonsCell.swift */; };
+		DEFE802E2A8E41D200FB96F0 /* TTHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80062A8E41D200FB96F0 /* TTHeaderCell.swift */; };
+		DEFE802F2A8E41D200FB96F0 /* TTCommandCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80072A8E41D200FB96F0 /* TTCommandCell.swift */; };
+		DEFE80302A8E41D200FB96F0 /* TTCommandsGroupsCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE800A2A8E41D200FB96F0 /* TTCommandsGroupsCollectionCell.swift */; };
+		DEFE80312A8E41D200FB96F0 /* TTCommandsGroupsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE800B2A8E41D200FB96F0 /* TTCommandsGroupsCollectionView.swift */; };
+		DEFE80322A8E41D200FB96F0 /* TTCommandsGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE800C2A8E41D200FB96F0 /* TTCommandsGroupsCell.swift */; };
+		DEFE80332A8E41D200FB96F0 /* TrainingTemplateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE800D2A8E41D200FB96F0 /* TrainingTemplateTableView.swift */; };
+		DEFE80342A8E41D200FB96F0 /* TrainingTemplateTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE800E2A8E41D200FB96F0 /* TrainingTemplateTableElement.swift */; };
+		DEFE80352A8E41D200FB96F0 /* CommandInstructionInstructionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80122A8E41D200FB96F0 /* CommandInstructionInstructionCell.swift */; };
+		DEFE80362A8E41D200FB96F0 /* CommandInstructionNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80132A8E41D200FB96F0 /* CommandInstructionNameCell.swift */; };
+		DEFE80372A8E41D200FB96F0 /* CommandInstructionImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80142A8E41D200FB96F0 /* CommandInstructionImageCell.swift */; };
+		DEFE80382A8E41D200FB96F0 /* CommandInstructionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80152A8E41D200FB96F0 /* CommandInstructionTableView.swift */; };
+		DEFE80392A8E41D200FB96F0 /* CommandInstructionTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80162A8E41D200FB96F0 /* CommandInstructionTableElement.swift */; };
+		DEFE803A2A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80172A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift */; };
+		DEFE803B2A8E41D200FB96F0 /* CommandTemplateInstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80182A8E41D200FB96F0 /* CommandTemplateInstructionView.swift */; };
+		DEFE803C2A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80192A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -558,6 +592,40 @@
 		DEFE7FDD2A8D155B00FB96F0 /* CommandsTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableView.swift; sourceTree = "<group>"; };
 		DEFE7FDE2A8D155B00FB96F0 /* CommandsTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTableCell.swift; sourceTree = "<group>"; };
 		DEFE7FDF2A8D155B00FB96F0 /* CommandsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsView.swift; sourceTree = "<group>"; };
+		DEFE7FE92A8E41D200FB96F0 /* CommandsTrainingResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingResultViewController.swift; sourceTree = "<group>"; };
+		DEFE7FEA2A8E41D200FB96F0 /* CommandsTrainingResultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingResultView.swift; sourceTree = "<group>"; };
+		DEFE7FEB2A8E41D200FB96F0 /* CommandsTrainingResultViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingResultViewModel.swift; sourceTree = "<group>"; };
+		DEFE7FED2A8E41D200FB96F0 /* CommandsTrainingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingViewModel.swift; sourceTree = "<group>"; };
+		DEFE7FEE2A8E41D200FB96F0 /* CommandsTrainingAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingAssembly.swift; sourceTree = "<group>"; };
+		DEFE7FF02A8E41D200FB96F0 /* CommandsTrainingLifeCyrcle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingLifeCyrcle.swift; sourceTree = "<group>"; };
+		DEFE7FF12A8E41D200FB96F0 /* CommandsTrainingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingView.swift; sourceTree = "<group>"; };
+		DEFE7FF42A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingImageViewCell.swift; sourceTree = "<group>"; };
+		DEFE7FF52A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingCollectionView.swift; sourceTree = "<group>"; };
+		DEFE7FF62A8E41D200FB96F0 /* ProgressSegmentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressSegmentView.swift; sourceTree = "<group>"; };
+		DEFE7FF72A8E41D200FB96F0 /* TrainingNameLabelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingNameLabelView.swift; sourceTree = "<group>"; };
+		DEFE7FF82A8E41D200FB96F0 /* CommandsTrainingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingMenuView.swift; sourceTree = "<group>"; };
+		DEFE7FF92A8E41D200FB96F0 /* CommandsTrainingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingViewController.swift; sourceTree = "<group>"; };
+		DEFE7FFB2A8E41D200FB96F0 /* CommandsTrainingQuitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingQuitView.swift; sourceTree = "<group>"; };
+		DEFE7FFC2A8E41D200FB96F0 /* CommandsTrainingQuitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingQuitViewController.swift; sourceTree = "<group>"; };
+		DEFE7FFE2A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingTemplateViewController.swift; sourceTree = "<group>"; };
+		DEFE7FFF2A8E41D200FB96F0 /* CommandsTrainingTemplateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingTemplateViewModel.swift; sourceTree = "<group>"; };
+		DEFE80002A8E41D200FB96F0 /* CommandsTrainingTemplateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandsTrainingTemplateView.swift; sourceTree = "<group>"; };
+		DEFE80042A8E41D200FB96F0 /* TTButtonsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTButtonsCell.swift; sourceTree = "<group>"; };
+		DEFE80062A8E41D200FB96F0 /* TTHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTHeaderCell.swift; sourceTree = "<group>"; };
+		DEFE80072A8E41D200FB96F0 /* TTCommandCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCommandCell.swift; sourceTree = "<group>"; };
+		DEFE800A2A8E41D200FB96F0 /* TTCommandsGroupsCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCommandsGroupsCollectionCell.swift; sourceTree = "<group>"; };
+		DEFE800B2A8E41D200FB96F0 /* TTCommandsGroupsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCommandsGroupsCollectionView.swift; sourceTree = "<group>"; };
+		DEFE800C2A8E41D200FB96F0 /* TTCommandsGroupsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTCommandsGroupsCell.swift; sourceTree = "<group>"; };
+		DEFE800D2A8E41D200FB96F0 /* TrainingTemplateTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingTemplateTableView.swift; sourceTree = "<group>"; };
+		DEFE800E2A8E41D200FB96F0 /* TrainingTemplateTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainingTemplateTableElement.swift; sourceTree = "<group>"; };
+		DEFE80122A8E41D200FB96F0 /* CommandInstructionInstructionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionInstructionCell.swift; sourceTree = "<group>"; };
+		DEFE80132A8E41D200FB96F0 /* CommandInstructionNameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionNameCell.swift; sourceTree = "<group>"; };
+		DEFE80142A8E41D200FB96F0 /* CommandInstructionImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionImageCell.swift; sourceTree = "<group>"; };
+		DEFE80152A8E41D200FB96F0 /* CommandInstructionTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionTableView.swift; sourceTree = "<group>"; };
+		DEFE80162A8E41D200FB96F0 /* CommandInstructionTableElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandInstructionTableElement.swift; sourceTree = "<group>"; };
+		DEFE80172A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTemplateInstructionViewController.swift; sourceTree = "<group>"; };
+		DEFE80182A8E41D200FB96F0 /* CommandTemplateInstructionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTemplateInstructionView.swift; sourceTree = "<group>"; };
+		DEFE80192A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommandTemplateInstructionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -969,6 +1037,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE7FE62A8E41D200FB96F0 /* CommandsTraining */,
 				DEFE7FD72A8D155B00FB96F0 /* Commands */,
 				DEFE7F9F2A8CF96C00FB96F0 /* Command */,
 				DEFE7F2C2A8CBA3800FB96F0 /* Game */,
@@ -1790,6 +1859,175 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		DEFE7FE62A8E41D200FB96F0 /* CommandsTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FE72A8E41D200FB96F0 /* CommandsTraining */,
+				DEFE800F2A8E41D200FB96F0 /* CommandInstruction */,
+				DEFE7FFD2A8E41D200FB96F0 /* CommandsTrainingTemplate */,
+			);
+			path = CommandsTraining;
+			sourceTree = "<group>";
+		};
+		DEFE7FE72A8E41D200FB96F0 /* CommandsTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FEC2A8E41D200FB96F0 /* WorkoutTraining */,
+				DEFE7FE82A8E41D200FB96F0 /* CommandsTrainingResult */,
+				DEFE7FFA2A8E41D200FB96F0 /* Quit */,
+			);
+			path = CommandsTraining;
+			sourceTree = "<group>";
+		};
+		DEFE7FE82A8E41D200FB96F0 /* CommandsTrainingResult */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FE92A8E41D200FB96F0 /* CommandsTrainingResultViewController.swift */,
+				DEFE7FEB2A8E41D200FB96F0 /* CommandsTrainingResultViewModel.swift */,
+				DEFE7FEA2A8E41D200FB96F0 /* CommandsTrainingResultView.swift */,
+			);
+			path = CommandsTrainingResult;
+			sourceTree = "<group>";
+		};
+		DEFE7FEC2A8E41D200FB96F0 /* WorkoutTraining */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FEF2A8E41D200FB96F0 /* Utils */,
+				DEFE7FF22A8E41D200FB96F0 /* Views */,
+				DEFE7FF92A8E41D200FB96F0 /* CommandsTrainingViewController.swift */,
+				DEFE7FED2A8E41D200FB96F0 /* CommandsTrainingViewModel.swift */,
+				DEFE7FF12A8E41D200FB96F0 /* CommandsTrainingView.swift */,
+				DEFE7FEE2A8E41D200FB96F0 /* CommandsTrainingAssembly.swift */,
+			);
+			path = WorkoutTraining;
+			sourceTree = "<group>";
+		};
+		DEFE7FEF2A8E41D200FB96F0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FF02A8E41D200FB96F0 /* CommandsTrainingLifeCyrcle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DEFE7FF22A8E41D200FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FF32A8E41D200FB96F0 /* Collection */,
+				DEFE7FF62A8E41D200FB96F0 /* ProgressSegmentView.swift */,
+				DEFE7FF72A8E41D200FB96F0 /* TrainingNameLabelView.swift */,
+				DEFE7FF82A8E41D200FB96F0 /* CommandsTrainingMenuView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE7FF32A8E41D200FB96F0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FF42A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift */,
+				DEFE7FF52A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		DEFE7FFA2A8E41D200FB96F0 /* Quit */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE7FFB2A8E41D200FB96F0 /* CommandsTrainingQuitView.swift */,
+				DEFE7FFC2A8E41D200FB96F0 /* CommandsTrainingQuitViewController.swift */,
+			);
+			path = Quit;
+			sourceTree = "<group>";
+		};
+		DEFE7FFD2A8E41D200FB96F0 /* CommandsTrainingTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80012A8E41D200FB96F0 /* Views */,
+				DEFE7FFE2A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift */,
+				DEFE7FFF2A8E41D200FB96F0 /* CommandsTrainingTemplateViewModel.swift */,
+				DEFE80002A8E41D200FB96F0 /* CommandsTrainingTemplateView.swift */,
+			);
+			path = CommandsTrainingTemplate;
+			sourceTree = "<group>";
+		};
+		DEFE80012A8E41D200FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80022A8E41D200FB96F0 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE80022A8E41D200FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80032A8E41D200FB96F0 /* Cells */,
+				DEFE800D2A8E41D200FB96F0 /* TrainingTemplateTableView.swift */,
+				DEFE800E2A8E41D200FB96F0 /* TrainingTemplateTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEFE80032A8E41D200FB96F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80082A8E41D200FB96F0 /* CommandsGroups */,
+				DEFE80062A8E41D200FB96F0 /* TTHeaderCell.swift */,
+				DEFE80042A8E41D200FB96F0 /* TTButtonsCell.swift */,
+				DEFE80072A8E41D200FB96F0 /* TTCommandCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEFE80082A8E41D200FB96F0 /* CommandsGroups */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80092A8E41D200FB96F0 /* Collection */,
+				DEFE800C2A8E41D200FB96F0 /* TTCommandsGroupsCell.swift */,
+			);
+			path = CommandsGroups;
+			sourceTree = "<group>";
+		};
+		DEFE80092A8E41D200FB96F0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE800A2A8E41D200FB96F0 /* TTCommandsGroupsCollectionCell.swift */,
+				DEFE800B2A8E41D200FB96F0 /* TTCommandsGroupsCollectionView.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		DEFE800F2A8E41D200FB96F0 /* CommandInstruction */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80102A8E41D200FB96F0 /* TableView */,
+				DEFE80172A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift */,
+				DEFE80192A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift */,
+				DEFE80182A8E41D200FB96F0 /* CommandTemplateInstructionView.swift */,
+			);
+			path = CommandInstruction;
+			sourceTree = "<group>";
+		};
+		DEFE80102A8E41D200FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80112A8E41D200FB96F0 /* Cells */,
+				DEFE80152A8E41D200FB96F0 /* CommandInstructionTableView.swift */,
+				DEFE80162A8E41D200FB96F0 /* CommandInstructionTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEFE80112A8E41D200FB96F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80122A8E41D200FB96F0 /* CommandInstructionInstructionCell.swift */,
+				DEFE80132A8E41D200FB96F0 /* CommandInstructionNameCell.swift */,
+				DEFE80142A8E41D200FB96F0 /* CommandInstructionImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1919,16 +2157,19 @@
 				DE1F7B302A83F13200B3FF24 /* SplashReceiptValidationObserver.swift in Sources */,
 				DEFE7F4D2A8CBA3800FB96F0 /* GameTrainingQuitViewController.swift in Sources */,
 				DEFE7F592A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift in Sources */,
+				DEFE801A2A8E41D200FB96F0 /* CommandsTrainingResultViewController.swift in Sources */,
 				DEFE7E9F2A8A4B2400FB96F0 /* OBehaviorView.swift in Sources */,
 				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
 				DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
 				DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */,
+				DEFE802F2A8E41D200FB96F0 /* TTCommandCell.swift in Sources */,
 				DEFE7F5F2A8CBA3800FB96F0 /* GIInstructionCell.swift in Sources */,
 				DE1F7B3D2A83F13200B3FF24 /* MainView.swift in Sources */,
 				DEB55D2A2A8678D700A56B96 /* ClearedTextField.swift in Sources */,
 				DE1F7AD92A83F10600B3FF24 /* WeekSchedule.swift in Sources */,
 				DEFE7F582A8CBA3800FB96F0 /* GameTrainingPlayPauseButton.swift in Sources */,
+				DEFE803C2A8E41D200FB96F0 /* CommandTemplateInstructionViewModel.swift in Sources */,
 				DE1F7AE52A83F10600B3FF24 /* IAPActionResult.swift in Sources */,
 				DE1F7ADB2A83F10600B3FF24 /* Profile.swift in Sources */,
 				DE1F7A942A83F0E700B3FF24 /* TapAreaButton.swift in Sources */,
@@ -1949,6 +2190,7 @@
 				DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */,
 				DEFE7EDC2A8B7DD600FB96F0 /* HomeViewModel.swift in Sources */,
 				DE1F7B332A83F13200B3FF24 /* PaygateViewModel.swift in Sources */,
+				DEFE802A2A8E41D200FB96F0 /* CommandsTrainingTemplateViewModel.swift in Sources */,
 				DEFE7F612A8CBA3800FB96F0 /* GIButtonsCell.swift in Sources */,
 				DE1F7A9C2A83F0E700B3FF24 /* AppDelegate.swift in Sources */,
 				DEFE7FE32A8D155B00FB96F0 /* CommandsTableView.swift in Sources */,
@@ -1959,6 +2201,7 @@
 				DE1F7B402A83F13200B3FF24 /* MainViewCoordinator.swift in Sources */,
 				DEB55C972A86228700A56B96 /* AssignedGame.swift in Sources */,
 				DEFE7EE82A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift in Sources */,
+				DEFE80222A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift in Sources */,
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
 				DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */,
 				DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */,
@@ -1973,45 +2216,58 @@
 				DEFE7FE22A8D155B00FB96F0 /* CommandsTableElement.swift in Sources */,
 				DEFE7FCE2A8CF96C00FB96F0 /* CommandTrainingViewController.swift in Sources */,
 				DEB55CF52A8641EC00A56B96 /* ScheduleTrainingResponse.swift in Sources */,
+				DEFE80362A8E41D200FB96F0 /* CommandInstructionNameCell.swift in Sources */,
 				DEB55D122A865BC500A56B96 /* GetPlanRequest.swift in Sources */,
 				DE1F7AE72A83F10600B3FF24 /* IAPError.swift in Sources */,
+				DEFE802E2A8E41D200FB96F0 /* TTHeaderCell.swift in Sources */,
 				DE1F7A8E2A83F0E700B3FF24 /* RequestReview.swift in Sources */,
+				DEFE80382A8E41D200FB96F0 /* CommandInstructionTableView.swift in Sources */,
 				DEB55CCE2A86315200A56B96 /* GetCommandsGroupsResponse.swift in Sources */,
 				DEFE7EE12A8B7DD600FB96F0 /* HomeGamesCollectionCell.swift in Sources */,
 				DE1F7A8F2A83F0E700B3FF24 /* ImagePicker.swift in Sources */,
 				DE1F7B322A83F13200B3FF24 /* SplashView.swift in Sources */,
+				DEFE80262A8E41D200FB96F0 /* CommandsTrainingViewController.swift in Sources */,
 				DE1F7B382A83F13200B3FF24 /* PaygateView.swift in Sources */,
 				DE1F7A7D2A83F0E700B3FF24 /* String+Extension.swift in Sources */,
 				DEFE7FE42A8D155B00FB96F0 /* CommandsTableCell.swift in Sources */,
 				DEFE7F532A8CBA3800FB96F0 /* GameTrainingView.swift in Sources */,
+				DEFE80302A8E41D200FB96F0 /* TTCommandsGroupsCollectionCell.swift in Sources */,
 				DE1F7A902A83F0E700B3FF24 /* RxActivityIndicator.swift in Sources */,
 				DE1F7B772A861FA800B3FF24 /* GetSkillLevelsRequest.swift in Sources */,
 				DEFE7EA72A8A546900FB96F0 /* OWhereTrainView.swift in Sources */,
 				DEB55CC42A86315200A56B96 /* AssignedCommand.swift in Sources */,
 				DE1F7B2F2A83F13200B3FF24 /* SplashActivity.swift in Sources */,
+				DEFE80322A8E41D200FB96F0 /* TTCommandsGroupsCell.swift in Sources */,
 				DEB55CC62A86315200A56B96 /* GetCommandTrainingRequest.swift in Sources */,
 				DEFE7FC52A8CF96C00FB96F0 /* CommandInstructionViewController.swift in Sources */,
+				DEFE80232A8E41D200FB96F0 /* ProgressSegmentView.swift in Sources */,
 				DEFE7EAA2A8A684000FB96F0 /* OCommandsTableView.swift in Sources */,
 				DEB55CC92A86315200A56B96 /* GetCommandsRequest.swift in Sources */,
+				DEFE80272A8E41D200FB96F0 /* CommandsTrainingQuitView.swift in Sources */,
 				DE1F7A7E2A83F0E700B3FF24 /* UIViewRxExtension.swift in Sources */,
 				DEFE7EB02A8A6BEC00FB96F0 /* OCommandsView.swift in Sources */,
 				DEB55D1F2A866D0F00A56B96 /* ORoleView.swift in Sources */,
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
 				DEFE7EE42A8B7DD600FB96F0 /* PlanWeekdaysCell.swift in Sources */,
+				DEFE80392A8E41D200FB96F0 /* CommandInstructionTableElement.swift in Sources */,
 				DEFE7F562A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
+				DEFE80252A8E41D200FB96F0 /* CommandsTrainingMenuView.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
 				DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */,
 				DE1F7A8A2A83F0E700B3FF24 /* SignError.swift in Sources */,
 				DE1F7A9E2A83F0E700B3FF24 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE1F7B432A83F13200B3FF24 /* OCombineData.swift in Sources */,
 				DEB55CF72A8641EC00A56B96 /* GetTrainingsResponse.swift in Sources */,
+				DEFE80312A8E41D200FB96F0 /* TTCommandsGroupsCollectionView.swift in Sources */,
+				DEFE80342A8E41D200FB96F0 /* TrainingTemplateTableElement.swift in Sources */,
 				DE1F7B342A83F13200B3FF24 /* DefaultPaygate.swift in Sources */,
 				DE1F7A812A83F0E700B3FF24 /* APIRequestBody.swift in Sources */,
 				DEB55CC32A86315200A56B96 /* CommandTraining.swift in Sources */,
 				DEB55D112A865BC500A56B96 /* PlanStatus.swift in Sources */,
 				DE1F7B352A83F13200B3FF24 /* PaygateOptionInfo.swift in Sources */,
+				DEFE801C2A8E41D200FB96F0 /* CommandsTrainingResultViewModel.swift in Sources */,
 				DE1F7B7C2A86204C00B3FF24 /* GetBreedsRequest.swift in Sources */,
 				DEB55CCF2A86315200A56B96 /* LogCommandProgressResponse.swift in Sources */,
 				DEFE7EB22A8A75F400FB96F0 /* OTopicsView.swift in Sources */,
@@ -2040,6 +2296,7 @@
 				DEFE7EE32A8B7DD600FB96F0 /* PlanWeekDayButton.swift in Sources */,
 				DEFE7EA32A8A4FEF00FB96F0 /* ODaysOfWeekView.swift in Sources */,
 				DE1F7A862A83F0E700B3FF24 /* ScreenSize.swift in Sources */,
+				DEFE80332A8E41D200FB96F0 /* TrainingTemplateTableView.swift in Sources */,
 				DE1F7A962A83F0E700B3FF24 /* ScreenPreloader.swift in Sources */,
 				DE1F7AE32A83F10600B3FF24 /* PurchaseValidationObserver.swift in Sources */,
 				DEFE7EDE2A8B7DD600FB96F0 /* HomeViewController.swift in Sources */,
@@ -2047,14 +2304,18 @@
 				DEFE7EED2A8B7DD600FB96F0 /* DailyPicksCollectionView.swift in Sources */,
 				DEFE7F5C2A8CBA3800FB96F0 /* GameInstructionViewModel.swift in Sources */,
 				DE1F7AA62A83F0E700B3FF24 /* FacebookManager.swift in Sources */,
+				DEFE801E2A8E41D200FB96F0 /* CommandsTrainingAssembly.swift in Sources */,
 				DE1F7A822A83F0E700B3FF24 /* RestAPITransport.swift in Sources */,
 				DE1F7A922A83F0E700B3FF24 /* NavigationControllerSettings.swift in Sources */,
 				DE1F7A7C2A83F0E700B3FF24 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE1F7AE42A83F10600B3FF24 /* ProductPrice.swift in Sources */,
 				DEB55CED2A8641EC00A56B96 /* TrainingsManager.swift in Sources */,
 				DEFE7EB42A8A795D00FB96F0 /* OCircleProgressView.swift in Sources */,
+				DEFE802C2A8E41D200FB96F0 /* TTButtonsCell.swift in Sources */,
+				DEFE80372A8E41D200FB96F0 /* CommandInstructionImageCell.swift in Sources */,
 				DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */,
 				DEB55C9D2A86228700A56B96 /* GetGamesResponse.swift in Sources */,
+				DEFE80352A8E41D200FB96F0 /* CommandInstructionInstructionCell.swift in Sources */,
 				DE1F7A772A83F0E700B3FF24 /* UIApplication+Extension.swift in Sources */,
 				DE1F7AD42A83F10600B3FF24 /* GetPaygateRequest.swift in Sources */,
 				DEFE7EB82A8B6FC900FB96F0 /* PlanCommand.swift in Sources */,
@@ -2069,8 +2330,10 @@
 				DE1F7A882A83F0E700B3FF24 /* XOREncryption.swift in Sources */,
 				DEFE7F522A8CBA3800FB96F0 /* GameTrainingViewController.swift in Sources */,
 				DE1F7A8C2A83F0E700B3FF24 /* ContentError.swift in Sources */,
+				DEFE803A2A8E41D200FB96F0 /* CommandTemplateInstructionViewController.swift in Sources */,
 				DE1F7AD32A83F10600B3FF24 /* GetPaygateResponse.swift in Sources */,
 				DE1F7B312A83F13200B3FF24 /* SplashViewModel.swift in Sources */,
+				DEFE80242A8E41D200FB96F0 /* TrainingNameLabelView.swift in Sources */,
 				DEFE7E932A8A38E400FB96F0 /* ODogNameView.swift in Sources */,
 				DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */,
 				DEFE7FC32A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift in Sources */,
@@ -2078,6 +2341,7 @@
 				DEB55C9B2A86228700A56B96 /* ScheduleGameResponse.swift in Sources */,
 				DEB55CCC2A86315200A56B96 /* AssignCommandResponse.swift in Sources */,
 				DEFE7EE52A8B7DD600FB96F0 /* HomeTitleCell.swift in Sources */,
+				DEFE80282A8E41D200FB96F0 /* CommandsTrainingQuitViewController.swift in Sources */,
 				DEB55CBF2A86315200A56B96 /* CommandsMediator.swift in Sources */,
 				DEFE7EEF2A8B7DD600FB96F0 /* HomeStatsCell.swift in Sources */,
 				DE1F7A832A83F0E700B3FF24 /* Scalable.swift in Sources */,
@@ -2098,12 +2362,14 @@
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
 				DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */,
+				DEFE801D2A8E41D200FB96F0 /* CommandsTrainingViewModel.swift in Sources */,
 				DEB55C962A86228700A56B96 /* GameTraining.swift in Sources */,
 				DEFE7FC62A8CF96C00FB96F0 /* CommandInstructionViewModel.swift in Sources */,
 				DEFE7EDF2A8B7DD600FB96F0 /* SeeAllTableCell.swift in Sources */,
 				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,
 				DEB55D162A86605000A56B96 /* HomeKit.swift in Sources */,
 				DEFE7F622A8CBA3800FB96F0 /* GITableView.swift in Sources */,
+				DEFE802B2A8E41D200FB96F0 /* CommandsTrainingTemplateView.swift in Sources */,
 				DE1F7B792A86202600B3FF24 /* Breed.swift in Sources */,
 				DE1F7A9A2A83F0E700B3FF24 /* GradientView.swift in Sources */,
 				DE1F7B3F2A83F13200B3FF24 /* TabView.swift in Sources */,
@@ -2118,6 +2384,7 @@
 				DE1F7AE62A83F10600B3FF24 /* IAPProduct.swift in Sources */,
 				DEFE7F4E2A8CBA3800FB96F0 /* GameTrainingQuitView.swift in Sources */,
 				DEFE7F502A8CBA3800FB96F0 /* GameTrainingResultViewController.swift in Sources */,
+				DEFE80202A8E41D200FB96F0 /* CommandsTrainingView.swift in Sources */,
 				DEB55CA32A86228700A56B96 /* LogGameProgressRequest.swift in Sources */,
 				DEB55C932A86228700A56B96 /* GamesManager.swift in Sources */,
 				DE1F7ADE2A83F10600B3FF24 /* LoginRequest.swift in Sources */,
@@ -2125,11 +2392,13 @@
 				DE1F7B762A861FA800B3FF24 /* GetSkillLevelsResponse.swift in Sources */,
 				DEB55CCD2A86315200A56B96 /* GetCommandsGroupsRequest.swift in Sources */,
 				DEFE7EDD2A8B7DD600FB96F0 /* HomeView.swift in Sources */,
+				DEFE801B2A8E41D200FB96F0 /* CommandsTrainingResultView.swift in Sources */,
 				DE1F7AE82A83F10600B3FF24 /* IAPErrorHelper.swift in Sources */,
 				DEFE7FD12A8CF96C00FB96F0 /* CommandTrainingViewModel.swift in Sources */,
 				DEB55CF02A8641EC00A56B96 /* TrainigDetails.swift in Sources */,
 				DE1F7AE22A83F10600B3FF24 /* IAPManager.swift in Sources */,
 				DE1F7A952A83F0E700B3FF24 /* Spinner.swift in Sources */,
+				DEFE803B2A8E41D200FB96F0 /* CommandTemplateInstructionView.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
 				DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */,
@@ -2145,8 +2414,11 @@
 				DEB55C952A86228700A56B96 /* Game.swift in Sources */,
 				DEFE7F512A8CBA3800FB96F0 /* GameTrainingResultView.swift in Sources */,
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
+				DEFE80212A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift in Sources */,
+				DEFE80292A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift in Sources */,
 				DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */,
 				DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */,
+				DEFE801F2A8E41D200FB96F0 /* CommandsTrainingLifeCyrcle.swift in Sources */,
 				DEFE7EE92A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionLayout.swift in Sources */,
 				DEB55D0D2A865BC500A56B96 /* PlanManager.swift in Sources */,
 				DEB55CA22A86228700A56B96 /* LogGameProgressResponse.swift in Sources */,

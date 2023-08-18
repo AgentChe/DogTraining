@@ -104,7 +104,8 @@ extension HomeViewController: HomeTableViewDelegate {
     }
     
     func homeTableDidTap(training: Training) {
-        // TODO: open screen
+        let vc = CommandsTrainingTemplateViewController.make(training: training)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func homeTableDidTap(planDay: Date) {
@@ -117,7 +118,8 @@ extension HomeViewController: HomeTableViewDelegate {
     }
     
     func homeTableDidTap(planTraining: PlanTraining) {
-        // TODO: open screen
+        let vc = CommandsTrainingTemplateViewController.make(planTraining: planTraining)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func homeTableDidTap(planCommand: PlanCommand) {

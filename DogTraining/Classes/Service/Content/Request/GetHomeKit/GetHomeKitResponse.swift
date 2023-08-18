@@ -95,7 +95,8 @@ private extension GetHomeKitResponse {
                     let imagePath = commandJSON["image"] as? String,
                     let imageUrl = URL(string: imagePath),
                     let commandGroupId = commandJSON["command_group_id"] as? Int,
-                    let instruction = commandJSON["description"] as? String
+                    let instruction = commandJSON["description"] as? String,
+                    let time = commandJSON["time"] as? Int
                 else {
                     return nil
                 }
@@ -107,7 +108,8 @@ private extension GetHomeKitResponse {
                     name: name,
                     image: imageUrl,
                     paid: commandJSON["paid"] as? Bool ?? false,
-                    instruction: instruction
+                    instruction: instruction,
+                    time: time
                 )
             }
             
@@ -131,7 +133,8 @@ private extension GetHomeKitResponse {
                 let imagePath = commandJSON["image"] as? String,
                 let imageUrl = URL(string: imagePath),
                 let commandGroupId = commandJSON["command_group_id"] as? Int,
-                let instruction = commandJSON["description"] as? String
+                let instruction = commandJSON["description"] as? String,
+                let time = commandJSON["time"] as? Int
             else {
                 return nil
             }
@@ -143,7 +146,8 @@ private extension GetHomeKitResponse {
                 name: name,
                 image: imageUrl,
                 paid: commandJSON["paid"] as? Bool ?? false,
-                instruction: instruction
+                instruction: instruction,
+                time: time
             )
         }
     }

@@ -11,8 +11,8 @@ protocol TrainingsManagerProtocol {
     func obtainTrainings(levelId: Int?) -> Single<[Training]>
     func assignTraining(id: Int) -> Single<AssignedTraining?>
     func scheduleTraining(customerTrainingId: Int, scheduleDate: TimeInterval) -> Single<AssignedTraining?>
-    func obtainTrainingDetails(customerTrainingId: Int) -> Single<TrainigDetails?>
-    func logProgress(customerTrainingId: Int, trainedTime: Int, finish: Bool) -> Single<AssignedTraining?>
+    func obtainTrainingDetails(customerTrainingId: Int) -> Single<TrainingDetails?>
+    func logProgress(customerTrainingId: Int, trainedTime: Int, finish: Bool, commandId: Int) -> Single<AssignedTraining?>
 }
 
 final class TrainingsManager {
@@ -83,7 +83,7 @@ extension TrainingsManager: TrainingsManagerProtocol {
             })
     }
     
-    func obtainTrainingDetails(customerTrainingId: Int) -> Single<TrainigDetails?> {
+    func obtainTrainingDetails(customerTrainingId: Int) -> Single<TrainingDetails?> {
         guard let userToken = sessionManager.getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
@@ -98,7 +98,7 @@ extension TrainingsManager: TrainingsManagerProtocol {
             .map { GetTrainingResponse.map(from: $0) }
     }
     
-    func logProgress(customerTrainingId: Int, trainedTime: Int, finish: Bool) -> Single<AssignedTraining?> {
+    func logProgress(customerTrainingId: Int, trainedTime: Int, finish: Bool, commandId: Int) -> Single<AssignedTraining?> {
         guard let userToken = sessionManager.getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
@@ -107,7 +107,8 @@ extension TrainingsManager: TrainingsManagerProtocol {
             userToken: userToken,
             customerTrainingId: customerTrainingId,
             trainedTime: trainedTime,
-            finish: finish
+            finish: finish,
+            commandId: commandId
         )
         
         return defaultRequestWrapper
