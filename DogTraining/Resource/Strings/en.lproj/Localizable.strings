@@ -191,6 +191,7 @@
 // MARK: Train
 "Train.Filter.Commands" = "Commands";
 "Train.Filter.Games" = "Games";
+"Train.Filter.Articles" = "Articles";
 "Train.Trainings" = "Trainings";
 "Train.Commands" = "Commands";
 "Train.SeeAll" = "See all";

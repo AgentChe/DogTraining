@@ -14,6 +14,7 @@ struct TrainTableSection {
 enum TrainTableElement {
     case title(TrainTitleElement)
     case trainings([TrainTrainigElement])
+    case article(Article)
 }
 
 enum TrainTitleElement {

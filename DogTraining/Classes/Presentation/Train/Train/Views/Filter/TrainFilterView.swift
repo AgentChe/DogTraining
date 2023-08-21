@@ -9,7 +9,7 @@ import UIKit
 
 final class TrainFilterView: UIView {
     enum Filter {
-        case commands, games
+        case commands, games, articles
     }
     
     var filter = Filter.commands {
@@ -21,6 +21,7 @@ final class TrainFilterView: UIView {
     lazy var separator = makeSeparator()
     lazy var commandsButton = makeButton(text: "Train.Filter.Commands".localized)
     lazy var gamesButton = makeButton(text: "Train.Filter.Games".localized)
+    lazy var articlesButton = makeButton(text: "Train.Filter.Articles".localized)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -39,6 +40,7 @@ private extension TrainFilterView {
     func update() {
         commandsButton.marked = filter == .commands
         gamesButton.marked = filter == .games
+        articlesButton.marked = filter == .articles
     }
 }
 
@@ -64,6 +66,13 @@ private extension TrainFilterView {
             gamesButton.heightAnchor.constraint(equalToConstant: 34.scale),
             gamesButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 147.scale),
             gamesButton.centerYAnchor.constraint(equalTo: centerYAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            articlesButton.widthAnchor.constraint(equalToConstant: 76.scale),
+            articlesButton.heightAnchor.constraint(equalToConstant: 34.scale),
+            articlesButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 235.scale),
+            articlesButton.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

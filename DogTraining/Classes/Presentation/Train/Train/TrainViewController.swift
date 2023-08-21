@@ -145,6 +145,19 @@ extension TrainViewController: TrainTableDelegate {
             }
         }
     }
+    
+    func trainTableDidTapped(article: Article) {
+        let needPayment = article.paid ? !SessionManager().hasActiveSubscriptions() : false
+        
+        if needPayment {
+            let vc = PaygateViewController.make()
+            present(vc, animated: true)
+        } else {
+            // TODO
+//            let vc = CommandInstructionViewController.make(command: command)
+//            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 // MARK: Private
@@ -163,6 +176,8 @@ private extension TrainViewController {
                     .map { TrainFilterView.Filter.commands },
                 mainView.filterView.gamesButton.rx.tap
                     .map { TrainFilterView.Filter.games },
+                mainView.filterView.articlesButton.rx.tap
+                    .map { TrainFilterView.Filter.articles },
                 externalSelectFilter.asObservable()
             )
             .startWith(selectFilter ?? .commands)

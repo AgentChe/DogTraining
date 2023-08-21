@@ -16,6 +16,8 @@ final class TrainViewModel {
     lazy var sections = makeSections()
     lazy var activity = RxActivityIndicator()
     
+    private lazy var articlesSection = makeArticlesSection()
+    private lazy var articles = makeArticles()
     private lazy var trainingsSection = makeTrainingsSection()
     private lazy var trainings = makeTrainings()
     private lazy var commandsSection = makeCommandsSection()
@@ -25,6 +27,7 @@ final class TrainViewModel {
     private lazy var gamesGroups = makeGamesGroups()
     private lazy var skillLevel = makeSkillLevel()
     
+    private lazy var articlesManager = ArticlesManager()
     private lazy var gamesManager = GamesManager()
     private lazy var commandsManager = CommandsManager()
     private lazy var trainingsManager = TrainingsManager()
@@ -42,16 +45,32 @@ private extension TrainViewModel {
                 didSelectFilter.asDriver(onErrorDriveWith: .never()),
                 trainingsSection,
                 commandsSection,
-                gamesSections
+                gamesSections,
+                articlesSection
             )
-            .map { filter, trainingsSection, commandsSection, gamesSections -> [TrainTableSection] in
+            .map { filter, trainingsSection, commandsSection, gamesSections, articlesSection -> [TrainTableSection] in
                 switch filter {
                 case .commands:
                     return [trainingsSection, commandsSection]
                 case .games:
                     return gamesSections
+                case .articles:
+                    return [articlesSection]
                 }
             }
+    }
+    
+    func makeArticlesSection() -> Driver<TrainTableSection> {
+        articles
+            .map { articles -> TrainTableSection in
+                TrainTableSection(elements: articles.map { .article($0) })
+            }
+    }
+    
+    func makeArticles() -> Driver<[Article]> {
+        articlesManager
+            .obtainArticles(forceUpdate: false)
+            .asDriver(onErrorJustReturn: [])
     }
     
     func makeTrainingsSection() -> Driver<TrainTableSection> {

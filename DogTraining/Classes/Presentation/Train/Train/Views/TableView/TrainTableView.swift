@@ -11,6 +11,7 @@ protocol TrainTableDelegate: AnyObject {
     func trainTableDidTapped(gamesGroup: GameGroup)
     func trainTableDidTappedCommands()
     func trainTableDidTapped(element: TrainTrainigElement.Element)
+    func trainTableDidTapped(article: Article)
 }
 
 final class TrainTableView: UITableView {
@@ -61,6 +62,10 @@ extension TrainTableView: UITableViewDataSource {
                 self?.mainDelegate?.trainTableDidTapped(element: element)
             }
             return cell
+        case .article(let element):
+            let cell = dequeueReusableCell(withIdentifier: String(describing: TrainArticleCell.self), for: indexPath) as! TrainArticleCell
+            cell.setup(element: element)
+            return cell
         }
     }
 }
@@ -78,6 +83,8 @@ extension TrainTableView: UITableViewDelegate {
             default:
                 return
             }
+        case .article(let element):
+            mainDelegate?.trainTableDidTapped(article: element)
         default:
             return
         }
@@ -89,6 +96,8 @@ extension TrainTableView: UITableViewDelegate {
             return 89.scale
         case .trainings:
             return 330.scale
+        case .article:
+            return UITableView.automaticDimension
         }
     }
 }
@@ -98,6 +107,7 @@ private extension TrainTableView {
     func initialize() {
         register(TrainTitleCell.self, forCellReuseIdentifier: String(describing: TrainTitleCell.self))
         register(TrainTrainingCell.self, forCellReuseIdentifier: String(describing: TrainTrainingCell.self))
+        register(TrainArticleCell.self, forCellReuseIdentifier: String(describing: TrainArticleCell.self))
         
         dataSource = self
         delegate = self

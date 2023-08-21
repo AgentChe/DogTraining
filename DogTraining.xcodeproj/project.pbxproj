@@ -333,6 +333,14 @@
 		DEFE80742A8FC69600FB96F0 /* TrainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80662A8FC69600FB96F0 /* TrainTableView.swift */; };
 		DEFE80752A8FC69600FB96F0 /* TrainFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80682A8FC69600FB96F0 /* TrainFilterButton.swift */; };
 		DEFE80762A8FC69600FB96F0 /* TrainFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80692A8FC69600FB96F0 /* TrainFilterView.swift */; };
+		DEFE80B92A93B6C000FB96F0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80B82A93B6C000FB96F0 /* Article.swift */; };
+		DEFE80BB2A93B6E800FB96F0 /* ArticleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80BA2A93B6E800FB96F0 /* ArticleDetails.swift */; };
+		DEFE80BF2A93B72000FB96F0 /* GetArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80BE2A93B72000FB96F0 /* GetArticlesRequest.swift */; };
+		DEFE80C12A93B72900FB96F0 /* GetArticlesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80C02A93B72900FB96F0 /* GetArticlesResponse.swift */; };
+		DEFE80C42A93ECB900FB96F0 /* GetArticleDetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80C32A93ECB900FB96F0 /* GetArticleDetailsRequest.swift */; };
+		DEFE80C62A93ECC400FB96F0 /* GetArticleDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80C52A93ECC400FB96F0 /* GetArticleDetailsResponse.swift */; };
+		DEFE80C82A93EDF900FB96F0 /* ArticlesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80C72A93EDF900FB96F0 /* ArticlesManager.swift */; };
+		DEFE80D62A93F28D00FB96F0 /* TrainArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80D52A93F28D00FB96F0 /* TrainArticleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -666,6 +674,14 @@
 		DEFE80662A8FC69600FB96F0 /* TrainTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainTableView.swift; sourceTree = "<group>"; };
 		DEFE80682A8FC69600FB96F0 /* TrainFilterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainFilterButton.swift; sourceTree = "<group>"; };
 		DEFE80692A8FC69600FB96F0 /* TrainFilterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainFilterView.swift; sourceTree = "<group>"; };
+		DEFE80B82A93B6C000FB96F0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		DEFE80BA2A93B6E800FB96F0 /* ArticleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetails.swift; sourceTree = "<group>"; };
+		DEFE80BE2A93B72000FB96F0 /* GetArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesRequest.swift; sourceTree = "<group>"; };
+		DEFE80C02A93B72900FB96F0 /* GetArticlesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticlesResponse.swift; sourceTree = "<group>"; };
+		DEFE80C32A93ECB900FB96F0 /* GetArticleDetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticleDetailsRequest.swift; sourceTree = "<group>"; };
+		DEFE80C52A93ECC400FB96F0 /* GetArticleDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticleDetailsResponse.swift; sourceTree = "<group>"; };
+		DEFE80C72A93EDF900FB96F0 /* ArticlesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesManager.swift; sourceTree = "<group>"; };
+		DEFE80D52A93F28D00FB96F0 /* TrainArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainArticleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -935,6 +951,7 @@
 		DE1F7AA72A83F10600B3FF24 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE80B62A93B6AE00FB96F0 /* Articles */,
 				DEB55CFE2A865BC500A56B96 /* Plan */,
 				DEB55CD12A8641EC00A56B96 /* Training */,
 				DEB55CA42A86315200A56B96 /* Commands */,
@@ -2145,6 +2162,7 @@
 			children = (
 				DEFE80602A8FC69600FB96F0 /* Collection */,
 				DEFE80642A8FC69600FB96F0 /* TrainTitleCell.swift */,
+				DEFE80D52A93F28D00FB96F0 /* TrainArticleCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2166,6 +2184,52 @@
 				DEFE80692A8FC69600FB96F0 /* TrainFilterView.swift */,
 			);
 			path = Filter;
+			sourceTree = "<group>";
+		};
+		DEFE80B62A93B6AE00FB96F0 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80BC2A93B70A00FB96F0 /* Requests */,
+				DEFE80B72A93B6B500FB96F0 /* Models */,
+				DEFE80C72A93EDF900FB96F0 /* ArticlesManager.swift */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		DEFE80B72A93B6B500FB96F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80B82A93B6C000FB96F0 /* Article.swift */,
+				DEFE80BA2A93B6E800FB96F0 /* ArticleDetails.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEFE80BC2A93B70A00FB96F0 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80C22A93EC5D00FB96F0 /* GetArticleDetails */,
+				DEFE80BD2A93B71100FB96F0 /* GetArticles */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		DEFE80BD2A93B71100FB96F0 /* GetArticles */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80BE2A93B72000FB96F0 /* GetArticlesRequest.swift */,
+				DEFE80C02A93B72900FB96F0 /* GetArticlesResponse.swift */,
+			);
+			path = GetArticles;
+			sourceTree = "<group>";
+		};
+		DEFE80C22A93EC5D00FB96F0 /* GetArticleDetails */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80C32A93ECB900FB96F0 /* GetArticleDetailsRequest.swift */,
+				DEFE80C52A93ECC400FB96F0 /* GetArticleDetailsResponse.swift */,
+			);
+			path = GetArticleDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2346,6 +2410,7 @@
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
 				DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */,
 				DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */,
+				DEFE80C42A93ECB900FB96F0 /* GetArticleDetailsRequest.swift in Sources */,
 				DE1F7B392A83F13200B3FF24 /* PaygateViewController.swift in Sources */,
 				DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */,
 				DEFE80542A8FC00B00FB96F0 /* CalendarView.swift in Sources */,
@@ -2463,6 +2528,7 @@
 				DEFE802C2A8E41D200FB96F0 /* TTButtonsCell.swift in Sources */,
 				DEFE80372A8E41D200FB96F0 /* CommandInstructionImageCell.swift in Sources */,
 				DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */,
+				DEFE80C82A93EDF900FB96F0 /* ArticlesManager.swift in Sources */,
 				DEFE806B2A8FC69600FB96F0 /* TrainInfoView.swift in Sources */,
 				DEB55C9D2A86228700A56B96 /* GetGamesResponse.swift in Sources */,
 				DEFE80352A8E41D200FB96F0 /* CommandInstructionInstructionCell.swift in Sources */,
@@ -2503,6 +2569,7 @@
 				DE1F7ADF2A83F10600B3FF24 /* SyncTokensRequest.swift in Sources */,
 				DE1F7A9D2A83F0E700B3FF24 /* PushNotificationsManager.swift in Sources */,
 				DE1F7AEA2A83F10600B3FF24 /* SessionManager.swift in Sources */,
+				DEFE80BF2A93B72000FB96F0 /* GetArticlesRequest.swift in Sources */,
 				DEB55CC52A86315200A56B96 /* GetCommandTrainingResponse.swift in Sources */,
 				DE1F7A932A83F0E700B3FF24 /* NavigationController.swift in Sources */,
 				DE1F7AD22A83F10600B3FF24 /* Paygate.swift in Sources */,
@@ -2554,9 +2621,11 @@
 				DEFE806D2A8FC69600FB96F0 /* TrainView.swift in Sources */,
 				DEFE803B2A8E41D200FB96F0 /* CommandTemplateInstructionView.swift in Sources */,
 				DEFE80512A8FC00B00FB96F0 /* CalendarDateCell.swift in Sources */,
+				DEFE80B92A93B6C000FB96F0 /* Article.swift in Sources */,
 				DEFE80522A8FC00B00FB96F0 /* CalendarEventType.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
+				DEFE80C62A93ECC400FB96F0 /* GetArticleDetailsResponse.swift in Sources */,
 				DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */,
 				DEB55CCB2A86315200A56B96 /* AssignCommandRequest.swift in Sources */,
 				DEB55CA02A86228700A56B96 /* GetGameGroupsRequest.swift in Sources */,
@@ -2572,6 +2641,7 @@
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
 				DEFE80212A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift in Sources */,
 				DEFE80292A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift in Sources */,
+				DEFE80D62A93F28D00FB96F0 /* TrainArticleCell.swift in Sources */,
 				DEFE80712A8FC69600FB96F0 /* TrainCollectionView.swift in Sources */,
 				DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */,
 				DEB55CF42A8641EC00A56B96 /* ScheduleTrainingRequest.swift in Sources */,
@@ -2587,8 +2657,10 @@
 				DEFE7FE02A8D155B00FB96F0 /* CommandsViewModel.swift in Sources */,
 				DE1F7B3B2A83F13200B3FF24 /* PaygateInfoCell.swift in Sources */,
 				DEFE7F602A8CBA3800FB96F0 /* GIHeaderCell.swift in Sources */,
+				DEFE80C12A93B72900FB96F0 /* GetArticlesResponse.swift in Sources */,
 				DEFE7F4F2A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift in Sources */,
 				DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */,
+				DEFE80BB2A93B6E800FB96F0 /* ArticleDetails.swift in Sources */,
 				DEFE80722A8FC69600FB96F0 /* TrainTitleCell.swift in Sources */,
 				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
 				DEFE7EF32A8B7DD600FB96F0 /* HomeTableView.swift in Sources */,

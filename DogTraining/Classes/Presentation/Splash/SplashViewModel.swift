@@ -27,6 +27,7 @@ final class SplashViewModel {
     private lazy var contentManager = ContentManager()
     private lazy var gamesManager = GamesManager()
     private lazy var commandsManager = CommandsManager()
+    private lazy var articlesManager = ArticlesManager()
     
     private lazy var observableRetrySingle = ObservableRetrySingle()
 }
@@ -121,6 +122,9 @@ private extension SplashViewModel {
             let commandsGroups = commandsManager
                 .obtainCommandsGroups(forceUpdate: true)
                 .mapToVoid()
+            let articles = articlesManager
+                .obtainArticles(forceUpdate: true)
+                .mapToVoid()
             
             return Single
                 .zip([
@@ -129,7 +133,8 @@ private extension SplashViewModel {
                     breeds,
                     levels,
                     gamesGroups,
-                    commandsGroups
+                    commandsGroups,
+                    articles
                 ])
                 .mapToVoid()
         }
