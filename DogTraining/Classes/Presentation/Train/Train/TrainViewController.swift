@@ -107,9 +107,8 @@ extension TrainViewController: TrainTableDelegate {
     }
     
     func trainTableDidTapped(gamesGroup: GameGroup) {
-        // TODO
-//        let vc = DrillsViewController.make(drillCategory: drillCategory)
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = GamesViewController.make(gamesGroup: gamesGroup)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func trainTableDidTapped(element: TrainTrainigElement.Element) {

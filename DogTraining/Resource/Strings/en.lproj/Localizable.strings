@@ -202,3 +202,6 @@
 
 // MARK: Commands
 "Commands.Title" = "Commands";
+
+// MARK: Games
+"Games.Title" = "Games";

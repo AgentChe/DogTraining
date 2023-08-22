@@ -344,6 +344,12 @@
 		DEFE80D92A94E10D00FB96F0 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80D82A94E10D00FB96F0 /* ArticleViewController.swift */; };
 		DEFE80DB2A94E11300FB96F0 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80DA2A94E11300FB96F0 /* ArticleViewModel.swift */; };
 		DEFE80DD2A94E11800FB96F0 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80DC2A94E11800FB96F0 /* ArticleView.swift */; };
+		DEFE80E02A950C0000FB96F0 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80DF2A950C0000FB96F0 /* GamesViewController.swift */; };
+		DEFE80E22A950C0600FB96F0 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80E12A950C0600FB96F0 /* GamesViewModel.swift */; };
+		DEFE80E42A950C0D00FB96F0 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80E32A950C0D00FB96F0 /* GamesView.swift */; };
+		DEFE80E82A950E0800FB96F0 /* GamesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80E72A950E0800FB96F0 /* GamesTableView.swift */; };
+		DEFE80EA2A950E0F00FB96F0 /* GamesTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80E92A950E0F00FB96F0 /* GamesTableElement.swift */; };
+		DEFE80EC2A950E1600FB96F0 /* GamesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80EB2A950E1600FB96F0 /* GamesTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -688,6 +694,12 @@
 		DEFE80D82A94E10D00FB96F0 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		DEFE80DA2A94E11300FB96F0 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		DEFE80DC2A94E11800FB96F0 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
+		DEFE80DF2A950C0000FB96F0 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		DEFE80E12A950C0600FB96F0 /* GamesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		DEFE80E32A950C0D00FB96F0 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		DEFE80E72A950E0800FB96F0 /* GamesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableView.swift; sourceTree = "<group>"; };
+		DEFE80E92A950E0F00FB96F0 /* GamesTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableElement.swift; sourceTree = "<group>"; };
+		DEFE80EB2A950E1600FB96F0 /* GamesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1100,6 +1112,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE80DE2A950BF100FB96F0 /* Games */,
 				DEFE80D72A94E10000FB96F0 /* Article */,
 				DEFE80552A8FC69600FB96F0 /* Train */,
 				DEFE80452A8FC00B00FB96F0 /* Calendar */,
@@ -2249,6 +2262,35 @@
 			path = Article;
 			sourceTree = "<group>";
 		};
+		DEFE80DE2A950BF100FB96F0 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80E52A950DFB00FB96F0 /* Views */,
+				DEFE80DF2A950C0000FB96F0 /* GamesViewController.swift */,
+				DEFE80E12A950C0600FB96F0 /* GamesViewModel.swift */,
+				DEFE80E32A950C0D00FB96F0 /* GamesView.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		DEFE80E52A950DFB00FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80E62A950DFF00FB96F0 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE80E62A950DFF00FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80E72A950E0800FB96F0 /* GamesTableView.swift */,
+				DEFE80E92A950E0F00FB96F0 /* GamesTableElement.swift */,
+				DEFE80EB2A950E1600FB96F0 /* GamesTableCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2467,6 +2509,7 @@
 				DE1F7B2F2A83F13200B3FF24 /* SplashActivity.swift in Sources */,
 				DEFE80322A8E41D200FB96F0 /* TTCommandsGroupsCell.swift in Sources */,
 				DEB55CC62A86315200A56B96 /* GetCommandTrainingRequest.swift in Sources */,
+				DEFE80EC2A950E1600FB96F0 /* GamesTableCell.swift in Sources */,
 				DEFE7FC52A8CF96C00FB96F0 /* CommandInstructionViewController.swift in Sources */,
 				DEFE80232A8E41D200FB96F0 /* ProgressSegmentView.swift in Sources */,
 				DEFE7EAA2A8A684000FB96F0 /* OCommandsTableView.swift in Sources */,
@@ -2484,6 +2527,7 @@
 				DEFE80252A8E41D200FB96F0 /* CommandsTrainingMenuView.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
 				DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */,
+				DEFE80E82A950E0800FB96F0 /* GamesTableView.swift in Sources */,
 				DE1F7A8A2A83F0E700B3FF24 /* SignError.swift in Sources */,
 				DE1F7A9E2A83F0E700B3FF24 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE1F7B432A83F13200B3FF24 /* OCombineData.swift in Sources */,
@@ -2507,6 +2551,7 @@
 				DEB55CF82A8641EC00A56B96 /* AssignTrainingRequest.swift in Sources */,
 				DE1F7A8D2A83F0E700B3FF24 /* Weak.swift in Sources */,
 				DE1F7ADD2A83F10600B3FF24 /* GetProfileResponse.swift in Sources */,
+				DEFE80E42A950C0D00FB96F0 /* GamesView.swift in Sources */,
 				DE1F7B442A83F13200B3FF24 /* OnboardingViewController.swift in Sources */,
 				DEFE80742A8FC69600FB96F0 /* TrainTableView.swift in Sources */,
 				DE1F7B372A83F13200B3FF24 /* PaygateInteractor.swift in Sources */,
@@ -2647,11 +2692,13 @@
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
 				DEFE80C62A93ECC400FB96F0 /* GetArticleDetailsResponse.swift in Sources */,
 				DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */,
+				DEFE80E22A950C0600FB96F0 /* GamesViewModel.swift in Sources */,
 				DEB55CCB2A86315200A56B96 /* AssignCommandRequest.swift in Sources */,
 				DEB55CA02A86228700A56B96 /* GetGameGroupsRequest.swift in Sources */,
 				DE1F7A7F2A83F0E700B3FF24 /* GlobalDefinitions.swift in Sources */,
 				DE1F7AA52A83F0E700B3FF24 /* FirebaseManager.swift in Sources */,
 				DEFE7EAE2A8A684E00FB96F0 /* OCommandsTableElement.swift in Sources */,
+				DEFE80E02A950C0000FB96F0 /* GamesViewController.swift in Sources */,
 				DE1F7B602A83F13200B3FF24 /* OnboardingView.swift in Sources */,
 				DE1F7AD52A83F10600B3FF24 /* PaygateManager.swift in Sources */,
 				DE1F7B2E2A83F13200B3FF24 /* SplashViewController.swift in Sources */,
@@ -2661,6 +2708,7 @@
 				DEB55CC02A86315200A56B96 /* CommandsManager.swift in Sources */,
 				DEFE80212A8E41D200FB96F0 /* CommandsTrainingImageViewCell.swift in Sources */,
 				DEFE80292A8E41D200FB96F0 /* CommandsTrainingTemplateViewController.swift in Sources */,
+				DEFE80EA2A950E0F00FB96F0 /* GamesTableElement.swift in Sources */,
 				DEFE80D62A93F28D00FB96F0 /* TrainArticleCell.swift in Sources */,
 				DEFE80712A8FC69600FB96F0 /* TrainCollectionView.swift in Sources */,
 				DEB55D102A865BC500A56B96 /* PlanGame.swift in Sources */,
