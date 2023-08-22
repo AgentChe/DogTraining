@@ -341,6 +341,9 @@
 		DEFE80C62A93ECC400FB96F0 /* GetArticleDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80C52A93ECC400FB96F0 /* GetArticleDetailsResponse.swift */; };
 		DEFE80C82A93EDF900FB96F0 /* ArticlesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80C72A93EDF900FB96F0 /* ArticlesManager.swift */; };
 		DEFE80D62A93F28D00FB96F0 /* TrainArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80D52A93F28D00FB96F0 /* TrainArticleCell.swift */; };
+		DEFE80D92A94E10D00FB96F0 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80D82A94E10D00FB96F0 /* ArticleViewController.swift */; };
+		DEFE80DB2A94E11300FB96F0 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80DA2A94E11300FB96F0 /* ArticleViewModel.swift */; };
+		DEFE80DD2A94E11800FB96F0 /* ArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80DC2A94E11800FB96F0 /* ArticleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -682,6 +685,9 @@
 		DEFE80C52A93ECC400FB96F0 /* GetArticleDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetArticleDetailsResponse.swift; sourceTree = "<group>"; };
 		DEFE80C72A93EDF900FB96F0 /* ArticlesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesManager.swift; sourceTree = "<group>"; };
 		DEFE80D52A93F28D00FB96F0 /* TrainArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainArticleCell.swift; sourceTree = "<group>"; };
+		DEFE80D82A94E10D00FB96F0 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		DEFE80DA2A94E11300FB96F0 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		DEFE80DC2A94E11800FB96F0 /* ArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1094,6 +1100,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE80D72A94E10000FB96F0 /* Article */,
 				DEFE80552A8FC69600FB96F0 /* Train */,
 				DEFE80452A8FC00B00FB96F0 /* Calendar */,
 				DEFE7FE62A8E41D200FB96F0 /* CommandsTraining */,
@@ -2232,6 +2239,16 @@
 			path = GetArticleDetails;
 			sourceTree = "<group>";
 		};
+		DEFE80D72A94E10000FB96F0 /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80D82A94E10D00FB96F0 /* ArticleViewController.swift */,
+				DEFE80DA2A94E11300FB96F0 /* ArticleViewModel.swift */,
+				DEFE80DC2A94E11800FB96F0 /* ArticleView.swift */,
+			);
+			path = Article;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2363,6 +2380,7 @@
 				DEFE7F592A8CBA3800FB96F0 /* GameTrainingBackgroundImageView.swift in Sources */,
 				DEFE801A2A8E41D200FB96F0 /* CommandsTrainingResultViewController.swift in Sources */,
 				DEFE7E9F2A8A4B2400FB96F0 /* OBehaviorView.swift in Sources */,
+				DEFE80DD2A94E11800FB96F0 /* ArticleView.swift in Sources */,
 				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
 				DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
@@ -2415,6 +2433,7 @@
 				DEB55D212A866D2500A56B96 /* ORoleButton.swift in Sources */,
 				DEFE80542A8FC00B00FB96F0 /* CalendarView.swift in Sources */,
 				DEFE7F652A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift in Sources */,
+				DEFE80D92A94E10D00FB96F0 /* ArticleViewController.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
 				DEFE7F5D2A8CBA3800FB96F0 /* GameInstructionViewController.swift in Sources */,
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
@@ -2558,6 +2577,7 @@
 				DEB55CCC2A86315200A56B96 /* AssignCommandResponse.swift in Sources */,
 				DEFE7EE52A8B7DD600FB96F0 /* HomeTitleCell.swift in Sources */,
 				DEFE80282A8E41D200FB96F0 /* CommandsTrainingQuitViewController.swift in Sources */,
+				DEFE80DB2A94E11300FB96F0 /* ArticleViewModel.swift in Sources */,
 				DEB55CBF2A86315200A56B96 /* CommandsMediator.swift in Sources */,
 				DEFE7EEF2A8B7DD600FB96F0 /* HomeStatsCell.swift in Sources */,
 				DE1F7A832A83F0E700B3FF24 /* Scalable.swift in Sources */,

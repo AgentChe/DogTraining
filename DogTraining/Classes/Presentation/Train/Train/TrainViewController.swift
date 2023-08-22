@@ -153,9 +153,8 @@ extension TrainViewController: TrainTableDelegate {
             let vc = PaygateViewController.make()
             present(vc, animated: true)
         } else {
-            // TODO
-//            let vc = CommandInstructionViewController.make(command: command)
-//            navigationController?.pushViewController(vc, animated: true)
+            let vc = ArticleViewController.make(articleId: article.id)
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
