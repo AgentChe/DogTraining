@@ -15,9 +15,9 @@ final class CommandsViewController: UIViewController {
     
     private lazy var disposeBag = DisposeBag()
     
-    private let commandGroup: CommandGroup
+    private let commandGroup: CommandGroup?
     
-    private init(commandGroup: CommandGroup) {
+    private init(commandGroup: CommandGroup?) {
         self.commandGroup = commandGroup
         
         super.init(nibName: nil, bundle: nil)
@@ -60,9 +60,9 @@ final class CommandsViewController: UIViewController {
 
 // MARK: Make
 extension CommandsViewController {
-    static func make(commandGroup: CommandGroup) -> CommandsViewController {
+    static func make(commandGroup: CommandGroup?) -> CommandsViewController {
         let vc = CommandsViewController(commandGroup: commandGroup)
-        vc.navigationItem.title = commandGroup.name
+        vc.navigationItem.title = commandGroup?.name ?? "Commands.Title".localized
         vc.navigationItem.backButtonTitle = " "
         return vc
     }

@@ -14,8 +14,9 @@ final class CommandsViewModel {
     lazy var elements = makeElements()
     lazy var activity = RxActivityIndicator()
     
-    private let commandGroup: Driver<CommandGroup>
+    private let commandGroup: Driver<CommandGroup?>
     private lazy var commands = makeCommands()
+    private lazy var commandsGroups = makeCommandsGroups()
     private lazy var profile = makeProfile()
     private lazy var activeSubscription = makeActiveSubscription()
     private lazy var skillLevels = makeSkillLevels()
@@ -27,7 +28,7 @@ final class CommandsViewModel {
     
     private lazy var observableRetrySingle = ObservableRetrySingle()
     
-    init(commandGroup: CommandGroup) {
+    init(commandGroup: CommandGroup?) {
         self.commandGroup = BehaviorRelay(value: commandGroup).asDriver()
     }
 }
@@ -36,10 +37,13 @@ final class CommandsViewModel {
 private extension CommandsViewModel {
     func makeElements() -> Driver<[CommandsTableElement]> {
         Driver
-            .combineLatest(commandGroup, commands, activeSubscription, skillLevels)
-            .map { commandGroup, commands, activeSubscription, skillLevels -> [CommandsTableElement] in
+            .combineLatest(commandsGroups, commands, activeSubscription, skillLevels)
+            .map { commandsGroups, commands, activeSubscription, skillLevels -> [CommandsTableElement] in
                 commands.compactMap { command -> CommandsTableElement? in
-                    guard let skillLevel = skillLevels.first(where: { $0.id == command.skillLevelId }) else {
+                    guard
+                        let commandGroup = commandsGroups.first(where: { $0.id == command.commandGroupId }),
+                        let skillLevel = skillLevels.first(where: { $0.id == command.skillLevelId })
+                    else {
                         return nil
                     }
                     
@@ -64,7 +68,7 @@ private extension CommandsViewModel {
                 func source() -> Single<[Command]> {
                     self.commandsManager
                         .obtainCommands(
-                            commandGroupId: commandGroup.id,
+                            commandGroupId: commandGroup?.id,
                             levelId: profile?.skillLevelId
                         )
                 }
@@ -83,6 +87,12 @@ private extension CommandsViewModel {
                     .trackActivity(self.activity)
                     .asDriver(onErrorJustReturn: [])
             }
+    }
+    
+    func makeCommandsGroups() -> Driver<[CommandGroup]> {
+        commandsManager
+            .obtainCommandsGroups(forceUpdate: false)
+            .asDriver(onErrorJustReturn: [])
     }
     
     func makeProfile() -> Driver<Profile?> {

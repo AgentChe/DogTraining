@@ -102,7 +102,8 @@ extension TrainViewController {
 // MARK: TrainTableDelegate
 extension TrainViewController: TrainTableDelegate {
     func trainTableDidTappedCommands() {
-        // TODO
+        let vc = CommandsViewController.make(commandGroup: nil)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func trainTableDidTapped(gamesGroup: GameGroup) {

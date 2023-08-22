@@ -199,3 +199,6 @@
 // MARK: TrainInfo
 "TrainInfo.Title" = "Info";
 "TrainInfo.SubTitle" = "To change the level of difficulty please go to the settings";
+
+// MARK: Commands
+"Commands.Title" = "Commands";
