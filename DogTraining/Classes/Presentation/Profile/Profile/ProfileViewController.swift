@@ -30,7 +30,9 @@ final class ProfileViewController: UIViewController {
             return self.open(error: error)
         }
         
-        let output = viewModel.configure(input: ProfileViewModel.Input())
+        let output = viewModel.configure(input: ProfileViewModel.Input(
+            didSelectElement: mainView.tableView.didSelectElement
+        ))
         
         output.activity
             .drive(Binder(self) { base, activity in
@@ -42,6 +44,12 @@ final class ProfileViewController: UIViewController {
             .drive(with: mainView.tableView) { base, elements in
                 base.setup(elements: elements)
             }
+            .disposed(by: disposeBag)
+        
+        output.route
+            .drive(Binder(self) { base, route in
+                base.route(route)
+            })
             .disposed(by: disposeBag)
     }
 }
@@ -56,6 +64,14 @@ extension ProfileViewController {
 
 // MARK: Private
 private extension ProfileViewController {
+    func route(_ route: ProfileViewModel.Route) {
+        switch route {
+        case .settings:
+            let vc = SettingsViewController.make()
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     func activity(_ activity: Bool) {
         activity ? mainView.preloader.startAnimating() : mainView.preloader.stopAnimating()
     }

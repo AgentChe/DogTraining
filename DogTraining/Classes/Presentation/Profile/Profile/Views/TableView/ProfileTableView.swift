@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 final class ProfileTableView: UITableView {
     lazy var elements = [ProfileTableElement]()
+    
+    private lazy var didSelectElementTrigger = PublishRelay<ProfileTableElement>()
 
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
@@ -27,6 +31,10 @@ extension ProfileTableView {
         self.elements = elements
         
         reloadData()
+    }
+    
+    var didSelectElement: Signal<ProfileTableElement> {
+        didSelectElementTrigger.asSignal()
     }
 }
 
@@ -64,6 +72,10 @@ extension ProfileTableView: UITableViewDataSource {
 extension ProfileTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         UITableView.automaticDimension
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        didSelectElementTrigger.accept(elements[indexPath.row])
     }
 }
 

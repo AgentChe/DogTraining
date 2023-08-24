@@ -371,6 +371,13 @@
 		DEFE81242A97872600FB96F0 /* ProfileMainStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81232A97872600FB96F0 /* ProfileMainStatsView.swift */; };
 		DEFE81262A97878500FB96F0 /* ProfileMainScrollContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */; };
 		DEFE81282A9787A000FB96F0 /* ProfileStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81272A9787A000FB96F0 /* ProfileStatsCell.swift */; };
+		DEFE812B2A97A46600FB96F0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE812A2A97A46600FB96F0 /* SettingsViewController.swift */; };
+		DEFE812D2A97A46D00FB96F0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE812C2A97A46D00FB96F0 /* SettingsViewModel.swift */; };
+		DEFE812F2A97A47200FB96F0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE812E2A97A47200FB96F0 /* SettingsView.swift */; };
+		DEFE81332A97A4D600FB96F0 /* SettingsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81322A97A4D600FB96F0 /* SettingsTableView.swift */; };
+		DEFE81352A97A4DC00FB96F0 /* SettingsTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81342A97A4DC00FB96F0 /* SettingsTableElement.swift */; };
+		DEFE81382A97A57200FB96F0 /* SettingsItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81372A97A57200FB96F0 /* SettingsItemCell.swift */; };
+		DEFE813A2A97A57A00FB96F0 /* SettingsHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81392A97A57A00FB96F0 /* SettingsHeaderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -742,6 +749,13 @@
 		DEFE81232A97872600FB96F0 /* ProfileMainStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainStatsView.swift; sourceTree = "<group>"; };
 		DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScrollContainerView.swift; sourceTree = "<group>"; };
 		DEFE81272A9787A000FB96F0 /* ProfileStatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatsCell.swift; sourceTree = "<group>"; };
+		DEFE812A2A97A46600FB96F0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DEFE812C2A97A46D00FB96F0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		DEFE812E2A97A47200FB96F0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DEFE81322A97A4D600FB96F0 /* SettingsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableView.swift; sourceTree = "<group>"; };
+		DEFE81342A97A4DC00FB96F0 /* SettingsTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableElement.swift; sourceTree = "<group>"; };
+		DEFE81372A97A57200FB96F0 /* SettingsItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItemCell.swift; sourceTree = "<group>"; };
+		DEFE81392A97A57A00FB96F0 /* SettingsHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeaderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2378,6 +2392,7 @@
 		DEFE810B2A977E2200FB96F0 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE81292A97A45900FB96F0 /* Settings */,
 				DEFE810C2A977E5B00FB96F0 /* Profile */,
 			);
 			path = Profile;
@@ -2432,6 +2447,44 @@
 				DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */,
 			);
 			path = Atoms;
+			sourceTree = "<group>";
+		};
+		DEFE81292A97A45900FB96F0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81302A97A4C500FB96F0 /* Views */,
+				DEFE812A2A97A46600FB96F0 /* SettingsViewController.swift */,
+				DEFE812C2A97A46D00FB96F0 /* SettingsViewModel.swift */,
+				DEFE812E2A97A47200FB96F0 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DEFE81302A97A4C500FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81312A97A4CA00FB96F0 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE81312A97A4CA00FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81362A97A56600FB96F0 /* Cells */,
+				DEFE81322A97A4D600FB96F0 /* SettingsTableView.swift */,
+				DEFE81342A97A4DC00FB96F0 /* SettingsTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEFE81362A97A56600FB96F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81372A97A57200FB96F0 /* SettingsItemCell.swift */,
+				DEFE81392A97A57A00FB96F0 /* SettingsHeaderCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2616,6 +2669,7 @@
 				DEFE7EE82A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift in Sources */,
 				DEFE80222A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift in Sources */,
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
+				DEFE81382A97A57200FB96F0 /* SettingsItemCell.swift in Sources */,
 				DEB55CFC2A8641EC00A56B96 /* LogTrainingProgressResponse.swift in Sources */,
 				DEFE7EEE2A8B7DD600FB96F0 /* HomeAddTrainingCell.swift in Sources */,
 				DEFE80C42A93ECB900FB96F0 /* GetArticleDetailsRequest.swift in Sources */,
@@ -2713,6 +2767,7 @@
 				DEFE7F5B2A8CBA3800FB96F0 /* GameInstructionView.swift in Sources */,
 				DEB55D232A86724B00A56B96 /* OBreedView.swift in Sources */,
 				DE1F7AD02A83F10600B3FF24 /* PaygateOptionLineComponent.swift in Sources */,
+				DEFE812F2A97A47200FB96F0 /* SettingsView.swift in Sources */,
 				DEFE7F5E2A8CBA3800FB96F0 /* GIDescriptionCell.swift in Sources */,
 				DEFE7EE22A8B7DD600FB96F0 /* HomeGamesCollectionView.swift in Sources */,
 				DEB55CEC2A8641EC00A56B96 /* TrainingsMediator.swift in Sources */,
@@ -2759,11 +2814,13 @@
 				DE1F7AA32A83F0E700B3FF24 /* BranchManager.swift in Sources */,
 				DEFE7FCF2A8CF96C00FB96F0 /* CommandTrainingView.swift in Sources */,
 				DEB55CC82A86315200A56B96 /* ScheduleCommandResponse.swift in Sources */,
+				DEFE81352A97A4DC00FB96F0 /* SettingsTableElement.swift in Sources */,
 				DEFE7FE52A8D155B00FB96F0 /* CommandsView.swift in Sources */,
 				DE1F7ADA2A83F10600B3FF24 /* DayOfWeek.swift in Sources */,
 				DE1F7AE12A83F10600B3FF24 /* ProfileMediator.swift in Sources */,
 				DE1F7A912A83F0E700B3FF24 /* Toast.swift in Sources */,
 				DE1F7A782A83F0E700B3FF24 /* UIDevice+Extension.swift in Sources */,
+				DEFE81332A97A4D600FB96F0 /* SettingsTableView.swift in Sources */,
 				DE1F7A882A83F0E700B3FF24 /* XOREncryption.swift in Sources */,
 				DEFE7F522A8CBA3800FB96F0 /* GameTrainingViewController.swift in Sources */,
 				DE1F7A8C2A83F0E700B3FF24 /* ContentError.swift in Sources */,
@@ -2793,14 +2850,17 @@
 				DE1F7ADF2A83F10600B3FF24 /* SyncTokensRequest.swift in Sources */,
 				DE1F7A9D2A83F0E700B3FF24 /* PushNotificationsManager.swift in Sources */,
 				DE1F7AEA2A83F10600B3FF24 /* SessionManager.swift in Sources */,
+				DEFE812B2A97A46600FB96F0 /* SettingsViewController.swift in Sources */,
 				DEFE80BF2A93B72000FB96F0 /* GetArticlesRequest.swift in Sources */,
 				DEB55CC52A86315200A56B96 /* GetCommandTrainingResponse.swift in Sources */,
 				DE1F7A932A83F0E700B3FF24 /* NavigationController.swift in Sources */,
+				DEFE813A2A97A57A00FB96F0 /* SettingsHeaderCell.swift in Sources */,
 				DE1F7AD22A83F10600B3FF24 /* Paygate.swift in Sources */,
 				DEB55D1D2A866AA000A56B96 /* OWelcomeView.swift in Sources */,
 				DEFE811B2A977EF700FB96F0 /* ProfileSettingsCell.swift in Sources */,
 				DEFE7EEC2A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift in Sources */,
 				DEB55C992A86228700A56B96 /* GetGameTrainingRequest.swift in Sources */,
+				DEFE812D2A97A46D00FB96F0 /* SettingsViewModel.swift in Sources */,
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
 				DE1F7B3C2A83F13200B3FF24 /* MainViewController.swift in Sources */,
 				DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */,

@@ -10,6 +10,10 @@ import RxSwift
 import RxCocoa
 
 final class ProfileViewModel {
+    enum Route {
+        case settings
+    }
+    
     var tryAgain: ((Error) -> (Observable<Void>))?
     
     private lazy var activity = RxActivityIndicator()
@@ -22,11 +26,14 @@ final class ProfileViewModel {
 
 // MARK: Public
 extension ProfileViewModel {
-    struct Input {}
+    struct Input {
+        let didSelectElement: Signal<ProfileTableElement>
+    }
     
     struct Output {
         let elements: Driver<[ProfileTableElement]>
         let activity: Driver<Bool>
+        let route: Driver<Route>
     }
     
     func configure(input: Input) -> Output {
@@ -40,13 +47,27 @@ extension ProfileViewModel {
                 skillLevels: skillLevels,
                 name: name
             ),
-            activity: activity.asDriver()
+            activity: activity.asDriver(),
+            route: makeRoute(didSelectElement: input.didSelectElement)
         )
     }
 }
 
 // MARK: Private
 private extension ProfileViewModel {
+    func makeRoute(didSelectElement: Signal<ProfileTableElement>) -> Driver<Route> {
+        didSelectElement
+            .compactMap { element -> Route? in
+                switch element {
+                case .settings:
+                    return .settings
+                default:
+                    return nil
+                }
+            }
+            .asDriver(onErrorDriveWith: .never())
+    }
+    
     func makeElements(
         homeKit: Driver<HomeKit>,
         skillLevels: Driver<[SkillLevel]>,
