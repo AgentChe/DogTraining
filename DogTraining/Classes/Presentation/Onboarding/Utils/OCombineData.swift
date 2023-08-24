@@ -8,18 +8,21 @@
 import Foundation
 
 struct OCombineData {
+    let name: String
     let skillLevel: SkillLevel
     let weekSchedule: WeekSchedule
     let commandsGroupsIds: [Int]
 }
 
 final class OnboardingCombineData {
+    private var name: String?
     private var skillLevel: SkillLevel?
     private var weekSchedule: WeekSchedule?
     private var commandsGroups: [CommandGroup]?
     
     func combineData() -> OCombineData? {
         guard
+            let name = name,
             let skillLevel = skillLevel,
             let weekSchedule = weekSchedule,
             let commandsGroups = commandsGroups
@@ -28,10 +31,18 @@ final class OnboardingCombineData {
         }
         
         return OCombineData(
+            name: name,
             skillLevel: skillLevel,
             weekSchedule: weekSchedule,
             commandsGroupsIds: commandsGroups.map { $0.id }
         )
+    }
+}
+
+// MARK: ODogNameViewDelegate
+extension OnboardingCombineData: ODogNameViewDelegate {
+    func dogNameDidSet(name: String) {
+        self.name = name
     }
 }
 

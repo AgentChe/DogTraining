@@ -8,9 +8,12 @@
 import RxSwift
 
 protocol ProfileManagerProtocol {
-    func set(skillLevelId: Int?,
-             weekSchedule: WeekSchedule?,
-             commandGroupIds: [Int]?) -> Single<Void>
+    func set(
+        name: String?,
+        skillLevelId: Int?,
+        weekSchedule: WeekSchedule?,
+        commandGroupIds: [Int]?
+    ) -> Single<Void>
     func obtainProfile(forceUpdate: Bool) -> Single<Profile?>
     func syncTokens(oldToken: String, newToken: String) -> Single<Void>
     func login(userToken: String) -> Single<Void>
@@ -18,6 +21,7 @@ protocol ProfileManagerProtocol {
 
 final class ProfileManager {
     enum Constants {
+        static let name = "profile_manager_name_key"
         static let skillLevelId = "profile_manager_skill_level_id_key"
         static let weekSchedule = "profile_manager_week_schedule_key"
         static let commandGroupIds = "profile_manager_command_group_ids_key"
@@ -30,9 +34,12 @@ final class ProfileManager {
 
 // MARK: ProfileManagerProtocol
 extension ProfileManager: ProfileManagerProtocol {
-    func set(skillLevelId: Int? = nil,
-             weekSchedule: WeekSchedule? = nil,
-             commandGroupIds: [Int]? = nil) -> Single<Void> {
+    func set(
+        name: String? = nil,
+        skillLevelId: Int? = nil,
+        weekSchedule: WeekSchedule? = nil,
+        commandGroupIds: [Int]? = nil
+    ) -> Single<Void> {
         guard let userToken = sessionManager.getSession()?.userToken else {
             return .error(SignError.tokenNotFound)
         }
@@ -56,13 +63,15 @@ extension ProfileManager: ProfileManagerProtocol {
             skillLevel: skillLevelId,
             weekSchedule: weekScheduleDays,
             commandGroupIds: commandGroupIds,
-            timezone: timezone
+            timezone: timezone,
+            name: name
         )
         
         return defaultRequestWrapper
             .callServerApi(requestBody: request)
             .mapToVoid()
             .do(onSuccess: { [weak self] in
+                self?.store(name: name)
                 self?.store(skillLevelId: skillLevelId)
                 self?.store(weekSchedule: weekSchedule)
                 self?.store(commandGroupIds: commandGroupIds)
@@ -104,6 +113,7 @@ private extension ProfileManager {
             .callServerApi(requestBody: request)
             .map { GetProfileResponse.map(from: $0) }
             .do(onSuccess: { [weak self] profile in
+                self?.store(name: profile?.name)
                 self?.store(skillLevelId: profile?.skillLevelId)
                 self?.store(weekSchedule: profile?.weekSchedule)
                 self?.store(commandGroupIds: profile?.commandGroupIds)
@@ -113,14 +123,18 @@ private extension ProfileManager {
     func cachedProfile() -> Single<Profile?> {
         Single
             .zip(
+                cachedName(),
                 cachedSkillLevelId(),
                 cachedWeekSchedule(),
                 cachedCommandGroupIds()
             )
-            .map { skillLevelId, weekSchedule, commandGroupIds -> Profile in
-                Profile(skillLevelId: skillLevelId,
-                        weekSchedule: weekSchedule,
-                        commandGroupIds: commandGroupIds)
+            .map { name, skillLevelId, weekSchedule, commandGroupIds -> Profile in
+                Profile(
+                    name: name,
+                    skillLevelId: skillLevelId,
+                    weekSchedule: weekSchedule,
+                    commandGroupIds: commandGroupIds
+                )
             }
     }
     
@@ -186,6 +200,26 @@ private extension ProfileManager {
             let commandGroupIds = UserDefaults.standard.value(forKey: Constants.commandGroupIds) as? [Int]
             
             event(.success(commandGroupIds))
+            
+            return Disposables.create()
+        }
+    }
+    
+    func store(name: String?) {
+        guard let name = name else {
+            return
+        }
+        
+        UserDefaults.standard.set(name, forKey: Constants.name)
+        
+        ProfileMediator.shared.notify(name: name)
+    }
+    
+    func cachedName() -> Single<String?> {
+        Single<String?>.create { event in
+            let name = UserDefaults.standard.value(forKey: Constants.name) as? String
+            
+            event(.success(name))
             
             return Disposables.create()
         }

@@ -9,7 +9,13 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+protocol ODogNameViewDelegate: AnyObject {
+    func dogNameDidSet(name: String)
+}
+
 final class ODogNameView: OSlideView {
+    weak var mainDelegate: ODogNameViewDelegate?
+    
     lazy var titleLabel = makeTitleLabel()
     lazy var textField = makeTextField()
     lazy var continueButton = makeContinueButton()
@@ -60,6 +66,8 @@ private extension ODogNameView {
     @objc
     func didTapContinue() {
         textField.textField.resignFirstResponder()
+        
+        mainDelegate?.dogNameDidSet(name: textField.textField.text ?? "")
         
         super.onNext()
     }

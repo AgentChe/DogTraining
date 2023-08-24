@@ -6,6 +6,7 @@
 //
 
 struct Profile: Codable, Hashable {
+    let name: String?
     let skillLevelId: Int?
     let weekSchedule: WeekSchedule?
     let commandGroupIds: [Int]?

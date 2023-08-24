@@ -70,6 +70,7 @@ private extension OPreloaderView {
         func source() -> Single<Void> {
             profileManager
                 .set(
+                    name: data.name,
                     skillLevelId: data.skillLevel.id,
                     weekSchedule: data.weekSchedule,
                     commandGroupIds: data.commandsGroupsIds

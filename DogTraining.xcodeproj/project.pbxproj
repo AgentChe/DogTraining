@@ -359,6 +359,18 @@
 		DEFE81042A96502B00FB96F0 /* WhistlesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81032A96502B00FB96F0 /* WhistlesCollectionCell.swift */; };
 		DEFE81062A96503100FB96F0 /* WhistlesCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81052A96503100FB96F0 /* WhistlesCollectionElement.swift */; };
 		DEFE810A2A9656C600FB96F0 /* WhistlesCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81092A9656C600FB96F0 /* WhistlesCollectionLayout.swift */; };
+		DEFE810E2A977E6C00FB96F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE810D2A977E6C00FB96F0 /* ProfileViewController.swift */; };
+		DEFE81102A977E7200FB96F0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE810F2A977E7200FB96F0 /* ProfileViewModel.swift */; };
+		DEFE81122A977E7600FB96F0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81112A977E7600FB96F0 /* ProfileView.swift */; };
+		DEFE81162A977EB000FB96F0 /* ProfileTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81152A977EB000FB96F0 /* ProfileTableView.swift */; };
+		DEFE81182A977EB900FB96F0 /* ProfileTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81172A977EB900FB96F0 /* ProfileTableElement.swift */; };
+		DEFE811B2A977EF700FB96F0 /* ProfileSettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE811A2A977EF700FB96F0 /* ProfileSettingsCell.swift */; };
+		DEFE811E2A9781A700FB96F0 /* ProfileMainProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE811D2A9781A700FB96F0 /* ProfileMainProgressView.swift */; };
+		DEFE81202A97821000FB96F0 /* ProfileProgressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE811F2A97821000FB96F0 /* ProfileProgressCell.swift */; };
+		DEFE81222A9783BD00FB96F0 /* ProfileAddEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81212A9783BD00FB96F0 /* ProfileAddEventCell.swift */; };
+		DEFE81242A97872600FB96F0 /* ProfileMainStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81232A97872600FB96F0 /* ProfileMainStatsView.swift */; };
+		DEFE81262A97878500FB96F0 /* ProfileMainScrollContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */; };
+		DEFE81282A9787A000FB96F0 /* ProfileStatsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81272A9787A000FB96F0 /* ProfileStatsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -718,6 +730,18 @@
 		DEFE81032A96502B00FB96F0 /* WhistlesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionCell.swift; sourceTree = "<group>"; };
 		DEFE81052A96503100FB96F0 /* WhistlesCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionElement.swift; sourceTree = "<group>"; };
 		DEFE81092A9656C600FB96F0 /* WhistlesCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionLayout.swift; sourceTree = "<group>"; };
+		DEFE810D2A977E6C00FB96F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DEFE810F2A977E7200FB96F0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		DEFE81112A977E7600FB96F0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DEFE81152A977EB000FB96F0 /* ProfileTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableView.swift; sourceTree = "<group>"; };
+		DEFE81172A977EB900FB96F0 /* ProfileTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableElement.swift; sourceTree = "<group>"; };
+		DEFE811A2A977EF700FB96F0 /* ProfileSettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingsCell.swift; sourceTree = "<group>"; };
+		DEFE811D2A9781A700FB96F0 /* ProfileMainProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainProgressView.swift; sourceTree = "<group>"; };
+		DEFE811F2A97821000FB96F0 /* ProfileProgressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProgressCell.swift; sourceTree = "<group>"; };
+		DEFE81212A9783BD00FB96F0 /* ProfileAddEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAddEventCell.swift; sourceTree = "<group>"; };
+		DEFE81232A97872600FB96F0 /* ProfileMainStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainStatsView.swift; sourceTree = "<group>"; };
+		DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainScrollContainerView.swift; sourceTree = "<group>"; };
+		DEFE81272A9787A000FB96F0 /* ProfileStatsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStatsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1130,6 +1154,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE810B2A977E2200FB96F0 /* Profile */,
 				DEFE80ED2A96250900FB96F0 /* Clicker */,
 				DEFE80DE2A950BF100FB96F0 /* Games */,
 				DEFE80D72A94E10000FB96F0 /* Article */,
@@ -2350,6 +2375,65 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
+		DEFE810B2A977E2200FB96F0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE810C2A977E5B00FB96F0 /* Profile */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DEFE810C2A977E5B00FB96F0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81132A977E7A00FB96F0 /* Views */,
+				DEFE810D2A977E6C00FB96F0 /* ProfileViewController.swift */,
+				DEFE810F2A977E7200FB96F0 /* ProfileViewModel.swift */,
+				DEFE81112A977E7600FB96F0 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		DEFE81132A977E7A00FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81142A977E9600FB96F0 /* TableView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE81142A977E9600FB96F0 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81192A977EBD00FB96F0 /* Cells */,
+				DEFE81152A977EB000FB96F0 /* ProfileTableView.swift */,
+				DEFE81172A977EB900FB96F0 /* ProfileTableElement.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DEFE81192A977EBD00FB96F0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE811C2A9781A100FB96F0 /* Atoms */,
+				DEFE811A2A977EF700FB96F0 /* ProfileSettingsCell.swift */,
+				DEFE811F2A97821000FB96F0 /* ProfileProgressCell.swift */,
+				DEFE81212A9783BD00FB96F0 /* ProfileAddEventCell.swift */,
+				DEFE81272A9787A000FB96F0 /* ProfileStatsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DEFE811C2A9781A100FB96F0 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE811D2A9781A700FB96F0 /* ProfileMainProgressView.swift */,
+				DEFE81232A97872600FB96F0 /* ProfileMainStatsView.swift */,
+				DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2485,6 +2569,7 @@
 				DEB55D1B2A8660E900A56B96 /* GetHomeKitResponse.swift in Sources */,
 				DEFE7EB62A8A797100FB96F0 /* OPreloaderView.swift in Sources */,
 				DE1F7B732A861FA800B3FF24 /* SkillLevel.swift in Sources */,
+				DEFE81222A9783BD00FB96F0 /* ProfileAddEventCell.swift in Sources */,
 				DEB55D0C2A865BC500A56B96 /* PlanMediator.swift in Sources */,
 				DEFE802F2A8E41D200FB96F0 /* TTCommandCell.swift in Sources */,
 				DEFE7F5F2A8CBA3800FB96F0 /* GIInstructionCell.swift in Sources */,
@@ -2509,6 +2594,8 @@
 				DEFE7F632A8CBA3800FB96F0 /* GITableElement.swift in Sources */,
 				DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */,
 				DE1F7ADC2A83F10600B3FF24 /* GetProfileRequest.swift in Sources */,
+				DEFE81182A977EB900FB96F0 /* ProfileTableElement.swift in Sources */,
+				DEFE81102A977E7200FB96F0 /* ProfileViewModel.swift in Sources */,
 				DE1F7B7E2A86205200B3FF24 /* GetBreedsResponse.swift in Sources */,
 				DEFE7FC42A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift in Sources */,
 				DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */,
@@ -2538,6 +2625,7 @@
 				DEFE7F652A8CBFDF00FB96F0 /* UITapGestureRecognizer+Extension.swift in Sources */,
 				DEFE80D92A94E10D00FB96F0 /* ArticleViewController.swift in Sources */,
 				DEB55C9C2A86228700A56B96 /* GetGamesRequest.swift in Sources */,
+				DEFE810E2A977E6C00FB96F0 /* ProfileViewController.swift in Sources */,
 				DEFE7F5D2A8CBA3800FB96F0 /* GameInstructionViewController.swift in Sources */,
 				DE1F7B582A83F13200B3FF24 /* OSlideView.swift in Sources */,
 				DEFE7EA52A8A545800FB96F0 /* OWhereTrainButton.swift in Sources */,
@@ -2582,6 +2670,7 @@
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
 				DEFE7EE42A8B7DD600FB96F0 /* PlanWeekdaysCell.swift in Sources */,
+				DEFE81262A97878500FB96F0 /* ProfileMainScrollContainerView.swift in Sources */,
 				DEFE80392A8E41D200FB96F0 /* CommandInstructionTableElement.swift in Sources */,
 				DEFE7F562A8CBA3800FB96F0 /* GameTrainingLifeCyrcle.swift in Sources */,
 				DE1F7A872A83F0E700B3FF24 /* ObservableRetrySingle.swift in Sources */,
@@ -2593,6 +2682,7 @@
 				DE1F7A8A2A83F0E700B3FF24 /* SignError.swift in Sources */,
 				DE1F7A9E2A83F0E700B3FF24 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE1F7B432A83F13200B3FF24 /* OCombineData.swift in Sources */,
+				DEFE81282A9787A000FB96F0 /* ProfileStatsCell.swift in Sources */,
 				DEB55CF72A8641EC00A56B96 /* GetTrainingsResponse.swift in Sources */,
 				DEFE80312A8E41D200FB96F0 /* TTCommandsGroupsCollectionView.swift in Sources */,
 				DEFE806F2A8FC69600FB96F0 /* TrainCollectionCell.swift in Sources */,
@@ -2619,6 +2709,7 @@
 				DEFE80742A8FC69600FB96F0 /* TrainTableView.swift in Sources */,
 				DE1F7B372A83F13200B3FF24 /* PaygateInteractor.swift in Sources */,
 				DEFE7F572A8CBA3800FB96F0 /* GameTrainingInstructionScrollView.swift in Sources */,
+				DEFE81202A97821000FB96F0 /* ProfileProgressCell.swift in Sources */,
 				DEFE7F5B2A8CBA3800FB96F0 /* GameInstructionView.swift in Sources */,
 				DEB55D232A86724B00A56B96 /* OBreedView.swift in Sources */,
 				DE1F7AD02A83F10600B3FF24 /* PaygateOptionLineComponent.swift in Sources */,
@@ -2682,6 +2773,7 @@
 				DEFE80242A8E41D200FB96F0 /* TrainingNameLabelView.swift in Sources */,
 				DEFE7E932A8A38E400FB96F0 /* ODogNameView.swift in Sources */,
 				DEB55D0E2A865BC500A56B96 /* PlanTraining.swift in Sources */,
+				DEFE81242A97872600FB96F0 /* ProfileMainStatsView.swift in Sources */,
 				DEFE7FC32A8CF96C00FB96F0 /* CommandTrainingResultViewModel.swift in Sources */,
 				DEFE7FD22A8CF96C00FB96F0 /* CommandTrainingAssembly.swift in Sources */,
 				DEB55C9B2A86228700A56B96 /* ScheduleGameResponse.swift in Sources */,
@@ -2706,6 +2798,7 @@
 				DE1F7A932A83F0E700B3FF24 /* NavigationController.swift in Sources */,
 				DE1F7AD22A83F10600B3FF24 /* Paygate.swift in Sources */,
 				DEB55D1D2A866AA000A56B96 /* OWelcomeView.swift in Sources */,
+				DEFE811B2A977EF700FB96F0 /* ProfileSettingsCell.swift in Sources */,
 				DEFE7EEC2A8B7DD600FB96F0 /* DailyPicksCollectionCell.swift in Sources */,
 				DEB55C992A86228700A56B96 /* GetGameTrainingRequest.swift in Sources */,
 				DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */,
@@ -2735,6 +2828,7 @@
 				DE1F7A842A83F0E700B3FF24 /* NumberLaunches.swift in Sources */,
 				DE1F7AE62A83F10600B3FF24 /* IAPProduct.swift in Sources */,
 				DEFE7F4E2A8CBA3800FB96F0 /* GameTrainingQuitView.swift in Sources */,
+				DEFE81162A977EB000FB96F0 /* ProfileTableView.swift in Sources */,
 				DEFE7F502A8CBA3800FB96F0 /* GameTrainingResultViewController.swift in Sources */,
 				DEFE80202A8E41D200FB96F0 /* CommandsTrainingView.swift in Sources */,
 				DEB55CA32A86228700A56B96 /* LogGameProgressRequest.swift in Sources */,
@@ -2797,6 +2891,7 @@
 				DEFE7F4F2A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift in Sources */,
 				DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */,
 				DEFE80BB2A93B6E800FB96F0 /* ArticleDetails.swift in Sources */,
+				DEFE811E2A9781A700FB96F0 /* ProfileMainProgressView.swift in Sources */,
 				DEFE80722A8FC69600FB96F0 /* TrainTitleCell.swift in Sources */,
 				DEB55CF32A8641EC00A56B96 /* GetTrainingRequest.swift in Sources */,
 				DEFE7EF32A8B7DD600FB96F0 /* HomeTableView.swift in Sources */,
@@ -2806,6 +2901,7 @@
 				DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */,
 				DEFE804E2A8FC00B00FB96F0 /* CalendarViewController.swift in Sources */,
 				DEB55CC72A86315200A56B96 /* ScheduleCommandRequest.swift in Sources */,
+				DEFE81122A977E7600FB96F0 /* ProfileView.swift in Sources */,
 				DE1F7A7B2A83F0E700B3FF24 /* Collection+Extension.swift in Sources */,
 				DEFE7EF12A8B7DD600FB96F0 /* HomePlanTrainingCell.swift in Sources */,
 				DEFE80762A8FC69600FB96F0 /* TrainFilterView.swift in Sources */,

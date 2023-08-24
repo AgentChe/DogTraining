@@ -212,3 +212,12 @@
 "Clicker.Whistle.Title" = "Tap the whistle to make a sound";
 "Clicker.Clicker.Title" = "Tap the clicker to make a sound";
 "Clicker.SoundName" = "Sound %i";
+
+// MARK: Profile
+"Profile.Settings" = "%@ profile";
+"Profile.Level" = "%@ Level";
+"Profile.AddEvent" = "Add event";
+"Profile.StatsTitle" = "Personal stats";
+"Profile.Completed.Commands" = "Completed commands";
+"Profile.Completed.Trainings" = "Completed trainings";
+"Profile.Completed.Games" = "Completed games";

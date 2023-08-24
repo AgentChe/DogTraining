@@ -14,6 +14,7 @@ final class GetProfileResponse {
             return nil
         }
         
+        let name = data["name"] as? String
         let skillLevelId = data["level_id"] as? Int
         
         let weekScheduleArray = data["training_days"] as? [Int] ?? []
@@ -30,6 +31,7 @@ final class GetProfileResponse {
         let commandGroupIds = data["command_group_ids"] as? [Int]
         
         return Profile(
+            name: name,
             skillLevelId: skillLevelId,
             weekSchedule: weekSchedule,
             commandGroupIds: commandGroupIds

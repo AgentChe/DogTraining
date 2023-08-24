@@ -13,6 +13,7 @@ struct SetRequest: APIRequestBody {
     let weekSchedule: [Int]?
     let commandGroupIds: [Int]?
     let timezone: String?
+    let name: String?
     
     var url: String {
         GlobalDefinitions.domain + "/api/users/set"
@@ -42,6 +43,10 @@ struct SetRequest: APIRequestBody {
         
         if let timezone = timezone {
             params["timezone"] = timezone
+        }
+        
+        if let name = name {
+            params["name"] = name
         }
         
         return params

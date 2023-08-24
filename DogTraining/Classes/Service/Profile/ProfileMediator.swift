@@ -11,6 +11,7 @@ import RxCocoa
 final class ProfileMediator {
     static let shared = ProfileMediator()
     
+    private lazy var nameChangeTrigger = PublishRelay<String>()
     private lazy var skillLevelIdChangeTrigger = PublishRelay<Int>()
     private lazy var weekScheduleChangeTrigger = PublishRelay<WeekSchedule>()
     private lazy var commandGroupIdsChangeTrigger = PublishRelay<[Int]>()
@@ -20,6 +21,12 @@ final class ProfileMediator {
 
 // MARK: Public
 extension ProfileMediator {
+    func notify(name: String) {
+        DispatchQueue.main.async { [weak self] in
+            self?.nameChangeTrigger.accept(name)
+        }
+    }
+    
     func notify(skillLevelId: Int) {
         DispatchQueue.main.async { [weak self] in
             self?.skillLevelIdChangeTrigger.accept(skillLevelId)
@@ -41,6 +48,10 @@ extension ProfileMediator {
 
 // MARK: Public (Rx)
 extension ProfileMediator {
+    var nameChange: Signal<String> {
+        nameChangeTrigger.asSignal()
+    }
+    
     var skillLevelIdChange: Signal<Int> {
         skillLevelIdChangeTrigger.asSignal()
     }

@@ -14,6 +14,7 @@ final class OnboardingView: UIView {
     
     var didFinish: (() -> Void)?
     
+    private lazy var nameView = ODogNameView(step: .dogName)
     private lazy var skillLevelView = OSkillLevelView(step: .skillLevel)
     private lazy var daysOfWeekView = ODaysOfWeekView(step: .daysOfWeek)
     private lazy var commandsView = OCommandsView(step: .commands)
@@ -24,7 +25,7 @@ final class OnboardingView: UIView {
             OWelcomeView(step: .welcome),
             ORoleView(step: .role),
             OBreedView(step: .breed),
-            ODogNameView(step: .dogName),
+            nameView,
             OAgeView(step: .age),
             skillLevelView,
             OBehaviorView(step: .behavior),
@@ -98,6 +99,7 @@ private extension OnboardingView {
                 }
             }
         
+        nameView.mainDelegate = combineData
         skillLevelView.mainDelegate = combineData
         daysOfWeekView.mainDelegate = combineData
         commandsView.mainDelegate = combineData
