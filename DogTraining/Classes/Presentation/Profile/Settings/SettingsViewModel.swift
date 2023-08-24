@@ -125,8 +125,14 @@ private extension SettingsViewModel {
                     }
             }
         
+        let name = Driver<String?>
+            .merge(
+                profile.map { $0.name },
+                ProfileMediator.shared.nameChange.map { $0 }.asDriver(onErrorDriveWith: .never())
+            )
+        
         return Driver
-            .combineLatest(level, weekSchedule, commandsGroups, profile.map { $0.name }) {
+            .combineLatest(level, weekSchedule, commandsGroups, name) {
                 EditableData(level: $0, weekSchedule: $1, commandsGroups: $2, dogName: $3)
             }
     }

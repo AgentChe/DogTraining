@@ -56,26 +56,20 @@ extension SettingsViewController {
 
 // MARK: Private
 private extension SettingsViewController {
-    // TODO
     func route(_ route: SettingsViewModel.Route) {
         switch route {
         case .skillLevel(let level):
-            break
-//            let vc = ProfileEditViewController.make(skillLevel: level)
-//            vc.modalPresentationStyle = .fullScreen
-//            present(vc, animated: true)
+            let vc = ProfileEditViewController.make(skillLevel: level)
+            present(vc, animated: true)
         case .trainingDays(let weekSchedule):
-            break
-//            let vc = ProfileEditViewController.make(weekSchedule: weekSchedule)
-//            vc.modalPresentationStyle = .fullScreen
-//            present(vc, animated: true)
+            let vc = ProfileEditViewController.make(weekSchedule: weekSchedule)
+            present(vc, animated: true)
         case .commandsGroups(let commandsGroups):
-            break
-//            let vc = ProfileEditViewController.make(focusZones: zones, gender: gender)
-//            vc.modalPresentationStyle = .fullScreen
-//            present(vc, animated: true)
+            let vc = ProfileEditViewController.make(commandsGroups: commandsGroups)
+            present(vc, animated: true)
         case .dogName(let dogName):
-            break
+            let vc = ProfileEditViewController.make(dogName: dogName)
+            present(vc, animated: true)
         case .open(let url):
             if let url = URL(string: url), UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url)
