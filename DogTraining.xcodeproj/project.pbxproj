@@ -350,6 +350,15 @@
 		DEFE80E82A950E0800FB96F0 /* GamesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80E72A950E0800FB96F0 /* GamesTableView.swift */; };
 		DEFE80EA2A950E0F00FB96F0 /* GamesTableElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80E92A950E0F00FB96F0 /* GamesTableElement.swift */; };
 		DEFE80EC2A950E1600FB96F0 /* GamesTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80EB2A950E1600FB96F0 /* GamesTableCell.swift */; };
+		DEFE80EF2A9625C600FB96F0 /* ClickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80EE2A9625C600FB96F0 /* ClickerView.swift */; };
+		DEFE80F12A9625CC00FB96F0 /* ClickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80F02A9625CC00FB96F0 /* ClickerViewController.swift */; };
+		DEFE80F92A96296C00FB96F0 /* ClickerUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80F82A96296C00FB96F0 /* ClickerUnitView.swift */; };
+		DEFE80FC2A96440000FB96F0 /* MakeClickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80FB2A96440000FB96F0 /* MakeClickerView.swift */; };
+		DEFE80FE2A964A1600FB96F0 /* MakeWhistleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE80FD2A964A1600FB96F0 /* MakeWhistleView.swift */; };
+		DEFE81022A96502500FB96F0 /* WhistlesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81012A96502500FB96F0 /* WhistlesCollectionView.swift */; };
+		DEFE81042A96502B00FB96F0 /* WhistlesCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81032A96502B00FB96F0 /* WhistlesCollectionCell.swift */; };
+		DEFE81062A96503100FB96F0 /* WhistlesCollectionElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81052A96503100FB96F0 /* WhistlesCollectionElement.swift */; };
+		DEFE810A2A9656C600FB96F0 /* WhistlesCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81092A9656C600FB96F0 /* WhistlesCollectionLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -700,6 +709,15 @@
 		DEFE80E72A950E0800FB96F0 /* GamesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableView.swift; sourceTree = "<group>"; };
 		DEFE80E92A950E0F00FB96F0 /* GamesTableElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableElement.swift; sourceTree = "<group>"; };
 		DEFE80EB2A950E1600FB96F0 /* GamesTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesTableCell.swift; sourceTree = "<group>"; };
+		DEFE80EE2A9625C600FB96F0 /* ClickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerView.swift; sourceTree = "<group>"; };
+		DEFE80F02A9625CC00FB96F0 /* ClickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerViewController.swift; sourceTree = "<group>"; };
+		DEFE80F82A96296C00FB96F0 /* ClickerUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerUnitView.swift; sourceTree = "<group>"; };
+		DEFE80FB2A96440000FB96F0 /* MakeClickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeClickerView.swift; sourceTree = "<group>"; };
+		DEFE80FD2A964A1600FB96F0 /* MakeWhistleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeWhistleView.swift; sourceTree = "<group>"; };
+		DEFE81012A96502500FB96F0 /* WhistlesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionView.swift; sourceTree = "<group>"; };
+		DEFE81032A96502B00FB96F0 /* WhistlesCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionCell.swift; sourceTree = "<group>"; };
+		DEFE81052A96503100FB96F0 /* WhistlesCollectionElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionElement.swift; sourceTree = "<group>"; };
+		DEFE81092A9656C600FB96F0 /* WhistlesCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhistlesCollectionLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1112,6 +1130,7 @@
 		DE1F7AEB2A83F13200B3FF24 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE80ED2A96250900FB96F0 /* Clicker */,
 				DEFE80DE2A950BF100FB96F0 /* Games */,
 				DEFE80D72A94E10000FB96F0 /* Article */,
 				DEFE80552A8FC69600FB96F0 /* Train */,
@@ -2291,6 +2310,46 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
+		DEFE80ED2A96250900FB96F0 /* Clicker */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80F42A96284E00FB96F0 /* Views */,
+				DEFE80F02A9625CC00FB96F0 /* ClickerViewController.swift */,
+				DEFE80EE2A9625C600FB96F0 /* ClickerView.swift */,
+			);
+			path = Clicker;
+			sourceTree = "<group>";
+		};
+		DEFE80F42A96284E00FB96F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE80FF2A96500C00FB96F0 /* Whistle */,
+				DEFE80F82A96296C00FB96F0 /* ClickerUnitView.swift */,
+				DEFE80FB2A96440000FB96F0 /* MakeClickerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE80FF2A96500C00FB96F0 /* Whistle */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81002A96501400FB96F0 /* Collection */,
+				DEFE80FD2A964A1600FB96F0 /* MakeWhistleView.swift */,
+			);
+			path = Whistle;
+			sourceTree = "<group>";
+		};
+		DEFE81002A96501400FB96F0 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE81012A96502500FB96F0 /* WhistlesCollectionView.swift */,
+				DEFE81032A96502B00FB96F0 /* WhistlesCollectionCell.swift */,
+				DEFE81052A96503100FB96F0 /* WhistlesCollectionElement.swift */,
+				DEFE81092A9656C600FB96F0 /* WhistlesCollectionLayout.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -2437,6 +2496,7 @@
 				DE1F7AE52A83F10600B3FF24 /* IAPActionResult.swift in Sources */,
 				DE1F7ADB2A83F10600B3FF24 /* Profile.swift in Sources */,
 				DE1F7A942A83F0E700B3FF24 /* TapAreaButton.swift in Sources */,
+				DEFE810A2A9656C600FB96F0 /* WhistlesCollectionLayout.swift in Sources */,
 				DEFE7E9B2A8A42FB00FB96F0 /* OSkillLevelView.swift in Sources */,
 				DEFE7E952A8A3C4500FB96F0 /* OAgeView.swift in Sources */,
 				DE1F7A972A83F0E700B3FF24 /* PaddingTextField.swift in Sources */,
@@ -2465,6 +2525,7 @@
 				DE1F7B402A83F13200B3FF24 /* MainViewCoordinator.swift in Sources */,
 				DEB55C972A86228700A56B96 /* AssignedGame.swift in Sources */,
 				DEFE80502A8FC00B00FB96F0 /* CalendarCollectionView.swift in Sources */,
+				DEFE80FC2A96440000FB96F0 /* MakeClickerView.swift in Sources */,
 				DEFE7EE82A8B7DD600FB96F0 /* HomeCommandsGroupsCollectionView.swift in Sources */,
 				DEFE80222A8E41D200FB96F0 /* CommandsTrainingCollectionView.swift in Sources */,
 				DE1F7B362A83F13200B3FF24 /* PaygateViewControllerDelegate.swift in Sources */,
@@ -2527,6 +2588,7 @@
 				DEFE80252A8E41D200FB96F0 /* CommandsTrainingMenuView.swift in Sources */,
 				DE1F7A802A83F0E700B3FF24 /* DefaultRequestWrapper.swift in Sources */,
 				DEFE7EAC2A8A684600FB96F0 /* OCommandsTableCell.swift in Sources */,
+				DEFE81022A96502500FB96F0 /* WhistlesCollectionView.swift in Sources */,
 				DEFE80E82A950E0800FB96F0 /* GamesTableView.swift in Sources */,
 				DE1F7A8A2A83F0E700B3FF24 /* SignError.swift in Sources */,
 				DE1F7A9E2A83F0E700B3FF24 /* PushNotificationsAuthorizationStatus.swift in Sources */,
@@ -2536,6 +2598,7 @@
 				DEFE806F2A8FC69600FB96F0 /* TrainCollectionCell.swift in Sources */,
 				DEFE80342A8E41D200FB96F0 /* TrainingTemplateTableElement.swift in Sources */,
 				DE1F7B342A83F13200B3FF24 /* DefaultPaygate.swift in Sources */,
+				DEFE80F92A96296C00FB96F0 /* ClickerUnitView.swift in Sources */,
 				DE1F7A812A83F0E700B3FF24 /* APIRequestBody.swift in Sources */,
 				DEB55CC32A86315200A56B96 /* CommandTraining.swift in Sources */,
 				DEB55D112A865BC500A56B96 /* PlanStatus.swift in Sources */,
@@ -2565,6 +2628,7 @@
 				DEFE80732A8FC69600FB96F0 /* TrainTableElement.swift in Sources */,
 				DEB55CF12A8641EC00A56B96 /* AssignedTraining.swift in Sources */,
 				DE1F7AE92A83F10600B3FF24 /* Session.swift in Sources */,
+				DEFE80F12A9625CC00FB96F0 /* ClickerViewController.swift in Sources */,
 				DEB55C9F2A86228700A56B96 /* AssignGameResponse.swift in Sources */,
 				DEFE7EF02A8B7DD600FB96F0 /* HomeCommandCell.swift in Sources */,
 				DE1F7B3E2A83F13200B3FF24 /* TabItemView.swift in Sources */,
@@ -2588,9 +2652,11 @@
 				DE1F7A7C2A83F0E700B3FF24 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE1F7AE42A83F10600B3FF24 /* ProductPrice.swift in Sources */,
 				DEB55CED2A8641EC00A56B96 /* TrainingsManager.swift in Sources */,
+				DEFE80EF2A9625C600FB96F0 /* ClickerView.swift in Sources */,
 				DEFE7EB42A8A795D00FB96F0 /* OCircleProgressView.swift in Sources */,
 				DEFE802C2A8E41D200FB96F0 /* TTButtonsCell.swift in Sources */,
 				DEFE80372A8E41D200FB96F0 /* CommandInstructionImageCell.swift in Sources */,
+				DEFE81062A96503100FB96F0 /* WhistlesCollectionElement.swift in Sources */,
 				DEB55CF92A8641EC00A56B96 /* AssignTrainingResponse.swift in Sources */,
 				DEFE80C82A93EDF900FB96F0 /* ArticlesManager.swift in Sources */,
 				DEFE806B2A8FC69600FB96F0 /* TrainInfoView.swift in Sources */,
@@ -2631,6 +2697,7 @@
 				DE1F7AD62A83F10600B3FF24 /* ProfileManager.swift in Sources */,
 				DE1F7B612A83F13200B3FF24 /* OnboardingViewModel.swift in Sources */,
 				DEFE7F5A2A8CBA3800FB96F0 /* GameTrainingMenuView.swift in Sources */,
+				DEFE81042A96502B00FB96F0 /* WhistlesCollectionCell.swift in Sources */,
 				DE1F7ADF2A83F10600B3FF24 /* SyncTokensRequest.swift in Sources */,
 				DE1F7A9D2A83F0E700B3FF24 /* PushNotificationsManager.swift in Sources */,
 				DE1F7AEA2A83F10600B3FF24 /* SessionManager.swift in Sources */,
@@ -2646,6 +2713,7 @@
 				DEB55D132A865BC500A56B96 /* GetPlanResponse.swift in Sources */,
 				DEFE801D2A8E41D200FB96F0 /* CommandsTrainingViewModel.swift in Sources */,
 				DEB55C962A86228700A56B96 /* GameTraining.swift in Sources */,
+				DEFE80FE2A964A1600FB96F0 /* MakeWhistleView.swift in Sources */,
 				DEFE7FC62A8CF96C00FB96F0 /* CommandInstructionViewModel.swift in Sources */,
 				DEFE7EDF2A8B7DD600FB96F0 /* SeeAllTableCell.swift in Sources */,
 				DEB55CF22A8641EC00A56B96 /* GetTrainingResponse.swift in Sources */,

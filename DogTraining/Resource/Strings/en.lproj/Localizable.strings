@@ -205,3 +205,10 @@
 
 // MARK: Games
 "Games.Title" = "Games";
+
+// MARK: Clicker
+"Clicker.Filter.Whistle" = "Whistle";
+"Clicker.Filter.Clicker" = "Clicker";
+"Clicker.Whistle.Title" = "Tap the whistle to make a sound";
+"Clicker.Clicker.Title" = "Tap the clicker to make a sound";
+"Clicker.SoundName" = "Sound %i";

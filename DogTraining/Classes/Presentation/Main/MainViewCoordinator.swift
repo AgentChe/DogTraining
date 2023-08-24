@@ -20,7 +20,7 @@ final class MainViewCoordinator {
         self?.change(tab: .train)
     }))
     lazy var trainVC = NavigationController(rootViewController: trainController)
-    lazy var clickerVC = NavigationController(rootViewController: UIViewController())
+    lazy var clickerVC = NavigationController(rootViewController: ClickerViewController.make())
     lazy var profileVC = NavigationController(rootViewController: UIViewController())
     
     private lazy var trainController = TrainViewController.make { [weak self] in
