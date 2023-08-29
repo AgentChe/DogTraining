@@ -10,15 +10,15 @@ import RxCocoa
 
 final class CreateEventViewModel {
     enum Route {
-        case created
+        case created, removed
     }
     
     private lazy var eventsManager = EventsManager()
     
-    private let eventType: EventType
+    private let mode: CreateEventViewController.Mode
     
-    init(eventType: EventType) {
-        self.eventType = eventType
+    init(mode: CreateEventViewController.Mode) {
+        self.mode = mode
     }
 }
 
@@ -29,6 +29,7 @@ extension CreateEventViewModel {
         let didChangeDate: Signal<Date>
         let didChangeRepeatMode: Signal<EventRepeatMode>
         let didTapCreate: Signal<Void>
+        let didTapRemove: Signal<Void>
     }
     
     struct Output {
@@ -47,7 +48,8 @@ extension CreateEventViewModel {
             enableSave: makeEnableSave(data: data),
             route: makeRoute(
                 didCreate: input.didTapCreate,
-                data: data
+                data: data,
+                didRemove: input.didTapRemove
             )
         )
     }
@@ -61,17 +63,30 @@ private extension CreateEventViewModel {
         let repeatMode: EventRepeatMode
     }
     
-    func makeRoute(didCreate: Signal<Void>, data: Driver<Data>) -> Driver<Route> {
-        didCreate
+    func makeRoute(
+        didCreate: Signal<Void>,
+        data: Driver<Data>,
+        didRemove: Signal<Void>
+    ) -> Driver<Route> {
+        let create = didCreate
             .withLatestFrom(data)
             .flatMapLatest { [weak self] data -> Driver<Route> in
                 guard let self else {
                     return .never()
                 }
                 
+                let eventId: String
+                
+                switch self.mode {
+                case .create:
+                    eventId = UUID().uuidString
+                case .edit(let input):
+                    eventId = input.id
+                }
+                
                 let event = Event(
-                    id: UUID().uuidString,
-                    type: self.eventType,
+                    id: eventId,
+                    type: self.mode.eventType,
                     note: data.note,
                     date: data.date,
                     repeatMode: data.repeatMode
@@ -83,6 +98,21 @@ private extension CreateEventViewModel {
                     .asDriver(onErrorDriveWith: .never())
             }
             .asDriver(onErrorDriveWith: .never())
+        
+        let remove = didRemove
+            .flatMapLatest { [weak self] void -> Driver<Route> in
+                guard let self, let eventId = self.mode.eventId else {
+                    return .never()
+                }
+                
+                return self.eventsManager
+                    .delete(eventId: eventId)
+                    .map { Route.removed }
+                    .asDriver(onErrorDriveWith: .never())
+            }
+            .asDriver(onErrorDriveWith: .never())
+        
+        return Driver.merge(create, remove)
     }
     
     func makeEnableSave(data: Driver<Data>) -> Driver<Bool> {

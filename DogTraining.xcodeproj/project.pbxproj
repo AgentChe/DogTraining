@@ -408,6 +408,7 @@
 		DEFE817D2A9DC69E00FB96F0 /* ProfileCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */; };
 		DEFE817F2A9DEEA600FB96F0 /* EventsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */; };
 		DEFE81812A9DF72200FB96F0 /* ProfileEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */; };
+		DEFE81832A9E12B500FB96F0 /* RemoveEventConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -816,6 +817,7 @@
 		DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCalendarView.swift; sourceTree = "<group>"; };
 		DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOnDay.swift; sourceTree = "<group>"; };
 		DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventCell.swift; sourceTree = "<group>"; };
+		DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveEventConfirmView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2652,6 +2654,7 @@
 				DEFE81712A9CF66E00FB96F0 /* EventTimeView.swift */,
 				DEFE81732A9DB73F00FB96F0 /* RepeatModeView.swift */,
 				DEFE81752A9DBB1600FB96F0 /* RepeatModeButton.swift */,
+				DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -3157,6 +3160,7 @@
 				DEFE80C12A93B72900FB96F0 /* GetArticlesResponse.swift in Sources */,
 				DEFE7F4F2A8CBA3800FB96F0 /* GameTrainingResultViewModel.swift in Sources */,
 				DEFE7E9D2A8A488000FB96F0 /* OBehaviorButton.swift in Sources */,
+				DEFE81832A9E12B500FB96F0 /* RemoveEventConfirmView.swift in Sources */,
 				DEFE80BB2A93B6E800FB96F0 /* ArticleDetails.swift in Sources */,
 				DEFE811E2A9781A700FB96F0 /* ProfileMainProgressView.swift in Sources */,
 				DEFE80722A8FC69600FB96F0 /* TrainTitleCell.swift in Sources */,
@@ -3339,7 +3343,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.books;
+				PRODUCT_BUNDLE_IDENTIFIER = training.app.dogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
@@ -3375,7 +3379,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.books;
+				PRODUCT_BUNDLE_IDENTIFIER = training.app.dogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";

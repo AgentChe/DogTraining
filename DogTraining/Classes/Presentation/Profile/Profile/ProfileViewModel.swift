@@ -12,6 +12,7 @@ import RxCocoa
 final class ProfileViewModel {
     enum Route {
         case settings, addEvent
+        case openEvent(Event)
     }
     
     var tryAgain: ((Error) -> (Observable<Void>))?
@@ -69,6 +70,8 @@ private extension ProfileViewModel {
                     return .settings
                 case .addEvent:
                     return .addEvent
+                case .event(let event):
+                    return .openEvent(event)
                 default:
                     return nil
                 }

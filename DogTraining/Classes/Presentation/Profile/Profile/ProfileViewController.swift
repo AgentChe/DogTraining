@@ -74,6 +74,8 @@ private extension ProfileViewController {
             navigationController?.pushViewController(vc, animated: true)
         case .addEvent:
             eventsAssembly.createEvent(from: self)
+        case .openEvent(let event):
+            eventsAssembly.open(event: event, from: self)
         }
     }
     

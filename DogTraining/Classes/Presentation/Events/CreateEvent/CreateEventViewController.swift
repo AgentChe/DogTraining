@@ -7,19 +7,55 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 final class CreateEventViewController: UIViewController {
-    lazy var mainView = CreateEventView(eventType: eventType)
+    enum Mode {
+        case create(EventType)
+        case edit(Event)
+        
+        var eventType: EventType {
+            switch self {
+            case .create(let type):
+                return type
+            case .edit(let event):
+                return event.type
+            }
+        }
+        
+        var eventId: String? {
+            switch self {
+            case .edit(let event):
+                return event.id
+            default:
+                return nil
+            }
+        }
+        
+        var isCreate: Bool {
+            switch self {
+            case .create:
+                return true
+            default:
+                return false
+            }
+        }
+    }
     
-    private lazy var viewModel = CreateEventViewModel(eventType: eventType)
+    lazy var mainView = CreateEventView(mode: mode)
+    
+    private lazy var viewModel = CreateEventViewModel(mode: mode)
     
     private lazy var disposeBag = DisposeBag()
     
-    private let eventType: EventType
+    private lazy var insertDateTrigger = PublishRelay<Date>()
+    private lazy var insertRepeatModeTrigger = PublishRelay<EventRepeatMode>()
+    
+    private let mode: Mode
     private let didClose: ((CreateEventViewController) -> Void)
     
-    private init(eventType: EventType, didClose: @escaping ((CreateEventViewController) -> Void)) {
-        self.eventType = eventType
+    private init(mode: Mode, didClose: @escaping ((CreateEventViewController) -> Void)) {
+        self.mode = mode
         self.didClose = didClose
         
         super.init(nibName: nil, bundle: nil)
@@ -70,24 +106,35 @@ final class CreateEventViewController: UIViewController {
             .disposed(by: disposeBag)
         
         mainView.eventTimeView.didSelectDate
-            .emit(to: Binder(mainView.selectDateView) { base, date in
-                let formatter = DateFormatter()
-                formatter.dateFormat = "MMM dd, yyyy HH:mm"
-                base.setup(value: formatter.string(from: date))
+            .emit(to: Binder(self) { base, date in
+                base.display(date: date)
             })
             .disposed(by: disposeBag)
         
         mainView.repeatModeView.didSelectMode
-            .emit(to: Binder(mainView.selectRepeatView) { base, mode in
-                base.setup(value: mode.title)
+            .emit(to: Binder(self) { base, mode in
+                base.display(repeatMode: mode)
+            })
+            .disposed(by: disposeBag)
+        
+        mainView.removeButton.rx.tap
+            .bind(to: Binder(mainView.confirmRemoveView) { base, void in
+                base.show()
             })
             .disposed(by: disposeBag)
         
         let output = viewModel.configure(input: CreateEventViewModel.Input(
             didChangeNote: mainView.noteField.rx.text.compactMap { $0 }.asSignal(onErrorSignalWith: .never()),
-            didChangeDate: mainView.eventTimeView.didSelectDate,
-            didChangeRepeatMode: mainView.repeatModeView.didSelectMode,
-            didTapCreate: mainView.saveButton.rx.tap.asSignal()
+            didChangeDate: Signal.merge(
+                insertDateTrigger.asSignal(),
+                mainView.eventTimeView.didSelectDate
+            ),
+            didChangeRepeatMode: Signal.merge(
+                insertRepeatModeTrigger.asSignal(),
+                mainView.repeatModeView.didSelectMode
+            ),
+            didTapCreate: mainView.saveButton.rx.tap.asSignal(),
+            didTapRemove: mainView.confirmRemoveView.didTapRemove
         ))
         
         output.enableSave
@@ -102,13 +149,15 @@ final class CreateEventViewController: UIViewController {
                 base.route(route)
             })
             .disposed(by: disposeBag)
+        
+        fillIfNeeded()
     }
 }
 
 // MARK: Public
 extension CreateEventViewController {
-    static func make(eventType: EventType, didClose: @escaping ((CreateEventViewController) -> Void)) -> CreateEventViewController {
-        CreateEventViewController(eventType: eventType, didClose: didClose)
+    static func make(mode: Mode, didClose: @escaping ((CreateEventViewController) -> Void)) -> CreateEventViewController {
+        CreateEventViewController(mode: mode, didClose: didClose)
     }
 }
 
@@ -116,8 +165,33 @@ extension CreateEventViewController {
 private extension CreateEventViewController {
     func route(_ route: CreateEventViewModel.Route) {
         switch route {
-        case .created:
+        case .created, .removed:
             didClose(self)
         }
+    }
+    
+    func fillIfNeeded() {
+        guard case let .edit(event) = mode else {
+            return
+        }
+        
+        mainView.noteField.text = event.note
+        mainView.noteField.sendActions(for: [.editingChanged])
+        
+        display(date: event.date)
+        insertDateTrigger.accept(event.date)
+        
+        display(repeatMode: event.repeatMode)
+        insertRepeatModeTrigger.accept(event.repeatMode)
+    }
+    
+    func display(date: Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM dd, yyyy HH:mm"
+        mainView.selectDateView.setup(value: formatter.string(from: date))
+    }
+    
+    func display(repeatMode: EventRepeatMode) {
+        mainView.selectRepeatView.setup(value: repeatMode.title)
     }
 }

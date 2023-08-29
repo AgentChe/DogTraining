@@ -19,13 +19,15 @@ final class CreateEventView: UIView {
     lazy var selectDateView = makeSelectDateView()
     lazy var selectRepeatView = makeSelectRepeatView()
     lazy var saveButton = makeSaveButton()
+    lazy var removeButton = makeRemoveButton()
     lazy var eventTimeView = makeEventTimeView()
     lazy var repeatModeView = makeRepeatModeView()
+    lazy var confirmRemoveView = makeConfirmRemoveView()
     
-    private let eventType: EventType
+    private let mode: CreateEventViewController.Mode
     
-    init(eventType: EventType) {
-        self.eventType = eventType
+    init(mode: CreateEventViewController.Mode) {
+        self.mode = mode
         
         super.init(frame: .zero)
         
@@ -154,8 +156,19 @@ private extension CreateEventView {
         NSLayoutConstraint.activate([
             saveButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
             saveButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
-            saveButton.heightAnchor.constraint(equalToConstant: 54.scale),
-            saveButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
+            saveButton.heightAnchor.constraint(equalToConstant: 54.scale)
+        ])
+        if mode.isCreate {
+            saveButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale).isActive = true
+        } else {
+            saveButton.bottomAnchor.constraint(equalTo: removeButton.topAnchor, constant: -12.scale).isActive = true
+        }
+        
+        NSLayoutConstraint.activate([
+            removeButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16.scale),
+            removeButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16.scale),
+            removeButton.heightAnchor.constraint(equalToConstant: 54.scale),
+            removeButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: ScreenSize.isIphoneXFamily ? -60.scale : -30.scale)
         ])
         
         NSLayoutConstraint.activate([
@@ -170,6 +183,13 @@ private extension CreateEventView {
             repeatModeView.trailingAnchor.constraint(equalTo: trailingAnchor),
             repeatModeView.bottomAnchor.constraint(equalTo: bottomAnchor),
             repeatModeView.topAnchor.constraint(equalTo: topAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            confirmRemoveView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            confirmRemoveView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            confirmRemoveView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            confirmRemoveView.topAnchor.constraint(equalTo: topAnchor)
         ])
     }
 }
@@ -224,7 +244,7 @@ private extension CreateEventView {
         let view = UIImageView()
         view.clipsToBounds = true
         view.contentMode = .scaleAspectFit
-        view.image = data(for: eventType).1
+        view.image = data(for: mode.eventType).1
         view.translatesAutoresizingMaskIntoConstraints = false
         typeImageContainer.addSubview(view)
         return view
@@ -238,7 +258,7 @@ private extension CreateEventView {
             .textAlignment(.center)
         
         let view = UILabel()
-        view.attributedText = data(for: eventType).0.attributed(with: attrs)
+        view.attributedText = data(for: mode.eventType).0.attributed(with: attrs)
         view.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(view)
         return view
@@ -305,8 +325,23 @@ private extension CreateEventView {
             .font(Fonts.Inter.semiBold(size: 16.scale))
         
         let view = UIButton()
-        view.setAttributedTitle("CreateEvent.Button".localized.attributed(with: attrs), for: .normal)
+        view.setAttributedTitle("CreateEvent.Button.Create".localized.attributed(with: attrs), for: .normal)
         view.backgroundColor = Appearance.primary
+        view.layer.cornerRadius = 8.scale
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeRemoveButton() -> UIButton {
+        let attrs = TextAttributes()
+            .textColor(Appearance.black)
+            .font(Fonts.Inter.semiBold(size: 16.scale))
+        
+        let view = UIButton()
+        view.isHidden = mode.isCreate
+        view.setAttributedTitle("CreateEvent.Button.Remove".localized.attributed(with: attrs), for: .normal)
+        view.backgroundColor = UIColor(integralRed: 233, green: 225, blue: 217)
         view.layer.cornerRadius = 8.scale
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
@@ -322,6 +357,13 @@ private extension CreateEventView {
     
     func makeRepeatModeView() -> RepeatModeView {
         let view = RepeatModeView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(view)
+        return view
+    }
+    
+    func makeConfirmRemoveView() -> RemoveEventConfirmView {
+        let view = RemoveEventConfirmView()
         view.translatesAutoresizingMaskIntoConstraints = false
         addSubview(view)
         return view

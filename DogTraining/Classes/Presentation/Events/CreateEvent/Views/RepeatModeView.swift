@@ -222,7 +222,7 @@ private extension RepeatModeView {
             .font(Fonts.Inter.semiBold(size: 16.scale))
         
         let view = UIButton()
-        view.setAttributedTitle("CreateEvent.Button".localized.attributed(with: attrs), for: .normal)
+        view.setAttributedTitle("CreateEvent.Button.Create".localized.attributed(with: attrs), for: .normal)
         view.backgroundColor = Appearance.primary
         view.layer.cornerRadius = 8.scale
         view.addTarget(self, action: #selector(didTap), for: .touchUpInside)

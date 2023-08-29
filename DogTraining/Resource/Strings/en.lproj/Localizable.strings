@@ -262,7 +262,12 @@
 "CreateEvent.AddNote" = "Add a note";
 "CreateEvent.Date" = "Date";
 "CreateEvent.Repeat" = "Repeat";
-"CreateEvent.Button" = "Save";
+"CreateEvent.Button.Create" = "Save";
+"CreateEvent.Button.Remove" = "Remove this event";
 "CreateEvent.EventTime.Title" = "Change event time";
 "CreateEvent.EventTime.Button" = "Save time";
 "CreateEvent.Repeat.Title" = "Repeat";
+"CreateEvent.Remove.Title" = "Are you sure?";
+"CreateEvent.Remove.SubTitle" = "Do you really want to remove this event?";
+"CreateEvent.Remove.Remove" = "Remove";
+"CreateEvent.Remove.Cancel" = "Cancel";
