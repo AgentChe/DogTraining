@@ -409,6 +409,7 @@
 		DEFE817F2A9DEEA600FB96F0 /* EventsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */; };
 		DEFE81812A9DF72200FB96F0 /* ProfileEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */; };
 		DEFE81832A9E12B500FB96F0 /* RemoveEventConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */; };
+		DEFE81862A9E43E000FB96F0 /* EventsNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81852A9E43E000FB96F0 /* EventsNotificationsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -818,6 +819,8 @@
 		DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOnDay.swift; sourceTree = "<group>"; };
 		DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventCell.swift; sourceTree = "<group>"; };
 		DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveEventConfirmView.swift; sourceTree = "<group>"; };
+		DEFE81842A9E42FC00FB96F0 /* DogTraining.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DogTraining.entitlements; sourceTree = "<group>"; };
+		DEFE81852A9E43E000FB96F0 /* EventsNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNotificationsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -870,6 +873,7 @@
 		DE1F7A072A83EFC200B3FF24 /* DogTraining */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE81842A9E42FC00FB96F0 /* DogTraining.entitlements */,
 				DE1F7A1D2A83F07D00B3FF24 /* Classes */,
 				DE1F7A1C2A83F07800B3FF24 /* Resource */,
 			);
@@ -2583,6 +2587,7 @@
 				DEFE814E2A9A6C7400FB96F0 /* Model */,
 				DEFE814C2A9A6C7100FB96F0 /* EventsManager.swift */,
 				DEFE81552A9A719500FB96F0 /* EventsMediator.swift */,
+				DEFE81852A9E43E000FB96F0 /* EventsNotificationsManager.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -3048,6 +3053,7 @@
 				DE1F7B612A83F13200B3FF24 /* OnboardingViewModel.swift in Sources */,
 				DEFE813D2A97B36B00FB96F0 /* ProfileEditViewController.swift in Sources */,
 				DEFE7F5A2A8CBA3800FB96F0 /* GameTrainingMenuView.swift in Sources */,
+				DEFE81862A9E43E000FB96F0 /* EventsNotificationsManager.swift in Sources */,
 				DEFE81412A97B37B00FB96F0 /* ProfileEditView.swift in Sources */,
 				DEFE81042A96502B00FB96F0 /* WhistlesCollectionCell.swift in Sources */,
 				DE1F7ADF2A83F10600B3FF24 /* SyncTokensRequest.swift in Sources */,
@@ -3326,6 +3332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DogTraining/DogTraining.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
@@ -3362,6 +3369,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DogTraining/DogTraining.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;

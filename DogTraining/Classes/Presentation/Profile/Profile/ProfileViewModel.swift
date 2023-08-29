@@ -98,6 +98,7 @@ private extension ProfileViewModel {
                 
                 result.append(.calendar)
                 
+                // TODO: добавлять повторения
                 if let eventsOnDay = eventsOnDays.first(where: { $0.day.isEqualByDays(with: eventsDay) }), !eventsOnDay.events.isEmpty {
                     eventsOnDay.events.forEach { result.append(.event($0)) }
                 }

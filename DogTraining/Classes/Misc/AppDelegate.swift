@@ -21,6 +21,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         OtterScale.shared.initialize(host: GlobalDefinitions.otterScaleHost, apiKey: GlobalDefinitions.otterScaleApiKey)
         
         PurchaseValidationObserver.shared.startObserve()
+        PushNotificationsManager.shared.requestAuthorization()
+        EventsNotificationsManager.shared.register()
         
         IAPManager.initialize()
         
