@@ -20,6 +20,7 @@ final class ProfileViewModel {
     
     private lazy var contentManager = ContentManager()
     private lazy var profileManager = ProfileManager()
+    private lazy var eventsManager = EventsManager()
     
     private lazy var observableRetrySingle = ObservableRetrySingle()
 }
@@ -28,6 +29,7 @@ final class ProfileViewModel {
 extension ProfileViewModel {
     struct Input {
         let didSelectElement: Signal<ProfileTableElement>
+        let didSelectDay: Signal<Date>
     }
     
     struct Output {
@@ -40,12 +42,16 @@ extension ProfileViewModel {
         let homeKit = makeHomeKit()
         let skillLevels = makeSkillLevels()
         let name = makeName()
+        let eventsDay = makeEventsDay(didTapDay: input.didSelectDay)
+        let eventsOnDays = makeEventsOnDays()
         
         return Output(
             elements: makeElements(
                 homeKit: homeKit,
                 skillLevels: skillLevels,
-                name: name
+                name: name,
+                eventsDay: eventsDay,
+                eventsOnDays: eventsOnDays
             ),
             activity: activity.asDriver(),
             route: makeRoute(didSelectElement: input.didSelectElement)
@@ -73,16 +79,24 @@ private extension ProfileViewModel {
     func makeElements(
         homeKit: Driver<HomeKit>,
         skillLevels: Driver<[SkillLevel]>,
-        name: Driver<String>
+        name: Driver<String>,
+        eventsDay: Driver<Date>,
+        eventsOnDays: Driver<[EventsOnDay]>
     ) -> Driver<[ProfileTableElement]> {
-        Driver.combineLatest(homeKit, skillLevels, name)
-            .map { homeKit, skillLevels, name -> [ProfileTableElement] in
+        Driver.combineLatest(homeKit, skillLevels, name, eventsDay, eventsOnDays)
+            .map { homeKit, skillLevels, name, eventsDay, eventsOnDays -> [ProfileTableElement] in
                 var result = [ProfileTableElement]()
                 
                 result.append(.settings(name))
                 
                 if let level = skillLevels.first(where: { $0.id == homeKit.levelId }) {
                     result.append(.progress(percent: homeKit.score, level: level.name))
+                }
+                
+                result.append(.calendar)
+                
+                if let eventsOnDay = eventsOnDays.first(where: { $0.day.isEqualByDays(with: eventsDay) }), !eventsOnDay.events.isEmpty {
+                    eventsOnDay.events.forEach { result.append(.event($0)) }
                 }
                 
                 result.append(.addEvent)
@@ -166,5 +180,29 @@ private extension ProfileViewModel {
             .obtainProfile(forceUpdate: false)
             .map { $0?.name ?? "" }
             .asDriver(onErrorJustReturn: "")
+    }
+    
+    func makeEventsDay(didTapDay: Signal<Date>) -> Driver<Date> {
+        didTapDay
+            .startWith(Calendar.current.startOfDay(for: Date()))
+            .asDriver(onErrorDriveWith: .never())
+    }
+    
+    func makeEventsOnDays() -> Driver<[EventsOnDay]> {
+        Signal
+            .merge(
+                EventsMediator.shared.didAdd.map { event in Void() },
+                EventsMediator.shared.didDelete.map { id in Void() }
+            )
+            .startWith(Void())
+            .flatMapLatest { [weak self] void -> Driver<[EventsOnDay]> in
+                guard let self else {
+                    return .never()
+                }
+                
+                return self.eventsManager
+                    .obtainEventsOnDays()
+                    .asDriver(onErrorJustReturn: [])
+            }
     }
 }

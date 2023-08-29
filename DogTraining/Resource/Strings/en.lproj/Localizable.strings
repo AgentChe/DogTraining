@@ -236,6 +236,7 @@
 "Profile.DaysOfWeek.Th" = "T";
 "Profile.DaysOfWeek.Fr" = "F";
 "Profile.DaysOfWeek.Sa" = "S";
+"Profile.Events.TItle" = "EVENTS";
 
 // MARK: ChooseEventType
 "ChooseEventType.Title" = "Choose the event you\nwant to log";

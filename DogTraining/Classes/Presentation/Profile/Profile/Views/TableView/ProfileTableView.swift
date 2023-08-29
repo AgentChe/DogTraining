@@ -13,7 +13,8 @@ final class ProfileTableView: UITableView {
     lazy var elements = [ProfileTableElement]()
     
     private lazy var didSelectElementTrigger = PublishRelay<ProfileTableElement>()
-
+    private lazy var didSelectDayTrigger = PublishRelay<Date>()
+    
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
@@ -36,6 +37,10 @@ extension ProfileTableView {
     var didSelectElement: Signal<ProfileTableElement> {
         didSelectElementTrigger.asSignal()
     }
+    
+    var didSelectDay: Signal<Date> {
+        didSelectDayTrigger.asSignal()
+    }
 }
 
 // MARK: UITableViewDataSource
@@ -53,6 +58,16 @@ extension ProfileTableView: UITableViewDataSource {
         case .progress(let percent, let level):
             let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ProfileProgressCell.self)) as! ProfileProgressCell
             cell.setup(percent: percent, level: level)
+            return cell
+        case .calendar:
+            let cell = dequeueReusableCell(withIdentifier: String(describing: ProfileCalendarCell.self)) as! ProfileCalendarCell
+            cell.setup(didSelectDate: { [weak self] day in
+                self?.didSelectDayTrigger.accept(day)
+            })
+            return cell
+        case .event(let element):
+            let cell = dequeueReusableCell(withIdentifier: String(describing: ProfileEventCell.self)) as! ProfileEventCell
+            cell.setup(element: element)
             return cell
         case .addEvent:
             return dequeueReusableCell(withIdentifier: String(describing: ProfileAddEventCell.self), for: indexPath)
@@ -84,6 +99,8 @@ private extension ProfileTableView {
     func initialize() {
         register(ProfileSettingsCell.self, forCellReuseIdentifier: String(describing: ProfileSettingsCell.self))
         register(ProfileProgressCell.self, forCellReuseIdentifier: String(describing: ProfileProgressCell.self))
+        register(ProfileCalendarCell.self, forCellReuseIdentifier: String(describing: ProfileCalendarCell.self))
+        register(ProfileEventCell.self, forCellReuseIdentifier: String(describing: ProfileEventCell.self))
         register(ProfileAddEventCell.self, forCellReuseIdentifier: String(describing: ProfileAddEventCell.self))
         register(ProfileStatsCell.self, forCellReuseIdentifier: String(describing: ProfileStatsCell.self))
         

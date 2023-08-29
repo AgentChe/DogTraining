@@ -403,6 +403,11 @@
 		DEFE81722A9CF66F00FB96F0 /* EventTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81712A9CF66E00FB96F0 /* EventTimeView.swift */; };
 		DEFE81742A9DB73F00FB96F0 /* RepeatModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81732A9DB73F00FB96F0 /* RepeatModeView.swift */; };
 		DEFE81762A9DBB1600FB96F0 /* RepeatModeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81752A9DBB1600FB96F0 /* RepeatModeButton.swift */; };
+		DEFE81782A9DC62800FB96F0 /* ProdileCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81772A9DC62800FB96F0 /* ProdileCalendarCell.swift */; };
+		DEFE817B2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817A2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift */; };
+		DEFE817D2A9DC69E00FB96F0 /* ProfileCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */; };
+		DEFE817F2A9DEEA600FB96F0 /* EventsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */; };
+		DEFE81812A9DF72200FB96F0 /* ProfileEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -806,6 +811,11 @@
 		DEFE81712A9CF66E00FB96F0 /* EventTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTimeView.swift; sourceTree = "<group>"; };
 		DEFE81732A9DB73F00FB96F0 /* RepeatModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatModeView.swift; sourceTree = "<group>"; };
 		DEFE81752A9DBB1600FB96F0 /* RepeatModeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatModeButton.swift; sourceTree = "<group>"; };
+		DEFE81772A9DC62800FB96F0 /* ProdileCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdileCalendarCell.swift; sourceTree = "<group>"; };
+		DEFE817A2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCalendarDayCell.swift; sourceTree = "<group>"; };
+		DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCalendarView.swift; sourceTree = "<group>"; };
+		DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOnDay.swift; sourceTree = "<group>"; };
+		DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -2488,6 +2498,8 @@
 				DEFE811F2A97821000FB96F0 /* ProfileProgressCell.swift */,
 				DEFE81212A9783BD00FB96F0 /* ProfileAddEventCell.swift */,
 				DEFE81272A9787A000FB96F0 /* ProfileStatsCell.swift */,
+				DEFE81772A9DC62800FB96F0 /* ProdileCalendarCell.swift */,
+				DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2495,6 +2507,7 @@
 		DEFE811C2A9781A100FB96F0 /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
+				DEFE81792A9DC64B00FB96F0 /* Calendar */,
 				DEFE811D2A9781A700FB96F0 /* ProfileMainProgressView.swift */,
 				DEFE81232A97872600FB96F0 /* ProfileMainStatsView.swift */,
 				DEFE81252A97878500FB96F0 /* ProfileMainScrollContainerView.swift */,
@@ -2578,6 +2591,7 @@
 				DEFE814F2A9A6C7C00FB96F0 /* Event.swift */,
 				DEFE81512A9A6C8500FB96F0 /* EventType.swift */,
 				DEFE81532A9A6D4B00FB96F0 /* EventRepeatMode.swift */,
+				DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -2640,6 +2654,15 @@
 				DEFE81752A9DBB1600FB96F0 /* RepeatModeButton.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DEFE81792A9DC64B00FB96F0 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				DEFE817A2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift */,
+				DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */,
+			);
+			path = Calendar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2807,6 +2830,7 @@
 				DEFE81102A977E7200FB96F0 /* ProfileViewModel.swift in Sources */,
 				DE1F7B7E2A86205200B3FF24 /* GetBreedsResponse.swift in Sources */,
 				DEFE7FC42A8CF96C00FB96F0 /* CommandTrainingResultViewController.swift in Sources */,
+				DEFE817B2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift in Sources */,
 				DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */,
 				DEFE7EDC2A8B7DD600FB96F0 /* HomeViewModel.swift in Sources */,
 				DE1F7B332A83F13200B3FF24 /* PaygateViewModel.swift in Sources */,
@@ -2877,6 +2901,7 @@
 				DEFE80322A8E41D200FB96F0 /* TTCommandsGroupsCell.swift in Sources */,
 				DEB55CC62A86315200A56B96 /* GetCommandTrainingRequest.swift in Sources */,
 				DEFE81662A9CA28700FB96F0 /* EventsAssembly.swift in Sources */,
+				DEFE81812A9DF72200FB96F0 /* ProfileEventCell.swift in Sources */,
 				DEFE81442A97B55400FB96F0 /* ProfileEditSkillLevelView.swift in Sources */,
 				DEFE80EC2A950E1600FB96F0 /* GamesTableCell.swift in Sources */,
 				DEFE7FC52A8CF96C00FB96F0 /* CommandInstructionViewController.swift in Sources */,
@@ -2889,6 +2914,7 @@
 				DEB55D1F2A866D0F00A56B96 /* ORoleView.swift in Sources */,
 				DEB55CC12A86315200A56B96 /* CommandGroup.swift in Sources */,
 				DEB55CFD2A8641EC00A56B96 /* LogTrainingProgressRequest.swift in Sources */,
+				DEFE817D2A9DC69E00FB96F0 /* ProfileCalendarView.swift in Sources */,
 				DEFE7EE42A8B7DD600FB96F0 /* PlanWeekdaysCell.swift in Sources */,
 				DEFE81262A97878500FB96F0 /* ProfileMainScrollContainerView.swift in Sources */,
 				DEFE80392A8E41D200FB96F0 /* CommandInstructionTableElement.swift in Sources */,
@@ -3089,6 +3115,8 @@
 				DEFE814D2A9A6C7100FB96F0 /* EventsManager.swift in Sources */,
 				DEFE80522A8FC00B00FB96F0 /* CalendarEventType.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
+				DEFE817F2A9DEEA600FB96F0 /* EventsOnDay.swift in Sources */,
+				DEFE81782A9DC62800FB96F0 /* ProdileCalendarCell.swift in Sources */,
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
 				DEFE80C62A93ECC400FB96F0 /* GetArticleDetailsResponse.swift in Sources */,
 				DEFE7EE02A8B7DD600FB96F0 /* HomeGamesCell.swift in Sources */,

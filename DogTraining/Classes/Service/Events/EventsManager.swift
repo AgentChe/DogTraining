@@ -11,6 +11,7 @@ import RxCocoa
 protocol EventsManagerProtocol {
     func add(event: Event) -> Single<Void>
     func obtainEvents() -> Single<[Event]>
+    func obtainEventsOnDays() -> Single<[EventsOnDay]>
     func delete(eventId: String) -> Single<Void>
 }
 
@@ -60,6 +61,19 @@ extension EventsManager: EventsManagerProtocol {
             
             return Disposables.create()
         }
+    }
+    
+    func obtainEventsOnDays() -> Single<[EventsOnDay]> {
+        obtainEvents()
+            .map { events -> [EventsOnDay] in
+                let grouping = Dictionary(grouping: events) { event -> Date in
+                    Calendar.current.startOfDay(for: event.date)
+                }
+                
+                return grouping.map { day, events -> EventsOnDay in
+                    EventsOnDay(day: day, events: events)
+                }
+            }
     }
     
     func delete(eventId: String) -> Single<Void> {

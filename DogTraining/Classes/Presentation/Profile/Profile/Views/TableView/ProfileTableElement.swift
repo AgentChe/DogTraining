@@ -10,6 +10,8 @@ import Foundation
 enum ProfileTableElement {
     case settings(String)
     case progress(percent: Int, level: String)
+    case calendar
+    case event(Event)
     case addEvent
     case stats(commands: String, trainings: String, games: String)
 }

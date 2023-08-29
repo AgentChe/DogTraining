@@ -33,7 +33,8 @@ final class ProfileViewController: UIViewController {
         }
         
         let output = viewModel.configure(input: ProfileViewModel.Input(
-            didSelectElement: mainView.tableView.didSelectElement
+            didSelectElement: mainView.tableView.didSelectElement,
+            didSelectDay: mainView.tableView.didSelectDay
         ))
         
         output.activity
