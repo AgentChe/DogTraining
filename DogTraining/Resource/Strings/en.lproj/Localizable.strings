@@ -236,3 +236,32 @@
 "Profile.DaysOfWeek.Th" = "T";
 "Profile.DaysOfWeek.Fr" = "F";
 "Profile.DaysOfWeek.Sa" = "S";
+
+// MARK: ChooseEventType
+"ChooseEventType.Title" = "Choose the event you\nwant to log";
+
+// MARK: EventType
+"EventType.Vaccination" = "Vaccination";
+"EventType.AntiParasitic" = "Anti parasitic";
+"EventType.Medicine" = "Medicine";
+"EventType.Symptoms" = "Symptoms";
+"EventType.VetVisit" = "Vet visit";
+"EventType.Care" = "Care";
+"EventType.Other" = "Other";
+
+// MARK: RepeatMode
+"RepeatMode.Never" = "Never";
+"RepeatMode.Daily" = "Daily";
+"RepeatMode.Weekly" = "Weekly";
+"RepeatMode.Monthly" = "Monthly";
+"RepeatMode.Yearly" = "Yearly";
+
+// MARK: CreateEvent
+"CreateEvent.Title" = "Create an event";
+"CreateEvent.AddNote" = "Add a note";
+"CreateEvent.Date" = "Date";
+"CreateEvent.Repeat" = "Repeat";
+"CreateEvent.Button" = "Save";
+"CreateEvent.EventTime.Title" = "Change event time";
+"CreateEvent.EventTime.Button" = "Save time";
+"CreateEvent.Repeat.Title" = "Repeat";

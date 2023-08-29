@@ -13,6 +13,8 @@ final class ProfileViewController: UIViewController {
     
     private lazy var viewModel: ProfileViewModel = ProfileViewModel()
     
+    private lazy var eventsAssembly = EventsAssembly()
+    
     private lazy var disposeBag = DisposeBag()
     
     override func loadView() {
@@ -69,6 +71,8 @@ private extension ProfileViewController {
         case .settings:
             let vc = SettingsViewController.make()
             navigationController?.pushViewController(vc, animated: true)
+        case .addEvent:
+            eventsAssembly.createEvent(from: self)
         }
     }
     
