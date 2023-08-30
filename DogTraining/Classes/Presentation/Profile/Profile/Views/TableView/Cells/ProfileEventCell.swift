@@ -40,8 +40,8 @@ final class ProfileEventCell: UITableViewCell {
 
 // MARK: Public
 extension ProfileEventCell {
-    func setup(element: Event) {
-        let data = data(for: element.type)
+    func setup(element: ProfileEventElement) {
+        let data = data(for: element.event.type)
         typeImageView.image = data.1
         typeLabel.attributedText = data.0.attributed(with: typeAttrs)
         

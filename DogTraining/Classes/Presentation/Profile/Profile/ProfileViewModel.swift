@@ -44,7 +44,7 @@ extension ProfileViewModel {
         let skillLevels = makeSkillLevels()
         let name = makeName()
         let eventsDay = makeEventsDay(didTapDay: input.didSelectDay)
-        let eventsOnDays = makeEventsOnDays()
+        let events = makeEvents()
         
         return Output(
             elements: makeElements(
@@ -52,7 +52,7 @@ extension ProfileViewModel {
                 skillLevels: skillLevels,
                 name: name,
                 eventsDay: eventsDay,
-                eventsOnDays: eventsOnDays
+                events: events
             ),
             activity: activity.asDriver(),
             route: makeRoute(didSelectElement: input.didSelectElement)
@@ -70,8 +70,8 @@ private extension ProfileViewModel {
                     return .settings
                 case .addEvent:
                     return .addEvent
-                case .event(let event):
-                    return .openEvent(event)
+                case .event(let element):
+                    return .openEvent(element.event)
                 default:
                     return nil
                 }
@@ -84,10 +84,14 @@ private extension ProfileViewModel {
         skillLevels: Driver<[SkillLevel]>,
         name: Driver<String>,
         eventsDay: Driver<Date>,
-        eventsOnDays: Driver<[EventsOnDay]>
+        events: Driver<[Event]>
     ) -> Driver<[ProfileTableElement]> {
-        Driver.combineLatest(homeKit, skillLevels, name, eventsDay, eventsOnDays)
-            .map { homeKit, skillLevels, name, eventsDay, eventsOnDays -> [ProfileTableElement] in
+        Driver.combineLatest(homeKit, skillLevels, name, eventsDay, events)
+            .map { [weak self] homeKit, skillLevels, name, eventsDay, events -> [ProfileTableElement] in
+                guard let self else {
+                    return []
+                }
+                
                 var result = [ProfileTableElement]()
                 
                 result.append(.settings(name))
@@ -98,9 +102,8 @@ private extension ProfileViewModel {
                 
                 result.append(.calendar)
                 
-                // TODO: добавлять повторения
-                if let eventsOnDay = eventsOnDays.first(where: { $0.day.isEqualByDays(with: eventsDay) }), !eventsOnDay.events.isEmpty {
-                    eventsOnDay.events.forEach { result.append(.event($0)) }
+                self.group(events: events, day: eventsDay).forEach { element in
+                    result.append(.event(element))
                 }
                 
                 result.append(.addEvent)
@@ -192,21 +195,85 @@ private extension ProfileViewModel {
             .asDriver(onErrorDriveWith: .never())
     }
     
-    func makeEventsOnDays() -> Driver<[EventsOnDay]> {
+    func makeEvents() -> Driver<[Event]> {
         Signal
             .merge(
                 EventsMediator.shared.didAdd.map { event in Void() },
                 EventsMediator.shared.didDelete.map { id in Void() }
             )
             .startWith(Void())
-            .flatMapLatest { [weak self] void -> Driver<[EventsOnDay]> in
+            .flatMapLatest { [weak self] void -> Driver<[Event]> in
                 guard let self else {
                     return .never()
                 }
                 
                 return self.eventsManager
-                    .obtainEventsOnDays()
+                    .obtainEvents()
                     .asDriver(onErrorJustReturn: [])
             }
+    }
+}
+
+// MARK: Private(Additional)
+private extension ProfileViewModel {
+    func group(events: [Event], day: Date) -> [ProfileEventElement] {
+        let calendar = Calendar.current
+        
+        var result = [ProfileEventElement]()
+        
+        func makeElement(event: Event) -> ProfileEventElement? {
+            var dateComponents = DateComponents()
+            dateComponents.hour = calendar.component(.hour, from: event.date)
+            dateComponents.minute = calendar.component(.minute, from: event.date)
+            dateComponents.day = calendar.component(.day, from: day)
+            dateComponents.month = calendar.component(.month, from: day)
+            dateComponents.year = calendar.component(.year, from: day)
+            
+            guard let date = calendar.date(from: dateComponents) else {
+                return nil
+            }
+            
+            return ProfileEventElement(event: event, date: date)
+        }
+        
+        events.forEach { event in
+            var element: ProfileEventElement?
+            
+            if event.date.isEqualByDays(with: day) {
+                element = ProfileEventElement(event: event, date: event.date)
+            } else {
+                switch event.repeatMode {
+                case .never:
+                    element = nil
+                case .daily:
+                    element = ProfileEventElement(event: event, date: event.date)
+                case .weekly:
+                    let dayDate = calendar.startOfDay(for: day)
+                    let eventDate = calendar.startOfDay(for: event.date)
+                    guard let days = calendar.dateComponents([.day], from: eventDate, to: dayDate).day else {
+                        return
+                    }
+                    
+                    if days >= 0, (days % 7) == 0 {
+                        element = makeElement(event: event)
+                    }
+                case .monthly:
+                    if calendar.dateComponents([.day], from: event.date) == calendar.dateComponents([.day], from: day) {
+                        element = makeElement(event: event)
+                    }
+                case .yearly:
+                    let components: Set<Calendar.Component> = [.day, .month]
+                    if calendar.dateComponents(components, from: event.date) == calendar.dateComponents(components, from: day) {
+                        element = makeElement(event: event)
+                    }
+                }
+            }
+            
+            if let element = element {
+                result.append(element)
+            }
+        }
+        
+        return result
     }
 }

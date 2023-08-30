@@ -406,7 +406,6 @@
 		DEFE81782A9DC62800FB96F0 /* ProdileCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81772A9DC62800FB96F0 /* ProdileCalendarCell.swift */; };
 		DEFE817B2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817A2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift */; };
 		DEFE817D2A9DC69E00FB96F0 /* ProfileCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */; };
-		DEFE817F2A9DEEA600FB96F0 /* EventsOnDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */; };
 		DEFE81812A9DF72200FB96F0 /* ProfileEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */; };
 		DEFE81832A9E12B500FB96F0 /* RemoveEventConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */; };
 		DEFE81862A9E43E000FB96F0 /* EventsNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFE81852A9E43E000FB96F0 /* EventsNotificationsManager.swift */; };
@@ -816,7 +815,6 @@
 		DEFE81772A9DC62800FB96F0 /* ProdileCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProdileCalendarCell.swift; sourceTree = "<group>"; };
 		DEFE817A2A9DC65500FB96F0 /* ProfileCalendarDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCalendarDayCell.swift; sourceTree = "<group>"; };
 		DEFE817C2A9DC69E00FB96F0 /* ProfileCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCalendarView.swift; sourceTree = "<group>"; };
-		DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsOnDay.swift; sourceTree = "<group>"; };
 		DEFE81802A9DF72200FB96F0 /* ProfileEventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventCell.swift; sourceTree = "<group>"; };
 		DEFE81822A9E12B500FB96F0 /* RemoveEventConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveEventConfirmView.swift; sourceTree = "<group>"; };
 		DEFE81842A9E42FC00FB96F0 /* DogTraining.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DogTraining.entitlements; sourceTree = "<group>"; };
@@ -2598,7 +2596,6 @@
 				DEFE814F2A9A6C7C00FB96F0 /* Event.swift */,
 				DEFE81512A9A6C8500FB96F0 /* EventType.swift */,
 				DEFE81532A9A6D4B00FB96F0 /* EventRepeatMode.swift */,
-				DEFE817E2A9DEEA600FB96F0 /* EventsOnDay.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -3124,7 +3121,6 @@
 				DEFE814D2A9A6C7100FB96F0 /* EventsManager.swift in Sources */,
 				DEFE80522A8FC00B00FB96F0 /* CalendarEventType.swift in Sources */,
 				DEB55C922A86228700A56B96 /* GamesMediator.swift in Sources */,
-				DEFE817F2A9DEEA600FB96F0 /* EventsOnDay.swift in Sources */,
 				DEFE81782A9DC62800FB96F0 /* ProdileCalendarCell.swift in Sources */,
 				DE1F7B422A83F13200B3FF24 /* TryAgainViewController.swift in Sources */,
 				DEFE80C62A93ECC400FB96F0 /* GetArticleDetailsResponse.swift in Sources */,
@@ -3350,7 +3346,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = training.app.dogs;
+				PRODUCT_BUNDLE_IDENTIFIER = app.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";
@@ -3387,7 +3383,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = training.app.dogs;
+				PRODUCT_BUNDLE_IDENTIFIER = app.books;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "BookSummaries Dev";

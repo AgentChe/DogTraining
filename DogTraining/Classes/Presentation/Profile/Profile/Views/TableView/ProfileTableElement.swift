@@ -11,7 +11,12 @@ enum ProfileTableElement {
     case settings(String)
     case progress(percent: Int, level: String)
     case calendar
-    case event(Event)
+    case event(ProfileEventElement)
     case addEvent
     case stats(commands: String, trainings: String, games: String)
+}
+
+struct ProfileEventElement {
+    let event: Event
+    let date: Date
 }
