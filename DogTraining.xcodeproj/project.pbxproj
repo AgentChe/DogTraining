@@ -64,8 +64,6 @@
 		DE1F7A9F2A83F0E700B3FF24 /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A6E2A83F0E700B3FF24 /* PushNotificationsModel.swift */; };
 		DE1F7AA02A83F0E700B3FF24 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A6F2A83F0E700B3FF24 /* SceneDelegate.swift */; };
 		DE1F7AA12A83F0E700B3FF24 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A702A83F0E700B3FF24 /* Appearance.swift */; };
-		DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A722A83F0E700B3FF24 /* AppsFlyerManager.swift */; };
-		DE1F7AA32A83F0E700B3FF24 /* BranchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A732A83F0E700B3FF24 /* BranchManager.swift */; };
 		DE1F7AA42A83F0E700B3FF24 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A742A83F0E700B3FF24 /* AmplitudeManager.swift */; };
 		DE1F7AA52A83F0E700B3FF24 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A752A83F0E700B3FF24 /* FirebaseManager.swift */; };
 		DE1F7AA62A83F0E700B3FF24 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE1F7A762A83F0E700B3FF24 /* FacebookManager.swift */; };
@@ -473,8 +471,6 @@
 		DE1F7A6E2A83F0E700B3FF24 /* PushNotificationsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsModel.swift; sourceTree = "<group>"; };
 		DE1F7A6F2A83F0E700B3FF24 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE1F7A702A83F0E700B3FF24 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
-		DE1F7A722A83F0E700B3FF24 /* AppsFlyerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsFlyerManager.swift; sourceTree = "<group>"; };
-		DE1F7A732A83F0E700B3FF24 /* BranchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BranchManager.swift; sourceTree = "<group>"; };
 		DE1F7A742A83F0E700B3FF24 /* AmplitudeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
 		DE1F7A752A83F0E700B3FF24 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE1F7A762A83F0E700B3FF24 /* FacebookManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
@@ -1077,8 +1073,6 @@
 		DE1F7A712A83F0E700B3FF24 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				DE1F7A722A83F0E700B3FF24 /* AppsFlyerManager.swift */,
-				DE1F7A732A83F0E700B3FF24 /* BranchManager.swift */,
 				DE1F7A742A83F0E700B3FF24 /* AmplitudeManager.swift */,
 				DE1F7A752A83F0E700B3FF24 /* FirebaseManager.swift */,
 				DE1F7A762A83F0E700B3FF24 /* FacebookManager.swift */,
@@ -2829,7 +2823,6 @@
 				DEFE7EEA2A8B7DD600FB96F0 /* HomeCommandsGroupsCell.swift in Sources */,
 				DEFE7F632A8CBA3800FB96F0 /* GITableElement.swift in Sources */,
 				DEFE816D2A9CAF4800FB96F0 /* CreateEventView.swift in Sources */,
-				DE1F7AA22A83F0E700B3FF24 /* AppsFlyerManager.swift in Sources */,
 				DE1F7ADC2A83F10600B3FF24 /* GetProfileRequest.swift in Sources */,
 				DEFE81182A977EB900FB96F0 /* ProfileTableElement.swift in Sources */,
 				DEFE81102A977E7200FB96F0 /* ProfileViewModel.swift in Sources */,
@@ -3013,7 +3006,6 @@
 				DE1F7A772A83F0E700B3FF24 /* UIApplication+Extension.swift in Sources */,
 				DE1F7AD42A83F10600B3FF24 /* GetPaygateRequest.swift in Sources */,
 				DEFE7EB82A8B6FC900FB96F0 /* PlanCommand.swift in Sources */,
-				DE1F7AA32A83F0E700B3FF24 /* BranchManager.swift in Sources */,
 				DEFE7FCF2A8CF96C00FB96F0 /* CommandTrainingView.swift in Sources */,
 				DEB55CC82A86315200A56B96 /* ScheduleCommandResponse.swift in Sources */,
 				DEFE81352A97A4DC00FB96F0 /* SettingsTableElement.swift in Sources */,
@@ -3331,7 +3323,7 @@
 				CODE_SIGN_ENTITLEMENTS = DogTraining/DogTraining.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -3345,7 +3337,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = training.app.dogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -3368,7 +3360,7 @@
 				CODE_SIGN_ENTITLEMENTS = DogTraining/DogTraining.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = AY43JM5PH6;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -3382,7 +3374,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = training.app.dogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
